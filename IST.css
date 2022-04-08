@@ -62,23 +62,30 @@ color: rgb(0, 60, 66);
 text-decoration: none;
 display: inline-block;
 width: 23.75%;
+transition: 600ms;
 
 
 
 }
-
+.colorone:hover, .colortwo:hover{
+color: rgba(158, 52, 52, 0.692); 
+   
+}
 .color{
 
     padding-top:10px;
     padding-bottom:10px;
     font-family: cursive;
     text-align: center;
-   
-    color: rgb(1, 135, 180);
+    transition: 600ms;
+    color: rgb(1, 135, 180);  
     text-decoration: none;
     display: inline-block;
     width: 23.75%;
 
+}
+.color:hover{
+color: rgba(158, 52, 52, 0.692);      
 }
 .columns{
     
@@ -92,20 +99,14 @@ width: 23.75%;
     
 }
 
-#ppp{
-background-color: rgb(173, 177, 179);
-padding-top:0;
-margin: 5% 40% 0 ;
-border-radius:30px 30px 30px 30px ;
-color: rgb(1, 135, 180);
-font-size: 40px;  
-text-align: center;
-}
 .column {
    
 
 
     text-align: center;
+    border: 3px solid;
+    border-color: #fbfbfb;
+    border-radius: 30px;
     font-size: 24px;
     color: aliceblue;
     list-style: none;   
@@ -121,8 +122,8 @@ text-align: center;
     display:inline-flex;
     width: 100%;
     max-width: 300px;
-    padding-left: 70%;
-    padding-bottom: 5%;
+    padding-left: 75%;
+    padding-bottom: 3%;
 }
 .search{
     flex-grow: 1;
@@ -130,16 +131,16 @@ text-align: center;
     outline: none;
     border: 1px solid rgb(1, 135, 180);
     border-radius: 5px 0 0 5px;
-    background: #F4FAF9;
+    background: #fbfbfb;
     transition: background 0.25s, box-shadow 0.25s;
 
 }
-.search: focus{
-background: white;
+.search:focus{
+background: rgba(96, 211, 224, 0.386);
 box-shadow: 0 0 2px rgb(1, 135, 180);
 }
 .search::placeholder{
-color: rgba(1, 135, 180, 0.409);
+color: rgba(6, 37, 47, 0.756);
 }
 .search_button{
     width: 40px;
@@ -154,12 +155,36 @@ color: rgba(1, 135, 180, 0.409);
     cursor: pointer;
     user-select: none;
 }
-.search_button: active{
-    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.25);
+.search_button:active{
+    
+    box-shadow: inset 0 0 30px rgba(1, 135, 180, 0.251);
 }
 .buy{
-border: #ffffff;
-border-radius: 15px 15px 15px 15px;
-
-
+    
+    width: 80px;
+    height: 80px;
+    background: rgb(1, 135, 180);
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    transition: background 0.2s;
 }
+.buy:hover {
+    background: rgba(1, 135, 180, 0.441);
+  }
+
+ 
+
+  .buying{
+    display: inline-block;
+    width: 10em;
+    height: 4em;
+    contain: strict;
+    fill: currentcolor;
+    box-sizing: content-box !important;
+
