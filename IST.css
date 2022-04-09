@@ -143,8 +143,11 @@ font-family: 'MGR';
 color: rgb(1, 135, 180);  
 font-size: 40px ; 
 font-style: normal;
+transition: 600ms;
 }
-
+.title:hover {
+  color: rgba(156, 62, 62, 0.856);
+}
 
 
 .navs {
