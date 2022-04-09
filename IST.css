@@ -6,23 +6,31 @@ html{ height: 100; width: 100%;}
 body{
 margin: 0;
 padding: 0;
-background-color: rgb(28 43 62);
+background-color: rgb(40 41 42);
  
 }
+.columns{
+    background-color: rgb(40 41 42);
+    margin: 0;
+    padding: 0;
+        
+    }
+    
 .container{
-background-color: black;
+background-color: rgb(40 41 42); 
 z-index: 1;
 margin: 0;
-padding: 0;
+padding:0;
 border: 0;
+
 }
 
 
 .title{  
-padding: 0;
+padding-bottom: 5%;
 margin: 0;
 border: 0;
-background-color: black;
+background-color: rgb(40 41 42); 
 z-index:1;
 text-align: left;
 color: rgb(1, 135, 180);   
@@ -38,8 +46,7 @@ color: rgb(1, 135, 180);
     font-size: 30px;
     text-align: center;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    display: flex;
     margin: 0%;
     border-radius: 30px 30px 30px 30px;
     position: sticky;
@@ -85,12 +92,6 @@ color: rgba(158, 52, 52, 0.692);
 .color:hover{
 color: rgba(158, 52, 52, 0.692);      
 }
-.columns{
-background-color: rgb(28 43 62);   
-margin: 0;
-padding: 0;
-    
-}
 
 .column {
    
@@ -112,10 +113,11 @@ padding: 0;
 
 }
 .search_bar{
-    display:inline-flex;
-    width: 100%;
-    max-width: 300px;
-    padding-left: 75%;
+    display: inline-flex;
+    width: 30%;
+    padding-right: 70%;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 .search{
     flex-grow: 1;
