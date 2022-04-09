@@ -1,6 +1,9 @@
 html{ height: 100; width: 100%;}
   
-
+@font-face{
+    font-family: "MGR";
+    src: url("fonts/SLANT.TTF");
+}
 
 
 body{
@@ -34,9 +37,10 @@ border: 0;
 background-color: rgb(40 41 42); 
 z-index:1;
 text-align: center;
-font-family: 'Miltonian Tattoo', cursive;
+font-family: 'MGR';
 color: rgb(1, 135, 180);  
-font-size: 40px; 
+font-size: 40px ; 
+font-style: normal;
 }
 
 
