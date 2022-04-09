@@ -11,6 +11,8 @@
     <title>Isaac info meterial shopping</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
@@ -96,19 +98,53 @@
 
       
          
+      
+      <div class="swiping">
+      <div class="swiper">
+       
+         <div class="swiper-wrapper">
+           
+           <div class="swiper-slide"><img src="assets/poco-x3-gt-launched.jpg" alt="" width="500px" height="500px"></div>
+           <div class="swiper-slide"><img src="assets/Redmi-Note-11-Pro-Price-in-Nepal-1.jpg" alt="" width="500px" height="500px"></div>
+           
+           
+         </div>
+         
+         <div class="swiper-pagination"></div>
+       
+        
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
        
          
-    
-      
-    
-     
-     <article>
-  
-     </article>
+         <div class="swiper-scrollbar"></div>
+       </div>
+      </div>
         
         
-         
+        <script>
+     const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
     
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+   </script> 
     </body>
 
 
