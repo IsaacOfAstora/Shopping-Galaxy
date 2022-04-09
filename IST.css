@@ -26,14 +26,17 @@ border: 0;
 }
 
 
-.title{  
+.title{ 
+padding-top: 3%; 
 padding-bottom: 5%;
 margin: 0;
 border: 0;
 background-color: rgb(40 41 42); 
 z-index:1;
-text-align: left;
-color: rgb(1, 135, 180);   
+text-align: center;
+font-family: 'Miltonian Tattoo', cursive;
+color: rgb(1, 135, 180);  
+font-size: 40px; 
 }
 
 
@@ -61,7 +64,7 @@ color: rgb(1, 135, 180);
 
 padding-top:10px;
 padding-bottom:10px;
-font-family: cursive;
+font-family: 'Audiowide', cursive;
 text-align: center;
 color: rgb(0, 60, 66);
 text-decoration: none;
@@ -80,7 +83,7 @@ color: rgba(158, 52, 52, 0.692);
 
     padding-top:10px;
     padding-bottom:10px;
-    font-family: cursive;
+    font-family: 'Audiowide', cursive;
     text-align: center;
     transition: 600ms;
     color: rgb(1, 135, 180);  
@@ -182,3 +185,4 @@ color: rgba(6, 37, 47, 0.756);
     fill: currentcolor;
     box-sizing: content-box !important;
 
+  }
