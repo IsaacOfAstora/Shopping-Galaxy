@@ -304,29 +304,42 @@ color: rgba(6, 37, 47, 0.756);
 
  /***/
 
-  .swiping{
-padding-top: 3%;
-padding-bottom: 3%;
-border: 2px bold rgb(7, 99, 130);
-border-radius: 15px;
-background:#222;
-display: flex;
-align-items: center;
-justify-content: center;
-
-
-}
-.swiper{
-  border: 4px bold;
-  border-color: rgb(1, 135, 180);
+ .swiping{
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border: 2px bold rgb(7, 99, 130);
   border-radius: 15px;
-
-  width:80%;
-  height: fit-content;
-}
-.swiper-slide img{
-  width: 100%;
-}
+  background:#222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+  }
+  .swiper{
+    border: 4px bold;
+    border-color: rgb(1, 135, 180);
+    border-radius: 15px;
+  
+    width:80%;
+    height: fit-content;
+  }
+  .swiper-slide img{
+    width: 100%;
+    animation: slide 10s ease-in-out infinite;
+    
+    }
+    .auto-slider__content:hover{
+      animation-play-state:paused;
+  }
+  @keyframes slide{
+    50%{
+      transform:translateX(0);
+    }
+    10%{
+      transform:translateX(-1000px);
+    }
+  }
 
 /***Sign Up ***/
 
