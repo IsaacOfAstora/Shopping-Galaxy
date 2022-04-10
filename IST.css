@@ -403,9 +403,11 @@ transition: 600ms;
 .search_bar{
     display: inline-flex;
     width: 30%;
-    padding-right: 70%;
+    padding-left: 0;
+    padding-right: 40%;
     padding-top: 7%;
     padding-bottom: 7%;
+    margin-left: 0;
 }
 .search{
     flex-grow: 1;
