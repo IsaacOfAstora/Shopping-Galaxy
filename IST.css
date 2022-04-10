@@ -212,7 +212,7 @@ transform: scale(0.96);
 .column {
    
 
-
+    
     text-align: center;
     border: 3px solid;
     border-color: #fbfbfb;
@@ -222,12 +222,19 @@ transform: scale(0.96);
     list-style: none;   
     padding-top: 20px;
     border: 0;  
-    margin-top:0;
+    margin-top:1%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2em;
     transition: 0.8s; 
 
+}
+.imgg{
+
+margin-right:22%;
+margin-left: 23.75%;
+background-color:rgba(173, 177, 179, 0.338);
+border-radius: 15px;
 }
 .imgg:hover{
   transform: scale(0.96);    
