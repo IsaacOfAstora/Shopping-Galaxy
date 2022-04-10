@@ -188,7 +188,7 @@ transition: 600ms;
 }
 .colorone:hover, .colortwo:hover{
 color: rgba(158, 52, 52, 0.692); 
-   
+transform: scale(0.96);  
 }
 .color{
 
@@ -204,7 +204,9 @@ color: rgba(158, 52, 52, 0.692);
 
 }
 .color:hover{
-color: rgba(158, 52, 52, 0.692);      
+color: rgba(158, 52, 52, 0.692); 
+transform: scale(0.96); 
+    
 }
 
 .column {
@@ -224,7 +226,11 @@ color: rgba(158, 52, 52, 0.692);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2em;
+    transition: 0.8s; 
 
+}
+.imgg:hover{
+  transform: scale(0.96);    
 }
 .search_bar{
     display: inline-flex;
