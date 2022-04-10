@@ -1,22 +1,123 @@
 html{ height: 100; width: 100%;}
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 .cont{
 display: grid;
 text-align: center;
 align-items: center;
-padding: 15%;
+padding: 0 0 5% 0;
 
 
 }
-.indextitle{
-font-family:'MGR';
-font-size: 45px; 
-color: rgb(173, 177, 179);
-transition: 600ms;
+
+h1 {
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  margin: auto;
 }
-.indextitle:hover{
-cursor: pointer;
-color: rgb(1, 135, 180);  
+
+h1 span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  -webkit-animation: bounce 0.3s ease infinite alternate;
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
 }
+
+h1 span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+}
+
+h1 span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+}
+
+h1 span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+}
+
+h1 span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+}
+
+h1 span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+}
+
+h1 span:nth-child(8) {
+  -webkit-animation-delay: 0.2s;
+}
+
+h1 span:nth-child(9) {
+  -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(10) {
+  -webkit-animation-delay: 0.4s;
+}
+
+h1 span:nth-child(11) {
+  -webkit-animation-delay: 0.5s;
+}
+
+h1 span:nth-child(12) {
+  -webkit-animation-delay: 0.6s;
+}
+
+h1 span:nth-child(13) {
+  -webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(14) {
+  -webkit-animation-delay: 0.8s;
+
+}
+h1 span:nth-child(15) {
+  -webkit-animation-delay: 0.9s;
+
+}
+h1 span:nth-child(16) {
+  -webkit-animation-delay: 1.0s;
+
+}
+h1 span:nth-child(17) {
+  -webkit-animation-delay: 1.01s;
+
+}
+h1 span:nth-child(18) {
+  -webkit-animation-delay: 1.02s;
+
+}
+h1 span:nth-child(19) {
+  -webkit-animation-delay: 1.03s;
+
+}
+h1 span:nth-child(20) {
+  -webkit-animation-delay: 1.04s;
+
+}
+
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+      0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+/************************************************************/
 .colory{
 font-size: 40px; 
 text-align: center;
@@ -24,7 +125,11 @@ align-items: center;
 font-family: 'Audiowide', cursive;
 transition: 600ms;
 text-decoration: none;
-color:rgb(173, 177, 179);
+color:rgb(40 41 42); 
+padding: 30px; 
+border-radius:100px;
+background-color: rgb(173, 177, 179);
+margin: 2% auto 1% auto;
 }
 .colory:hover{
   color: rgb(1, 135, 180); 
