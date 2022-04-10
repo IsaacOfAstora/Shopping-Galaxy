@@ -282,14 +282,14 @@ background-color: rgb(40 41 42);
 z-index:1;
 text-align: center;
 font-family: 'MGR';
-color: rgb(1, 135, 180);  
+color: rgb(173, 177, 179);  
 font-size: 40px ; 
 font-style: normal;
 transition: 600ms;
 }
 .title:hover {
   cursor: pointer;
-  color: rgba(156, 62, 62, 0.856);
+  color: rgb(1, 135, 180);
 }
 
 
