@@ -1,4 +1,39 @@
 html{ height: 100; width: 100%;}
+.cont{
+display: grid;
+text-align: center;
+align-items: center;
+padding: 15%;
+
+
+}
+.indextitle{
+font-family:'MGR';
+font-size: 45px; 
+color: rgb(173, 177, 179);
+transition: 600ms;
+}
+.indextitle:hover{
+cursor: pointer;
+color: rgb(1, 135, 180);  
+}
+.colory{
+font-size: 40px; 
+text-align: center;
+align-items: center;
+font-family: 'Audiowide', cursive;
+transition: 600ms;
+text-decoration: none;
+color:rgb(173, 177, 179);
+}
+.colory:hover{
+  color: rgb(1, 135, 180); 
+  transform: scale(1.1);  
+   
+
+}
+/***************-_____-*********************/
+/**********Home Fonish**************/
 .link{
     color: #000000;
     text-decoration: none;
@@ -208,6 +243,25 @@ color: rgba(158, 52, 52, 0.692);
 transform: scale(0.96); 
     
 }
+.colorr{
+  padding: 4px;
+background-color:rgb(173, 177, 179);
+color: rgb(40 41 42);
+transition: 600ms;
+border-radius: 50%;
+}
+.colorr:hover{
+background-color:rgb(152, 152, 152);
+transform: scale(1.03);  
+}
+.ico{
+  
+transition: 600ms;
+
+}
+.ico:hover{
+  transform: scale(1.1); 
+}
 
 .column {
    
@@ -226,18 +280,19 @@ transform: scale(0.96);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2em;
-    transition: 0.8s; 
+    
 
 }
 .imgg{
-
-margin-right:22%;
-margin-left: 23.75%;
+position: relative;
+padding: 0;
+margin: auto;
 background-color:rgba(173, 177, 179, 0.338);
 border-radius: 15px;
+transition: 600ms; 
 }
 .imgg:hover{
-  transform: scale(0.96);    
+  transform: scale(1.1);    
 }
 .search_bar{
     display: inline-flex;
@@ -307,7 +362,7 @@ color: rgba(6, 37, 47, 0.756);
   .buying{
     display: inline-block;
     width: 10em;
-    height: 3em;
+    height: 2em;
     contain: strict;
     fill: currentcolor;
     box-sizing: content-box !important;
@@ -361,9 +416,9 @@ color: rgba(6, 37, 47, 0.756);
 
 
 .signup-form{
+  padding: 10px;
+  margin: auto;
   width: 300px;
-  margin-top: 5%;
-  margin-left: 38%;
   text-align: center;
   justify-items: center;
   align-items: center;
