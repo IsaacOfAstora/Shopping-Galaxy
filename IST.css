@@ -22,10 +22,11 @@ h1 span {
   display: inline-block;
   -webkit-animation: bounce 0.3s ease infinite alternate;
   font-size: 80px;
-  color: #fff;
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
-    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
-    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+  transition: 600ms;
+  color: rgb(173, 177, 179);
+  text-shadow: 0 1px 0 rgb(199, 199, 199), 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+  0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+  0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
 h1 span:nth-child(2) {
