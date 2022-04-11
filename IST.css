@@ -491,6 +491,7 @@ color: rgba(6, 37, 47, 0.756);
   margin: 0;
   
   
+  
   }
   .swiper{
     position: relative;
@@ -501,7 +502,7 @@ color: rgba(6, 37, 47, 0.756);
     border-radius: 15px;
     width:60%;
     height: fit-content;
-   
+    max-width: 1000px;
    
 
   }
