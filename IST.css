@@ -482,17 +482,18 @@ transition: 600ms;
 }
 .search-box .cancel-icon{
   position: absolute;
-  right: 375px;
+  right: 350px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 25px;
-  color: #fff;
+  color: rgb(173, 177, 179);
   cursor: pointer;
-  transition: all 0.5s 0.1s;
+  transition: all 0.1s 0.2s;
 }
 .search-box .cancel-icon.active{
   right: 16px;
   transform: translateY(-50%) rotate(360deg);
+  color:#fbfbfb
 }
 .search-box .search-data{
   text-align: center;
