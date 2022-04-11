@@ -409,27 +409,30 @@ transition: 600ms;
 .imgg:hover{
   transform: scale(1.1);    
 }
+
+/********************************Search Bar***************************/
+
 .search_bar{
-    display: inline-flex;
-    width: 30%;
-    padding-left: 0;
-    padding-right: 40%;
-    padding-top: 7%;
-    padding-bottom: 7%;
-    margin-left: 0;
+  display: inline-flex;
+  width: 20%;
+  padding-left: 0;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 0;
 }
 .search{
     flex-grow: 1;
     padding: 10px;
     outline: none;
-    border: 1px solid rgb(1, 135, 180);
+    border: 1px solid rgb(0, 60, 66);
     border-radius:  15px 0 0 15px ;
     background: #fbfbfb;
     transition: background 0.25s, box-shadow 0.25s;
 
 }
 .search:focus{
-background: rgba(96, 211, 224, 0.386);
+background: rgba(173, 177, 179, 0.338);
 box-shadow: 0 0 2px rgb(1, 135, 180);
 }
 .search::placeholder{
@@ -437,7 +440,7 @@ color: rgba(6, 37, 47, 0.756);
 }
 .search_button{
     width: 40px;
-    background: rgb(1, 135, 180);
+    background: rgb(0, 60, 66);
     color: #ffffff;
     outline: none;
     border: none;
@@ -451,9 +454,10 @@ color: rgba(6, 37, 47, 0.756);
 }
 
 .search_button:hover{
-  background: rgb(2, 70, 92);
+  background: rgb(1, 135, 180);
 }
 
+/********************************Search Bar Finished***************************/
 
 .buy{
   margin-bottom: 3%;
