@@ -482,7 +482,7 @@ color: rgba(6, 37, 47, 0.756);
 
  .swiping{
   padding: 3% 0 3% 0;
-  border: 2px bold rgb(7, 99, 130);
+  border-color:  rgb(7, 99, 130);
   border-radius: 15px;
   background:rgb(40 41 42);
   display: flex;
@@ -497,12 +497,12 @@ color: rgba(6, 37, 47, 0.756);
     position: relative;
     padding: 0;
     margin: auto;
-    border: 4px bold;
     border-color: rgb(1, 135, 180);
     border-radius: 15px;
     width:60%;
     height: fit-content;
-    max-width: 1000px;
+    min-width: 760px;
+    max-width: 760px;
    
 
   }
