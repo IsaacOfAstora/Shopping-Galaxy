@@ -413,7 +413,6 @@ transition: 600ms;
 /********************************Search Bar***************************/
 
 .search-box{
-
   display: inline-flex;
   width: 20%;
   padding-right: 4%;
