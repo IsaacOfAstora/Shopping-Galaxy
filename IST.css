@@ -409,6 +409,9 @@ transition: 600ms;
 .imgg:hover{
   transform: scale(1.1);    
 }
+.im{
+border-radius: 15px;
+}
 
 /********************************Search Bar***************************/
 
@@ -488,7 +491,7 @@ transition: 600ms;
   font-size: 25px;
   color: rgb(173, 177, 179);
   cursor: pointer;
-  transition: all 0.1s 0.2s;
+  transition: all 0.5s 0.1s;
 }
 .search-box .cancel-icon.active{
   right: 16px;
