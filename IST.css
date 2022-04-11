@@ -359,7 +359,7 @@ transform: scale(0.96);
     
 }
 .colorr{
-  padding: 4px;
+padding: 6px;
 background-color:rgb(173, 177, 179);
 color: rgb(40 41 42);
 transition: 600ms;
@@ -369,12 +369,12 @@ border-radius: 50%;
 background-color:rgb(152, 152, 152);
 transform: scale(1.03);  
 }
-.ico{
-  
+.fa-home{
+color:rgb(0, 60, 66);   
 transition: 600ms;
 
 }
-.ico:hover{
+.fa-home:hover{
   transform: scale(1.1); 
 }
 
@@ -473,6 +473,10 @@ border-radius: 15px 15px 0  0;
   cursor: pointer;
   z-index: 1;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.search-box .search-icon:hover{
+background-color:rgb(152, 152, 152);
+
 }
 .search-box .search-icon.active{
   margin-right: 4.7%;
