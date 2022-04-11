@@ -145,12 +145,14 @@ margin: 2% auto 1% auto;
 .link{
     color: #000000;
     text-decoration: none;
+  
     }
 .wrapper{
     display: flex;
     padding-top: 3%;
     padding-bottom: 3%;
-    padding-left: 50%;
+    padding-left: 58%;
+    
     
   }
   .wrapper .icon{
@@ -206,11 +208,14 @@ margin: 2% auto 1% auto;
     height: 15px;
     width: 15px;
     background: #fff;
-    left: 35%;
+    left: 50%;
     bottom: -6px;
     transform: translateX(-50%) rotate(45deg);
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
+  /***********************************/
+
+  /**********************_outube***********************************************/
   .wrapper .icon:hover span{
     color: #fff;
   }
