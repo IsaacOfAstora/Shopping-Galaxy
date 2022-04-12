@@ -361,11 +361,20 @@ transform: scale(0.96);
 .button span{
   float: right;
   line-height: 40px;
-  transition: 0.5s;
+  transition:0.5s;
 }
 .button span.rotate{
   transform: rotate(-180deg);
 }
+.color span{
+  float: right;
+  line-height: 40px;
+  transition: 0.5s;
+}
+.color span.rotate{
+  transform: rotate(-180deg);
+}
+
 .navs .menu{
   z-index:9999;
   list-style: none;
