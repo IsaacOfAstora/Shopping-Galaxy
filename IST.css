@@ -352,7 +352,9 @@ transform: scale(0.96);
   display: inline-block;
   width: 23.75%;
   transition: 600ms;
-
+  border: none;
+  background: none;
+  font-size: 30px;
 }
 .button:hover{
 color: rgba(158, 52, 52, 0.692); 
@@ -376,7 +378,7 @@ transform: scale(0.96);
 }
 
 .navs .menu{
-  z-index:9999;
+  
   list-style: none;
   text-align: left;
   padding: auto;
@@ -392,14 +394,14 @@ transform: scale(0.96);
   
 }
 
-[id^=btn]:checked + .menu{
+.button:focus + .menu , .menu:hover{
   opacity: 1;
   pointer-events: all;
   transform: translateY(30%);
   
 }
-#btn{
-display: none;
+
+
 }
 .navs .menu:before{
   position: absolute;
@@ -414,7 +416,9 @@ display: none;
 }
 .col{
  
-  z-index:9999;
+  border: none;
+  background: none;
+  font-size: 30px;
   padding-top:10px;
   padding-bottom:10px;
   font-family: 'Audiowide', cursive;
@@ -428,6 +432,10 @@ display: none;
   color: rgba(158, 52, 52, 0.692); 
   transform: scale(0.96);  
 }
+.color:focus + .menu , .menu:hover{
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(30%);
 /********************************Drop down menu END*********************************/
  
 
