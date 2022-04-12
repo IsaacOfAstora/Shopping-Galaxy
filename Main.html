@@ -18,11 +18,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
     </head>
    
     <body>
+
 
         <div class="containerr">
        
@@ -82,12 +83,27 @@
 
 
 
-      
+      <header>
         <nav class="navs">
           <div class="navo">
         <a class= "colorr" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>      
-        <a class= "color" href="Main.html">Main </a>    
-        <a class= "colorone" href="products.html">Products</a> 
+        <a class= "color" href="Main.html">Main </a>
+         
+        <label for="btn" class="button"> Products
+          <span class="fas fa-caret-down"></span>
+           
+        </label>
+        <input type="checkbox" id="btn"> 
+              
+            
+            
+        <ul class="menu">
+              <li><a class= "col" href="products.html">Phones</a></li>
+              <li><a class= "col" href="">Accessories</a></li>
+              <li><a class= "col" href="">perfumes</a></li>
+       </ul>
+   
+            
         <a class= "colortwo" href="For_customer.html">Cart</a>
       </div>
         
@@ -103,11 +119,13 @@
   </div>
   </div>
       
+
+
       </nav>  
       </div>
       
 
-      
+    </header>
          
       
       <div class="swiping">
@@ -185,6 +203,20 @@
       searchInput.value = "";
     }
   </script>
+
+
+
+<script>
+  $('nav .button').click(function(){
+    $('nav .button span').toggleClass("rotate");
+  });
+
+</script>
+
+
+
+
+
     </body>
 
 
