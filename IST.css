@@ -402,7 +402,6 @@ transform: scale(0.96);
 }
 
 
-}
 .navs .menu:before{
   position: absolute;
   content: '';
@@ -436,6 +435,7 @@ transform: scale(0.96);
   opacity: 1;
   pointer-events: all;
   transform: translateY(30%);
+}
 /********************************Drop down menu END*********************************/
  
 
