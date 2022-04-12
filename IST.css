@@ -415,9 +415,7 @@ transform: scale(0.96);
 }
 .col{
  
-  border: none;
-  background: none;
-  font-size: 30px;
+ 
   padding-top:10px;
   padding-bottom:10px;
   font-family: 'Audiowide', cursive;
@@ -443,7 +441,9 @@ transform: scale(0.96);
 
 .color{
  
-
+  border: none;
+  background: none;
+  font-size: 30px;
     padding-top:10px;
     padding-bottom:10px;
     font-family: 'Audiowide', cursive;
