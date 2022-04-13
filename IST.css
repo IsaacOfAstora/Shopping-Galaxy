@@ -365,7 +365,7 @@ transform: scale(0.96);
   line-height: 40px;
   transition:0.5s;
 }
-.button span.rotate{
+.button:focus span.rotate{
   transform: rotate(-180deg);
 }
 .color span{
@@ -373,7 +373,7 @@ transform: scale(0.96);
   line-height: 40px;
   transition: 0.5s;
 }
-.color span.rotate{
+.color:focus span.rotate{
   transform: rotate(-180deg);
 }
 
@@ -381,8 +381,8 @@ transform: scale(0.96);
   
   list-style: none;
   text-align: left;
-  padding: auto;
-  margin-left: 27.8%;
+  padding: 10px;
+  margin-left: 29.0%;
   position: absolute;
   border-radius: 5px;
   background-color: rgb(173, 177, 179);
