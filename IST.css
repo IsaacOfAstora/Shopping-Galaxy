@@ -378,7 +378,7 @@ transform: scale(0.96);
 .button:focus + .menu , .menu:hover{
   opacity: 1;
   pointer-events: all;
-  transform: translateY(35%);
+  transform: translateY(30%);
   
 }
 
