@@ -294,7 +294,7 @@ transition: 600ms;
     border-radius: 30px 30px 30px 30px;
     position: sticky;
     top: 0;
-    padding-bottom: 10px;
+  
 
 
 }
@@ -543,7 +543,7 @@ border-radius: 15px 15px 0  0;
   margin-right: 3%;
   position: absolute;
   right: 300px;
-  top: 44%;
+  top: 50%;
   transform: translateY(-50%);
   height: 55px;
   width: 55px;
@@ -587,18 +587,8 @@ background-color:rgb(152, 152, 152);
   transform: translateY(-50%) rotate(360deg);
   color:#fbfbfb
 }
-.search-box .search-data{
-  text-align: center;
-  position: absolute;
-    top: 50px;
-    padding: 7px;
-    color: rgb(40 41 42);
-    font-size: 16px;
-  word-wrap: break-word;
-}
-.search-box .search-data.active{
-  display: none;
-}
+
+
 
 /********************************Search Bar Finished***************************/
 
