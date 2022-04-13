@@ -294,6 +294,7 @@ transition: 600ms;
     border-radius: 30px 30px 30px 30px;
     position: sticky;
     top: 0;
+    padding-bottom: 10px;
 
 
 }
@@ -377,7 +378,7 @@ transform: scale(0.96);
 .button:focus + .menu , .menu:hover{
   opacity: 1;
   pointer-events: all;
-  transform: translateY(30%);
+  transform: translateY(35%);
   
 }
 
@@ -542,7 +543,7 @@ border-radius: 15px 15px 0  0;
   margin-right: 3%;
   position: absolute;
   right: 300px;
-  top: 50%;
+  top: 44%;
   transform: translateY(-50%);
   height: 55px;
   width: 55px;
@@ -588,9 +589,11 @@ background-color:rgb(152, 152, 152);
 }
 .search-box .search-data{
   text-align: center;
-  padding-top: 7px;
-  color: #fff;
-  font-size: 18px;
+  position: absolute;
+    top: 50px;
+    padding: 7px;
+    color: rgb(40 41 42);
+    font-size: 16px;
   word-wrap: break-word;
 }
 .search-box .search-data.active{
