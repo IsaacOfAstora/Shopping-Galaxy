@@ -117,7 +117,7 @@ border-radius: 15px 15px 0  0;
         position: relative;
         cursor: pointer;
         transition: 600ms;
-        border-top: 11px solid rgb(158 52 52 / 81%); 
+    
           }
           .footer .paragraph:hover {
             transform: scale(1.1); 
