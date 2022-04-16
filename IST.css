@@ -3,7 +3,16 @@ html{ height: 100; width: 100%;}
   font-family: "MGR";
   src: url("fonts/SLANT.TTF");
 }
-
+.containerr{
+  background-color: rgb(40 41 42); 
+  z-index: 1;
+  margin: auto;
+  padding:0;
+  border-color: #ccc;
+  border-radius: 15px;
+  max-width: 1300px;
+  
+  }
 .link{
     color: #000000;
     text-decoration: none;
@@ -140,7 +149,7 @@ transition: 600ms;
 }
 .title:hover {
   cursor: pointer;
-  color: rgb(1, 135, 180);
+  color: rgba(158, 52, 52, 0.692);
 }
 
 
@@ -157,7 +166,7 @@ transition: 600ms;
     border-radius: 30px 30px 30px 30px;
     position: sticky;
     top: 0;
-  
+    border-bottom: 11px solid rgb(158 52 52 / 81%);
 
 
 }
@@ -476,6 +485,7 @@ background-color:rgb(152, 152, 152);
     border-radius: 25px 25px 0 0;
     width: 100%;
     height: fit-content;
+    border-top: 11px solid rgb(158 52 52 / 81%); 
       }
   
      .footer .paragraph {
@@ -503,6 +513,7 @@ background-color:rgb(152, 152, 152);
         justify-content: center;
         align-items: center;
         padding-bottom: 20px;
+        padding-bottom: 10px;
         
           }
           .wrap .icon{
@@ -558,4 +569,88 @@ background-color:rgb(152, 152, 152);
             transform: scale(1.2);
           background: #DE463B;
         }  
+
+
+        /******************wavy background*****************/
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+svg {
+  position: relative;
+  top: -80px;
+  left: 0;
+  height: 200px;
+  width: 100%;
+
+}
+
+
+
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count:infinite;
+  fill: #681e18;
+}
+.drop {
+  fill: transparent;
+  animation: drop 5s ease infinite normal;
+  stroke: #681e18;
+  stroke-width:0.5;
+  opacity:.6; 
+  transform: translateY(80%);
+}
+.drop1 {
+  transform-origin: 20px 3px;
+}
+.drop2 {
+  animation-delay: 3s;
+  animation-duration:3s;
+  transform-origin: 25px 3px;
+}
+.drop3 {
+  animation-delay: -2s;
+  animation-duration:3.4s;
+  transform-origin: 16px 3px;
+}
+.gooeff {
+  	filter: url(#goo);
+}
+#wave2 {
+  animation-duration:5s;
+  animation-direction: reverse;
+  opacity: .6
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity:.3;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(80%); 
+    opacity:.6; 
+  }
+  80% {
+    transform: translateY(80%); 
+    opacity:.6; 
+  }
+  90% { 
+    transform: translateY(10%) ; 
+    opacity:.6; 
+  }
+  100% { 
+    transform: translateY(0%) scale(1.5);  
+    stroke-width:0.2;
+    opacity:0; 
+  }
+}
+@keyframes wave {
+  to {transform: translateX(-100%);}
+}
+@keyframes ball {
+  to {transform: translateY(20%);}
+}
+
+
+/******************wavy background complete*****************/
         /**************************footer complete***************************************************/
+
+

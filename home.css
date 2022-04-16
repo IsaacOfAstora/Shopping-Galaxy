@@ -204,11 +204,14 @@ margin: 2% auto 1% auto;
     
   }
   .footer{
+
 display: block;
 background-color:rgba(173, 177, 179, 0.642); 
 border-radius: 25px 25px 0 0;
 width: 100%;
 height: fit-content;
+border-top: 11px solid rgb(158 52 52 / 81%); 
+
   }
 
  .footer .paragraph {
@@ -239,7 +242,7 @@ display: flex;
 text-align: center;
 justify-content: center;
 align-items: center;
-padding-bottom: 20px;
+padding-bottom: 10px;
 
   }
   .wrapper .icon{
@@ -294,7 +297,9 @@ padding-bottom: 20px;
     color: #fff;
     transform: scale(1.2);
   background: #DE463B;
-}
+} 
 /******************wavy background*****************/
+
+
 
 /******************wavy background complete*****************/
