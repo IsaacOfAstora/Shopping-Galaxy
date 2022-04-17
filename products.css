@@ -3,11 +3,7 @@ html{ height: 100; width: 100%;}
   font-family: "MGR";
   src: url("fonts/SLANT.TTF");
 }
-body{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(40 41 42);
-}
+
 /*****************Product Images****************/
 .columns{
   background-color: rgb(40 41 42);
