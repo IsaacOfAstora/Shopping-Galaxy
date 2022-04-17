@@ -10,49 +10,43 @@ body{
 }
 /*****************Product Images****************/
 .columns{
-    background-color: rgb(40 41 42);
-    margin: auto;
-    padding: 0;
-    max-width: 1300px;    
+  background-color: rgb(40 41 42);
+  margin: 40px auto;
+  padding: 0;
+  max-width: 1000px;
+  scale: (1.1);   
     }
     
-.containerr{
-background-color: rgb(40 41 42); 
-z-index: 1;
-margin: auto;
-padding:0;
-border-color: #ccc;
-border-radius: 15px;
-max-width: 1300px;
 
-}
 .column {
-   
-
-    
+  padding: 0;
+  SIZE: A4;
   text-align: center;
-  border: 3px solid;
-  border-color: #fbfbfb;
+  border-top: 13px solid #fcfc4b;
+  border-bottom: 13px solid #fcfc4b;
   border-radius: 30px;
   font-size: 24px;
-  color: aliceblue;
-  list-style: none;   
-  padding-top: 20px;
-  border: 0;  
-  margin-top:1%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2em;
+  font-family: 'MGR';
+  color: #f8f8f8;
+  /* margin: 50px auto; */
+  list-style: none;
+  /* padding-top: 20px; */
+  /* border: 0; */
+  /* margin-top: 1%; */
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  gap: 1em;
   
 
 }
 .imgg{
-position: relative;
-padding: 0;
-margin: auto;
-background-color:rgba(173, 177, 179, 0.338);
-border-radius: 15px;
-transition: 600ms; 
+    position: relative;
+    /* padding: 0; */
+    margin: 23px 52px;
+    background-color: rgba(173, 177, 179, 0.338);
+    border-radius: 15px;
+    transition: 600ms;
 }
 .imgg:hover{
 transform: scale(1.1);    
@@ -62,22 +56,23 @@ border-radius: 15px 15px 0  0;
 }
 /*****Buy Icons *****/
 .buy{
-  margin-bottom: 3%;
-    width: 80px;
-    height: 80px;
-    background: rgb(1, 135, 180);
-    color: #ffffff;
+ 
+    margin-bottom: 3%;
+    width: 50px;
+    height: 50px;
+    background: rgb(252 252 75);
+    color: #28292a;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     border-radius: 50%;
-    border:none;
+    border: none;
     text-decoration: none;
-    transition: 0.2s;
+    transition: 0.6s;
 }
 .buy:hover {
-    background: rgba(1, 135, 180, 0.29);
+    transform: scale(1.1);
   }
 
  
@@ -99,26 +94,29 @@ border-radius: 15px 15px 0  0;
 
      /**************************footer***************************************************/
      .footer{
-        display: block;
-        background-color:rgba(173, 177, 179, 0.642); 
-        border-radius: 25px 25px 0 0;
-        width: 100%;
-        height: fit-content;
-          }
-      
-         .footer .paragraph {
+      display: block;
+      background-color: rgb(33 33 33);
+      border-radius: 25px 25px 0 0;
+      width: 100%;
+      height: fit-content;
+      border-top: 20px solid rgb(252 252 75);
+  }
+  
+  
+        
+    
+       .footer .paragraph {
         width: fit-content;
-        margin:auto;
+        margin: auto;
         padding: 10px;
         font-family: "MGR";
-        color:rgb(40 41 42);
+        color: rgb(255 255 255);
         text-align: center;
         font-size: 30px;
         position: relative;
         cursor: pointer;
         transition: 600ms;
-    
-          }
+       }
           .footer .paragraph:hover {
             transform: scale(1.1); 
             
