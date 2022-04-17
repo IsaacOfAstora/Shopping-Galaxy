@@ -10,6 +10,9 @@ html{ height: 100; width: 100%;}
   margin: 40px auto;
   padding: 0;
   max-width: 1000px;
+  border-top: 13px solid #c7404e;
+  border-bottom: 13px solid #c7404e;
+  border-radius: 30px;
   scale: (1.1);   
     }
     
@@ -18,9 +21,7 @@ html{ height: 100; width: 100%;}
   padding: 0;
   SIZE: A4;
   text-align: center;
-  border-top: 13px solid #fcfc4b;
-  border-bottom: 13px solid #fcfc4b;
-  border-radius: 30px;
+
   font-size: 24px;
   font-family: 'MGR';
   color: #f8f8f8;
@@ -56,7 +57,7 @@ border-radius: 15px 15px 0  0;
     margin-bottom: 3%;
     width: 50px;
     height: 50px;
-    background: rgb(252 252 75);
+    background: #c7404e;
     color: #28292a;
     display: inline-flex;
     align-items: center;
@@ -89,19 +90,21 @@ border-radius: 15px 15px 0  0;
 
 
      /**************************footer***************************************************/
-     .footer{
+     footer{
       display: block;
       background-color: rgb(33 33 33);
       border-radius: 25px 25px 0 0;
       width: 100%;
       height: fit-content;
-      border-top: 20px solid rgb(252 252 75);
+      border-top: 20px solid #c7404e;
+      bottom: 0;
   }
-  
+
+
   
         
     
-       .footer .paragraph {
+       footer .paragraph {
         width: fit-content;
         margin: auto;
         padding: 10px;
@@ -113,7 +116,7 @@ border-radius: 15px 15px 0  0;
         cursor: pointer;
         transition: 600ms;
        }
-          .footer .paragraph:hover {
+          footer .paragraph:hover {
             transform: scale(1.1); 
             
           } 

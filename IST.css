@@ -129,6 +129,7 @@ body{
 margin: 0;
 padding: 0;
 background-image:url("https://images3.alphacoders.com/106/1062805.jpg");
+background-attachment: fixed;
 background-size: cover;
 background-repeat: no-repeat;
  
@@ -149,7 +150,7 @@ background-repeat: no-repeat;
 }
 .title:hover {
   cursor: pointer;
-  color: rgb(252 252 75);
+  color: #df4c5b;
 }
 
 
@@ -165,7 +166,7 @@ background-repeat: no-repeat;
   display: flex;
   margin: auto;
   border-radius: 0px 0px 30px 30px;
-  border-bottom: 10px solid #fcfc4b;
+  border-bottom: 10px solid #c7404e;
   max-width: 1300px;
   top: 0 !important;
   position: sticky !important;
@@ -192,7 +193,7 @@ background-repeat: no-repeat;
 
 }
 .colorone:hover, .colortwo:hover{
-color: rgb(212, 170, 31);
+color: #d87982;
 transform: scale(0.96);  
 }
 /********************************Drop down menu*********************************/
@@ -212,7 +213,7 @@ transform: scale(0.96);
   font-size: 30px;
 }
 .button:hover{
-color: rgb(212, 170, 31);
+color: #d87982;
 transform: scale(0.96); 
 }
 .button span{
@@ -239,7 +240,7 @@ transform: scale(0.96);
   padding: 10px;
   left: 29.25%;
   margin: auto;
-  border-bottom: 10px solid rgb(252 252 75);
+  border-bottom: 10px solid #c7404e;
   position: absolute;
   border-radius: 10px;
   background-color: rgb(42 42 42);
@@ -284,7 +285,7 @@ transform: scale(0.96);
   transition: 600ms;
 }
 .col:hover{
-  color: rgb(212, 170, 31);
+  color: #d87982;
   transform: scale(0.96);  
 }
 .color:focus + .menu , .menu:hover{
@@ -306,7 +307,7 @@ transform: scale(0.96);
   font-family: 'Audiowide', cursive;
   text-align: center;
   transition: 600ms;
-  color: rgb(255 255 76);
+  color: #df4c5b;
   text-decoration: none;
   display: inline-block;
   width: 23.75%;
@@ -370,7 +371,7 @@ transform: scale(1.03);
 }
 .search-box input.active {
   opacity: 1;
-  border-color: rgb(221 222 100);
+  border-color: #c7404e;
   border-style: solid;
   padding-left: 15px;
   visibility: visible;
@@ -409,7 +410,7 @@ background-color:rgba(152, 152, 152, 0.299);
   line-height: 50px;
   width: 50px;
   font-size: 20px;
-  background: rgb(252 252 75);
+  background: #c7404e;
   color: rgb(33 33 33);
   transform: translateY(-50%) rotate(360deg);
 }
@@ -438,8 +439,8 @@ background-color:rgba(152, 152, 152, 0.299);
 
 
  .swiping{
-    border-bottom: 13px solid rgb(252 252 75);
-    border-top: 13px solid rgb(252 252 75);
+    border-bottom: 13px solid #c7404e;
+    border-top: 13px solid #c7404e;
     border-radius: 25px;
     background: rgb(33 33 33);
     display: flex;
@@ -447,6 +448,7 @@ background-color:rgba(152, 152, 152, 0.299);
     justify-content: center;
     margin: 40px auto 40px;
     max-width: 1000px;
+  
   
   
   
@@ -493,19 +495,24 @@ background-color:rgba(152, 152, 152, 0.299);
     color: #e4ba0c;
   }
     /**************************footer***************************************************/
-  .footer{
+  footer{
     display: block;
     background-color: rgb(33 33 33);
     border-radius: 25px 25px 0 0;
     width: 100%;
     height: fit-content;
-    border-top: 20px solid rgb(252 252 75);
+    border-top: 20px solid #c7404e;
+    margin-bottom: 0;
+
+
 }
+
+
 
 
       
   
-     .footer .paragraph {
+     footer .paragraph {
       width: fit-content;
       margin: auto;
       padding: 10px;
@@ -516,9 +523,10 @@ background-color:rgba(152, 152, 152, 0.299);
       position: relative;
       cursor: pointer;
       transition: 600ms;
+     
     
       }
-      .footer .paragraph:hover {
+      footer .paragraph:hover {
         transform: scale(1.1); 
         
       } 
