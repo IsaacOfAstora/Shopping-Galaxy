@@ -494,6 +494,10 @@ background-color:rgba(152, 152, 152, 0.299);
     line-height: 1;
     color: #c7404e;
   }
+  .swiper-pagination-bullet-active {
+    background-color: #c7404e !important;
+  }
+
     /**************************footer***************************************************/
   footer{
     display: block;
