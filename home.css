@@ -44,7 +44,7 @@ color:rgb(199 64 78);
   align-content: center;
   border-radius: 25px;
   border: 3px solid rgb(199 64 78);
-  background-color: rgb(33 33 33);
+  background-color: rgb(33 33 33 / 75%);
 }
 
 /**********************************social media *********************/
@@ -141,7 +141,7 @@ margin: auto;
   color: rgb(219 225 231);
   font-family: 'MGR' !important;
   padding: 10px;
-  background: rgb(33 33 33);
+  background: rgba(33, 33, 33, 0);
   text-decoration: none;
   display: block;
   width: fit-content;
@@ -170,7 +170,7 @@ transition: 600ms;
     padding: 15px;
     justify-items: center;
     align-items: center;
-    background-color: rgb(33 33 33);
+    background-color: rgb(33 33 33 / 75%);
     position: relative;
     overflow: hidden;
     border-radius: 25px;
