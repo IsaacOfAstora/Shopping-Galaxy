@@ -221,7 +221,7 @@ transform: scale(0.96);
   line-height: 40px;
   transition:0.5s;
 }
-.button:focus span.rotate{
+.button:hover span{
   transform: rotate(-180deg);
 }
 .color span{
@@ -229,7 +229,7 @@ transform: scale(0.96);
   line-height: 40px;
   transition: 0.5s;
 }
-.color:focus span.rotate{
+.color:hover span{
   transform: rotate(-180deg);
 }
 
@@ -238,7 +238,7 @@ transform: scale(0.96);
   list-style: none;
   text-align: left;
   padding: 10px;
-  left: 29.25%;
+  left: 29.7%;
   margin: auto;
   border-bottom: 10px solid #c7404e;
   position: absolute;
@@ -252,10 +252,10 @@ transform: scale(0.96);
   
 }
 
-.button:focus + .menu , .menu:hover{
+.button:hover  + .menu , .menu:hover{
   opacity: 1;
   pointer-events: all;
-  transform: translateY(30%);
+  transform: translateY(25%);
   
 }
 
@@ -288,10 +288,10 @@ transform: scale(0.96);
   color: #d87982;
   transform: scale(0.96);  
 }
-.color:focus + .menu , .menu:hover{
+.color:hover + .menu , .menu:hover{
   opacity: 1;
   pointer-events: all;
-  transform: translateY(30%);
+  transform: translateY(25%);
 }
 /********************************Drop down menu END*********************************/
  
