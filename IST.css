@@ -221,7 +221,7 @@ transform: scale(0.96);
   line-height: 40px;
   transition:0.5s;
 }
-.button:hover span{
+.button span.rotate{
   transform: rotate(-180deg);
 }
 .color span{
@@ -229,7 +229,7 @@ transform: scale(0.96);
   line-height: 40px;
   transition: 0.5s;
 }
-.color:hover span{
+.color span.rotate{
   transform: rotate(-180deg);
 }
 
@@ -238,7 +238,7 @@ transform: scale(0.96);
   list-style: none;
   text-align: left;
   padding: 10px;
-  left: 29.7%;
+  left: 28.6%;
   margin: auto;
   border-bottom: 10px solid #c7404e;
   position: absolute;
@@ -252,14 +252,15 @@ transform: scale(0.96);
   
 }
 
-.button:hover  + .menu , .menu:hover{
+#btn{
+visibility: hidden;
+}
+[id^=btn]:checked + .menu{
   opacity: 1;
   pointer-events: all;
-  transform: translateY(25%);
-  
+  transform: translateY(30%);
+
 }
-
-
 .navs .menu:before{
   position: absolute;
   content: '';
@@ -288,11 +289,7 @@ transform: scale(0.96);
   color: #d87982;
   transform: scale(0.96);  
 }
-.color:hover + .menu , .menu:hover{
-  opacity: 1;
-  pointer-events: all;
-  transform: translateY(25%);
-}
+
 /********************************Drop down menu END*********************************/
  
 
@@ -324,8 +321,7 @@ transform: scale(0.96);
   border-radius: 50%;
 }
 .colorr:hover{
-background-color:rgba(152, 152, 152, 0.299);
-transform: scale(1.03);  
+transform: scale(1.2);  
 }
 .fa-home{
     color: rgb(255 255 255);
@@ -333,7 +329,7 @@ transform: scale(1.03);
 
 }
 .fa-home:hover{
-  transform: scale(1.1); 
+  transform: scale(1.2); 
 }
 
 
@@ -399,10 +395,12 @@ transform: scale(1.03);
   z-index: 1;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.search-box .search-icon:hover{
-background-color:rgba(152, 152, 152, 0.299);
-
+.fa-search{
+transition: 0.5s;
 }
+.fa-search:hover{
+  transform: scale(1.18);
+  }
 .search-box .search-icon.active{
   margin-right: 4.7%;
   right: 5px;
@@ -411,7 +409,7 @@ background-color:rgba(152, 152, 152, 0.299);
   width: 50px;
   font-size: 20px;
   background: #c7404e;
-  color: rgb(33 33 33);
+  color: rgb(255 255 255);
   transform: translateY(-50%) rotate(360deg);
 }
 

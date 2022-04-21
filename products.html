@@ -80,11 +80,11 @@
           <a class= "colorr" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>       
           <a class= "colorone" href="Main.html">Main </a>    
       
-             
-          <label  class="button"> Products
+          <label for="btn" class="color"> Products
             <span class="fas fa-caret-down"></span>
-             
+           
           </label>
+          <input id="btn" type="checkbox" >
             
                   
                 
@@ -100,7 +100,7 @@
         </div>
          
         <div class="search-box">
-            <input type="text" placeholder="Type to search..">
+            <input class="B" type="text" placeholder="Type to search..">
             <div class="search-icon">
               <i class="fas fa-search"></i>
             </div>
@@ -183,7 +183,7 @@
       const searchBox = document.querySelector(".search-box");
       const searchBtn = document.querySelector(".search-icon");
       const cancelBtn = document.querySelector(".cancel-icon");
-      const searchInput = document.querySelector("input");
+      const searchInput = document.querySelector(".B");
       searchBtn.onclick =()=>{
         searchBox.classList.add("active");
         searchBtn.classList.add("active");
