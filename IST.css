@@ -343,23 +343,22 @@ transform: scale(1.2);
   margin-right: 5%;
   margin-top: 0.5%;
   margin-bottom: 0.5%;
-  transition: all 0.4s ease-in-out;
+
 }
-.search-box.active {
-  width: 30%;
-}
+
 .search-box input {
   height: 43px;
   width: 0;
   border-radius: 50px;
+  border-color: #c7404e;
+  border-style: solid;
   background: rgb(255, 255, 255);
   outline: none;
   padding: 2px;
   font-size: 18px;
   opacity: 0;
   transition: all 0.4s ease-in-out;
-  border-color: #c7404e;
-  border-style: solid;
+
 }
 .search-box input.active {
   width: 100%;
