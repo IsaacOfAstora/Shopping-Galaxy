@@ -354,7 +354,7 @@ transform: scale(1.2);
   border-style: solid;
   background: rgb(255, 255, 255);
   outline: none;
-  padding: 2px;
+  padding: 2px 50px 2px 15px;
   font-size: 18px;
   opacity: 0;
   transition: all 0.4s ease-in-out;
@@ -363,7 +363,7 @@ transform: scale(1.2);
 .search-box input.active {
   width: 100%;
   opacity: 1;
-  padding-left: 15px;
+  
 }
 
 .search-box input::placeholder{

@@ -20,17 +20,22 @@ body{
   max-width: 1300px;
   margin: auto;
 }
-.container h1 {
+.cont {
+  padding: 0;
+  max-width: 1300px;
+  margin: auto;
+}
+.cont h1 {
   cursor: pointer;
     text-align: center;
     padding: 0;
-    font-size: 50px;
+    font-size: 70px;
     color: #ffffff;
-    margin: auto;
+    margin: 200px auto;
     font-family: 'MGR';
     transition: 600ms;
 }
-.container h1:hover {
+.cont h1:hover {
 color:rgb(199 64 78);
 
 }
@@ -38,7 +43,7 @@ color:rgb(199 64 78);
 /***********************navigation bar-mini******************************/
 .navs{
 
-  margin: 10px 15px auto 750px;
+  margin: 10px;
   display: inline-flex;
   justify-content: center;
   align-content: center;
@@ -136,6 +141,37 @@ margin: auto;
 
 
 /************************************************************/
+.logy {
+  font-size: 20px;
+  top: 0;
+  margin: 10px;
+  left: auto;
+  position: absolute;
+  color: rgb(219 225 231);
+  font-family: 'MGR' !important;
+  padding: 8px;
+  background: rgba(33, 33, 33, 0);
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 3px solid rgb(199 64 78);
+  border: 2px bold;
+  transition: 600ms;
+
+}
+.logy:hover{
+  color: #c7404e; 
+  transform: scale(1.01);  
+   
+
+}
+
+
 .colory {
   font-size: 20px;
   color: rgb(219 225 231);
@@ -149,7 +185,7 @@ margin: auto;
   box-sizing: border-box;
   outline: none;
   border: 2px bold;
-transition: 600ms;
+ transition: 600ms;
   border-radius: 25px;
 }
 .colory:hover{
@@ -165,7 +201,7 @@ transition: 600ms;
   .signup-form {
     border-top: 10px solid #c7404e;
     border-bottom: 8px solid #c7404e;
-    margin: auto auto 30px auto;
+    margin: 70px auto ;
     width: 300px;
     padding: 15px;
     justify-items: center;
@@ -175,15 +211,14 @@ transition: 600ms;
     overflow: hidden;
     border-radius: 25px;
     transition: 600ms;
+  
 }
-  .signup-form:hover{
-  transform: scale(1.01);
-    
- 
-}
+
   
   .signup-form h1{
-    margin-top: 100px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px auto auto auto;
     font-family: 'MGR';
     color: rgb(219 225 231);
     font-size: 40px;
@@ -229,17 +264,46 @@ transition: 600ms;
     transform: scale(1.03);
     
   }
+  .log{
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(219 225 231);
+  font-family: 'MGR' !important;
+  outline: none;
 
+  }
+  .log p{
+    transition: 600ms;
+  }
+  .log p:hover{
+  transform: scale(1.02)!important;
+
+  }
+  .sign{
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(219 225 231);
+  font-family: 'MGR' !important;
+  outline: none;
+  }
+  .sign p{
+    transition: 600ms;
+  }
+  .sign p:hover{
+  transform: scale(1.02)!important;
+
+  }
 /****************************Sign Up complete********************************/
  /**************************footer***************************************************/
  footer{
+  bottom: 0;
+  position: absolute;
   display: block;
   background-color: rgb(33 33 33);
   border-radius: 25px 25px 0 0;
   width: 100%;
   height: fit-content;
   border-top: 20px solid #c7404e;
-  margin-bottom: 0;
 
 
 }
@@ -264,7 +328,7 @@ transition: 600ms;
   
     }
     footer .paragraph:hover {
-      transform: scale(1.1); 
+      transform: scale(0.9); 
       
     } 
     .wrap{
