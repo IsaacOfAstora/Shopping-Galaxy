@@ -94,7 +94,7 @@ border-radius: 15px 15px 0  0;
   
         
     
-       footer .paragraph {
+       .footer .paragraph {
         width: fit-content;
         margin: auto;
         padding: 10px;
@@ -106,8 +106,8 @@ border-radius: 15px 15px 0  0;
         cursor: pointer;
         transition: 600ms;
        }
-          footer .paragraph:hover {
-            transform: scale(1.1); 
+          .footer .paragraph:hover {
+            transform: scale(0.9); 
             
           } 
           .wrap{
