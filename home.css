@@ -218,7 +218,7 @@ margin: auto;
   .signup-form h1{
     cursor: pointer;
     text-align: center;
-    margin: 10px auto auto auto;
+    margin: 5px auto 50px auto;
     font-family: 'MGR';
     color: rgb(219 225 231);
     font-size: 40px;
@@ -253,8 +253,7 @@ margin: auto;
   .signup-btn {
     font-family: 'MGR' !important;
     font-size: 30px !important;
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin: 50px auto auto auto;
     background-color: rgb(33 33 33);
     color: rgb(219 225 231);
     cursor: pointer;
