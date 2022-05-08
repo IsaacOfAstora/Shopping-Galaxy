@@ -1,7 +1,7 @@
 html{ height: 100; width: 100%;}
 @font-face{
   font-family: "MGR";
-  src: url("fonts/SLANT.TTF");
+  src: url("../fonts/SLANT.TTF");
 }
 
 /*****************Product Images****************/
@@ -30,6 +30,7 @@ html{ height: 100; width: 100%;}
   }
 .imgg{
     position: relative;
+
     margin: auto;
     background-color: rgba(173, 177, 179, 0.338);
     border-radius: 15px;
@@ -39,7 +40,14 @@ html{ height: 100; width: 100%;}
 transform: scale(1.1);    
 }
 .im{
+width: 200px;
+max-width: 200px;
+height: 200px;
+max-height: 200px;
 border-radius: 15px 15px 0  0;
+}
+.im h3{
+font-size: 1em;
 }
 /*****Buy Icons *****/
 .buy{

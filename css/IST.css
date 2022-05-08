@@ -1,7 +1,7 @@
 html{ height: 100; width: 100%;}
 @font-face{
   font-family: "MGR";
-  src: url("fonts/SLANT.TTF");
+  src: url("../fonts/SLANT.TTF");
 }
 body{
   margin: 0;
@@ -273,13 +273,11 @@ visibility: hidden;
   z-index: -1;
 }
 .col{
- 
+ font-size: 30px;
   padding: auto;
   margin: auto;
-  /* padding-bottom: 10px; */
   font-family: 'Audiowide', cursive;
   text-align: center;
-  /* border: 2px solid rgb(252 252 75); */
   color: rgb(246 255 255);
   text-decoration: none;
   display: inline-block;
@@ -299,8 +297,7 @@ visibility: hidden;
   border: none;
   background: none;
   font-size: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: auto;
   font-family: 'Audiowide', cursive;
   text-align: center;
   transition: 600ms;
@@ -343,6 +340,7 @@ transform: scale(1.2);
   margin-right: 5%;
   margin-top: 0.5%;
   margin-bottom: 0.5%;
+  transition: all 0.4s ease-in-out;
 
 }
 
@@ -354,16 +352,15 @@ transform: scale(1.2);
   border-style: solid;
   background: rgb(255, 255, 255);
   outline: none;
-  padding: 2px 50px 2px 15px;
+  padding: 2px 0;
   font-size: 18px;
   opacity: 0;
-  transition: all 0.4s ease-in-out;
-
+  transition: all 0.5s ease-in-out;
 }
 .search-box input.active {
   width: 100%;
   opacity: 1;
-  
+  padding: 2px 50px 2px 15px;
 }
 
 .search-box input::placeholder{
@@ -371,31 +368,30 @@ transform: scale(1.2);
 }
 
 .search-box .search-icon {
-    position: absolute;
-    right: 30%;
-    height: 55px;
-    width: 55px;
-    background: rgb(33 33 33);
-    border-radius: 50%;
-    text-align: center;
-    line-height: 55px;
-    font-size: 22px;
-    color: rgb(255 255 255);
-    cursor: pointer;
-    z-index: 1;
-    transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 30%;
+  height: 55px;
+  width: 55px;
+  background: rgb(33 33 33);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 55px;
+  font-size: 22px;
+  color: rgb(255 255 255);
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.43s ease-in-out;
 }
 
-  .search-box .search-icon.active {
-    margin-right: 4.7%;
-    right: 5px;
-    height: 50px;
-    line-height: 50px;
-    width: 50px;
-    font-size: 20px;
-    background: #c7404e;
-    color: rgb(255 255 255);
-    transform: rotate(360deg);
+.search-box .search-icon.active {
+  right: 5%;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  font-size: 20px;
+  background: #c7404e;
+  color: rgb(255 255 255);
+  transform: rotate(360deg);
 }
 .fa-search{
   transition: 0.4s;
