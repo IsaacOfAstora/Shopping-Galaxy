@@ -20,7 +20,7 @@ html{ height: 100; width: 100%;}
       padding: 20px;
       text-align: center;
       background-color: rgb(33 33 33);
-      font-size: 24px;
+      font-size: 20px;
       font-family: 'MGR';
       color: #f8f8f8;
       list-style: none;
@@ -39,16 +39,17 @@ html{ height: 100; width: 100%;}
 .imgg:hover{
 transform: scale(1.1);    
 }
+
+
 .im{
 width: 200px;
 max-width: 200px;
 height: 200px;
 max-height: 200px;
 border-radius: 15px 15px 0  0;
+
 }
-.im h3{
-font-size: 1em;
-}
+
 /*****Buy Icons *****/
 .buy{
  
