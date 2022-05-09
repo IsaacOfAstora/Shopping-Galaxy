@@ -1,4 +1,4 @@
-html{ height: 100; width: 100%;}
+html{ height: 100%; width: 100%;}
 @font-face{
   font-family: "MGR";
   src: url("../fonts/SLANT.TTF");
@@ -9,10 +9,11 @@ html{ height: 100; width: 100%;}
   background-color: rgb(33 33 33);
   margin: 30px auto;
   max-width: 1000px;
+  max-width: 1000px;
   border-top: 13px solid #c7404e;
   border-bottom: 13px solid #c7404e;
   border-radius: 30px;
-  scale: (1.1);   
+  flex-grow: 1; 
     }
     
 
@@ -26,6 +27,7 @@ html{ height: 100; width: 100%;}
       list-style: none;
       display: flex;
       flex-wrap: wrap;
+     
       gap: 3em;
   }
 .imgg{
@@ -96,7 +98,7 @@ border-radius: 15px 15px 0  0;
       width: 100%;
       height: fit-content;
       border-top: 20px solid #c7404e;
-      bottom: 0;
+    
   }
 
 

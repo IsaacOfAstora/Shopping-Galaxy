@@ -1,4 +1,4 @@
-html{ height: 100; width: 100%;}
+html{ height: 100%; width: 100%;}
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 @font-face{
     font-family: "MGR";
@@ -6,6 +6,7 @@ html{ height: 100; width: 100%;}
 }
 
 body{
+  height: 100; width: 100%;
   margin: 0;
   padding: 0;
   background-image:url("https://images4.alphacoders.com/689/689588.jpg");

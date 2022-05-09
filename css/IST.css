@@ -1,27 +1,30 @@
-html{ height: 100; width: 100%;}
+html{ height: 100%; width: 100%;}
 @font-face{
   font-family: "MGR";
   src: url("../fonts/SLANT.TTF");
 }
-body{
+body {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
-  background-image:url("https://images4.alphacoders.com/689/689588.jpg");
+  background-image: url(https://images4.alphacoders.com/689/689588.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-   
-  }
+}
   
-.container{
-    background-color: #212121;
-    z-index: 1;
-    margin: auto;
-    padding: 10px 0 1px 0;
-    max-width: 1300px;
-
-  
-  }
+.container {
+  background-color: #212121;
+  z-index: 1;
+  margin: auto;
+  padding: 10px 0 0 0;
+  width: 100%;
+  max-width: 1300px;
+}
 .link{
     color: #000000;
     text-decoration: none;
@@ -31,6 +34,7 @@ body{
     .wrapper {
       display: flex;
       margin-top: 6%;
+      width: fit-content;
       margin-bottom: 1%;
       margin-left: 58%;
   }
@@ -138,12 +142,11 @@ body{
 
 
 
-.title{ 
-  
+.title {
   margin: 10px auto 0;
   border: 0;
-  background-color: rgb(33 33 33);
   z-index: 1;
+  width: fit-content;
   text-align: center;
   font-family: 'MGR';
   color: rgb(255 255 255);
@@ -422,21 +425,18 @@ transform: scale(1.2);
 /********************************Search Bar Finished***************************/
 
 
- .swiping{
-    border-bottom: 13px solid #c7404e;
-    border-top: 13px solid #c7404e;
-    border-radius: 25px;
-    background: rgb(33 33 33);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 40px auto 40px;
-    max-width: 1000px;
-  
-  
-  
-  
-  }
+.swiping {
+  border-bottom: 13px solid #c7404e;
+  border-top: 13px solid #c7404e;
+  border-radius: 25px;
+  background: rgb(33 33 33);
+  display: flex;
+  justify-content: center;
+  margin: 40px auto 40px;
+  width: 1000px;
+  max-width:1300px;
+  flex-grow: 1;
+}
   .swiper {
     margin: 3% 10%;
     overflow: hidden;
@@ -484,13 +484,15 @@ transform: scale(1.2);
 
     /**************************footer***************************************************/
   footer{
+    position: relative;
     display: block;
     background-color: rgb(33 33 33);
     border-radius: 25px 25px 0 0;
     width: 100%;
     height: fit-content;
     border-top: 20px solid #c7404e;
-    margin-bottom: 0;
+    margin-top: 5px;
+   
 
 
 }
