@@ -80,7 +80,7 @@ body{
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   .wrapper .icon:hover .tooltip {
-    top: -70px;
+    top: -60px;
     opacity: 1;
     pointer-events: auto;
   }
@@ -100,6 +100,7 @@ body{
  
   .wrapper .icon:hover span{
     color: #fff;
+    transform: scale(0.9) rotate(360deg);
   }
   .wrapper .icon:hover span,
   .wrapper .icon:hover .tooltip{
@@ -340,8 +341,6 @@ transform: scale(1.2);
   margin-right: 5%;
   margin-top: 0.5%;
   margin-bottom: 0.5%;
-  transition: all 0.4s ease-in-out;
-
 }
 
 .search-box input {
@@ -355,7 +354,7 @@ transform: scale(1.2);
   padding: 2px 0;
   font-size: 18px;
   opacity: 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s 0.1s ease-in-out;
 }
 .search-box input.active {
   width: 100%;
@@ -380,13 +379,13 @@ transform: scale(1.2);
   color: rgb(255 255 255);
   cursor: pointer;
   z-index: 1;
-  transition: all 0.43s ease-in-out;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .search-box .search-icon.active {
   right: 5%;
   height: 50px;
-  line-height: 50px;
+  line-height: 50px; 
   width: 50px;
   font-size: 20px;
   background: #c7404e;
@@ -401,21 +400,21 @@ transform: scale(1.2);
     }
 
 
-  .search-box .cancel-icon {
-   position: absolute;
-   right: 30%;
-   top: 26%;
-   font-size: 25px;   
-   cursor: pointer;
-   transition: all 0.4s 0.1s ease-in-out;
-  opacity: 0;
-
+    .search-box .cancel-icon {
+      position: absolute;
+      right: 30%;
+      top: 26%;
+      font-size: 25px;
+      cursor: pointer;
+      transition: all 0.2s 0.2s ease-in-out;
+      opacity: 0;
   }
-.search-box .cancel-icon.active {
+  .search-box .cancel-icon.active {
     opacity: 1;
+    outline: none;
     right: 25px;
     transform: rotate(360deg);
-    color: #fbfbfb;
+    color: #ffffff;
 }
 
 
@@ -565,7 +564,7 @@ transform: scale(1.2);
           }
           .wrap .twitter:hover span{
             color: #fff;
-            transform: scale(1.2);
+          transform: scale(1.2);
           background: #46C1F6;
         }
         .wrap .instagram:hover span{
