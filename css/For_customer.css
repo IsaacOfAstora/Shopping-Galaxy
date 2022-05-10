@@ -1,12 +1,22 @@
-   
-   
+
   html{ height: 100%; width: 100%;}
   @font-face{
     font-family: "MGR";
     src: url("../fonts/SLANT.TTF");
   }
 
-   
+  .cart{
+display: block;
+background-color: #212121;
+width: 100%;
+max-width: 1000px;
+margin:30px auto;
+flex-grow: 1;
+border-top: 13px solid #c7404e;
+border-bottom: 13px solid #c7404e;
+border-radius: 25px;
+
+} 
    /**************************footer***************************************************/
  
       

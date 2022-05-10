@@ -9,7 +9,6 @@ html{ height: 100%; width: 100%;}
   background-color: rgb(33 33 33);
   margin: 30px auto;
   max-width: 1000px;
-  max-width: 1000px;
   border-top: 13px solid #c7404e;
   border-bottom: 13px solid #c7404e;
   border-radius: 30px;
@@ -87,107 +86,8 @@ border-radius: 15px 15px 0  0;
 
 
  /*****Buy Complete *****/
+
  /*****************Product Images complete****************/
 
 
-     /**************************footer***************************************************/
-     footer{
-      display: block;
-      background-color: rgb(33 33 33);
-      border-radius: 25px 25px 0 0;
-      width: 100%;
-      height: fit-content;
-      border-top: 20px solid #c7404e;
     
-  }
-
-
-  
-        
-    
-       .footer .paragraph {
-        width: fit-content;
-        margin: auto;
-        padding: 10px;
-        font-family: "MGR";
-        color: rgb(255 255 255);
-        text-align: center;
-        font-size: 30px;
-        position: relative;
-        cursor: pointer;
-        transition: 600ms;
-       }
-          .footer .paragraph:hover {
-            transform: scale(0.9); 
-            
-          } 
-          .wrap{
-            width: fit-content;
-            margin: auto;
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 20px;
-            padding-bottom: 10px;
-            
-              }
-              .wrap .icon{
-                margin: 0 10px;
-                text-align: center;
-                cursor: pointer;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                position: relative;
-                z-index: 2;
-                transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-              }
-              .wrap .icon span{
-                display: block;
-                height: 30px;
-                width: 30px;
-                background: #fff;
-                border-radius: 10px;
-                position: relative;
-                z-index: 2;
-                box-shadow: 0px 20px 20px rgba(0,0,0,0.2);
-                transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-              }
-              .wrap .icon span i{
-                line-height: 30px;
-                font-size: 15px;
-                
-              }
-              .wrap .facebook:hover span{
-                  color: #fff;
-                  transform: scale(1.2);
-                background: #3B5999;
-              }
-              .wrap .twitter:hover span{
-                color: #fff;
-                transform: scale(1.2);
-              background: #46C1F6;
-            }
-            .wrap .instagram:hover span{
-                color: #fff;
-                transform: scale(1.2);
-              background: #e1306c;
-            }
-            .wrap .github:hover span{
-                color: #fff;
-                transform: scale(1.2);
-              background: #333;
-            }
-            .wrap .youtube:hover span{
-                color: #fff;
-                transform: scale(1.2);
-              background: #DE463B;
-            }  
-
-            /******************wavy background*****************/
-
-
-/******************wavy background complete*****************/
-            /**************************footer complete***************************************************/
