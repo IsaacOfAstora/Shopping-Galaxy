@@ -5,10 +5,13 @@ html{ height: 100%; width: 100%;}
     src: url("../fonts/SLANT.TTF");
 }
 
-body{
+body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
   padding: 0;
-  background-image:url("https://images4.alphacoders.com/689/689588.jpg");
+  min-height: 100vh;
+  background-image: url(https://images4.alphacoders.com/689/689588.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,23 +20,31 @@ body{
   text-align: right;
   align-items: center;
   padding: 0;
+  width: 100%;
   max-width: 1300px;
   margin: auto;
 }
 .cont {
+  flex-grow: 1;
+  height: fit-content;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
   padding: 0;
   max-width: 1300px;
   margin: auto;
 }
 .cont h1 {
+  width: fit-content;
   cursor: pointer;
-    text-align: center;
-    padding: 0;
-    font-size: 70px;
-    color: #ffffff;
-    margin: 200px auto;
-    font-family: 'MGR';
-    transition: 600ms;
+  text-align: center;
+  padding: 0;
+  font-size: 70px;
+  color: #ffffff;
+  margin: 0;
+  font-family: 'MGR';
+  transition: 600ms;
 }
 .cont h1:hover {
 color:rgb(199 64 78);
@@ -294,17 +305,14 @@ margin: auto;
   }
 /****************************Sign Up complete********************************/
  /**************************footer***************************************************/
- footer{
-  bottom: 0;
-  position: absolute;
+ footer {
+
   display: block;
   background-color: rgb(33 33 33);
   border-radius: 25px 25px 0 0;
   width: 100%;
   height: fit-content;
   border-top: 20px solid #c7404e;
-
-
 }
 
 
