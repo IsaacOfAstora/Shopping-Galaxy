@@ -86,7 +86,8 @@ border-radius: 15px 15px 0  0;
   font-size: 18px;
   color: #f8f8f8;
   background-color: #c7404e;
-  transition: 0.5s ease-in-out;
+  box-shadow: 0 0 20px 1px #c7404e;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   pointer-events: none;
   opacity: 0;
 }
