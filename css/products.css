@@ -67,11 +67,49 @@ border-radius: 15px 15px 0  0;
     border: none;
     text-decoration: none;
     transition: 0.6s;
+    z-index: 1;
 }
 .buy:hover {
-    transform: scale(1.1);
-  }
+  transform: scale(1.1);
+}
+.tot {
+  padding: 0 5px;
+  display: flex;
+  transform: translateX(50px);
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  font-family: 'MGR';
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #f8f8f8;
+  background-color: #c7404e;
+  transition: 0.5s ease-in-out;
+  pointer-events: none;
+  opacity: 0;
+}
+.buy:hover .tot{
+  transform: translateX(100px);
+  opacity: 1;
+}
+.tot p{
+margin:auto;
 
+}
+.tot::after {
+  content: "";
+  height: 18px;
+  width: 18px;
+  background-color: #c7404e;
+  top: 32%;
+  transform: rotate(45deg);
+  left: -2px;
+  z-index: -1;
+  position: absolute;
+}
  
 
   .buying{
