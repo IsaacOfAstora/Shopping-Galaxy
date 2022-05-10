@@ -4,8 +4,6 @@ html{ height: 100%; width: 100%;}
   src: url("../fonts/SLANT.TTF");
 }
 body {
-  height: 100%;
-  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
