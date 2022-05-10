@@ -31,14 +31,13 @@ html{ height: 100%; width: 100%;}
   }
 .imgg{
     position: relative;
-
     margin: auto;
     background-color: rgba(173, 177, 179, 0.338);
     border-radius: 15px;
     transition: 600ms;
 }
 .imgg:hover{
-transform: scale(1.1);    
+transform: scale(1.05);    
 }
 
 
