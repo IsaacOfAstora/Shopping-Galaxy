@@ -74,6 +74,7 @@ body {
     position: absolute;
     top: 0;
     z-index: 1;
+    font-family: 'Overpass', sans-serif;
     background: rgb(33 33 33);
     color: rgb(255, 255, 255);
     padding: 10px 18px;
@@ -105,7 +106,7 @@ body {
   }
   .tool_Discord {
       position: absolute;
-      padding: 12px 40px 12px 10px;
+      padding: 13px 40px 13px 10px;
       z-index: 1;
       background: rgb(33 33 33);
       color: rgb(33 33 33);
@@ -115,8 +116,8 @@ body {
       transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   .tool_Discord p {
-    font-size: 20px;
-    font-family: 'MGR';
+    font-size: 15px;
+    font-family: 'Audiowide', cursive;
     width: 180px;
     min-width: 180px;
     margin: 0;
@@ -180,7 +181,8 @@ body {
     box-shadow: 0 0 20px 1px #DE463B;
   }
 
-  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+
   
 /******************************Social Media Complete**********************************************************************/
 
@@ -218,13 +220,14 @@ body {
   border-radius: 0px 0px 30px 30px;
   border-bottom: 10px solid #c7404e;
   max-width: 1300px;
-  top: 0 !important;
-  position: sticky !important;
+  top: 0 ;
+  position: sticky ;
     
 
 
 }
 .navo{
+  padding-top: 3px;
   z-index:9999;
     width: 70%;  
 }
@@ -247,10 +250,7 @@ color: #d87982;
 transform: scale(0.96);  
 }
 /********************************Drop down menu*********************************/
-.button{
-  
-  padding-top: 10px;
-  padding-bottom: 10px;
+.button {
   font-family: 'Audiowide', cursive;
   text-align: center;
   color: rgb(255 255 255);
@@ -295,7 +295,7 @@ transform: scale(0.96);
   list-style: none;
   text-align: left;
   padding: 10px;
-  left: 25.8%;
+  left: 25.6%;
   margin: auto;
   border-bottom: 10px solid #c7404e;
   position: absolute;
@@ -378,13 +378,15 @@ transform: scale(0.96);
 
 .fa-house-chimney{
     color: rgb(255 255 255);
-    font-size: 25px;
+    font-size: 20px;
     transition: 0.4s;
 
 }
 .colorr:hover .fa-house-chimney {
   transform: scale(1.2); 
 }
+
+
 /***********************Home button**********************/
 
 
@@ -462,7 +464,7 @@ transform: scale(0.96);
       top: 26%;
       font-size: 25px;
       cursor: pointer;
-      transition: all 0.2s 0.2s ease-in-out;
+      transition: all 0.3s 0.3s ease-in-out;
       opacity: 0;
   }
   .search-box .cancel-icon.active {
@@ -471,6 +473,9 @@ transform: scale(0.96);
     right: 25px;
     transform: rotate(360deg);
     color: #ffffff;
+}
+.fa-times{
+font-size: 25px;
 }
 
 
