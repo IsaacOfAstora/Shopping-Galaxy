@@ -102,8 +102,8 @@ body {
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
-  element.style {
-  }
+
+  
   .tool_Discord {
       position: absolute;
       padding: 13px 40px 13px 10px;
@@ -232,14 +232,13 @@ body {
 
 
 }
-.navo{
-  padding-top: 3px;
-  z-index:9999;
-    width: 70%;  
+.navo {
+  margin-top: 15px;
+  z-index: 9999;
+  width: 70%;
 }
 .colorone, .colortwo {
-  padding-top: 10px;
-  padding-bottom: 10px;
+
   font-family: 'Audiowide', cursive;
   text-align: center;
   color: rgb(255 255 255);
