@@ -266,22 +266,29 @@ transform: scale(0.96);
 color: #d87982;
 transform: scale(0.96); 
 }
-.button span{
-  float: right;
-  line-height: 40px;
-  transition:0.5s;
-}
-.button span.rotate{
-  transform: rotate(-180deg);
-}
-.color span{
+.button span {
+  font-size: 30px;
   float: right;
   line-height: 40px;
   transition: 0.5s;
 }
+.button span.rotate{
+  transform: rotate(-180deg);
+}
+.color span {
+  font-size: 30px;
+  float: right;
+  line-height: 40px;
+  transition: 0.5s;
+  color: #df4c5b;
+}
+.color:hover span {
+  color:rgb(251, 251, 251);
+}
 .color span.rotate{
   transform: rotate(-180deg);
 }
+
 
 .navs .menu {
   list-style: none;
@@ -360,6 +367,7 @@ color: rgb(251, 251, 251);
 transform: scale(0.96); 
     
 }
+
 /***********************Home button**********************/
 .colorr{
   background-color: #212121;

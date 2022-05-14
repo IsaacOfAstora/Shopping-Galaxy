@@ -69,8 +69,10 @@ border-radius: 15px 15px 0  0;
     z-index: 1;
 }
 .buy:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
+
+
 .tot {
   padding: 0 5px;
   display: flex;
@@ -112,15 +114,10 @@ margin:auto;
 }
  
 
-  .buying{
-    display: inline-block;
-    width: 10em;
-    height: 2em;
-    contain: strict;
-    fill: currentcolor;
-    box-sizing: content-box !important;
-
-  }
+.fa-solid, .fas {
+  font-size: 20px;
+  color: white;
+}
 
 
  /*****Buy Complete *****/
