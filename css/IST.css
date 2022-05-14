@@ -261,6 +261,7 @@ transform: scale(0.96);
   border: none;
   background: none;
   font-size: 30px;
+  cursor: pointer;
 }
 .button:hover{
 color: #d87982;
@@ -360,6 +361,7 @@ visibility: hidden;
   text-decoration: none;
   display: inline-block;
   width: 23.75%;
+  cursor: pointer;
 
 }
 .color:hover{
