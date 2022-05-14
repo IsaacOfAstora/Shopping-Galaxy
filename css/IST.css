@@ -29,7 +29,7 @@ body {
   max-width: 1300px;
 }
 .link{
-    color: #000000;
+    color: #212121;
     text-decoration: none;
   
     }
@@ -45,7 +45,7 @@ body {
     
   
   .wrapper .icon{
-    margin: 0 20px;
+    margin: 0 15px;
     text-align: center;
     cursor: pointer;
     display: flex;
@@ -99,7 +99,36 @@ body {
     bottom: -6px;
     transform: translateX(-50%) rotate(45deg);
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  element.style {
+  }
+  .tool_Discord {
+      position: absolute;
+      padding: 12px 40px 12px 10px;
+      z-index: 1;
+      background: rgb(33 33 33);
+      color: rgb(33 33 33);
+      opacity: 0;
+      border-radius: 25px;
+      pointer-events: none;
+      transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .tool_Discord p {
+    font-size: 20px;
+    font-family: 'MGR';
+    width: 180px;
+    min-width: 180px;
+    margin: 0;
 }
+.wrapper .discord:hover .tool_Discord{
+  transform: translatex(-100px);
+  opacity: 1;
+  background: #5865F2;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 15px 2px #5865F2;
+}
+
   /***********************************/
 
  
@@ -112,6 +141,14 @@ body {
   .wrapper .icon:hover .tooltip{
     text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
   }
+  .wrapper .discord:hover span,
+  .wrapper .discord:hover .tooltip,
+  .wrapper .discord:hover .tooltip:before
+  {
+    background: #5865F2;
+    box-shadow: 0 0 20px 3px #5865F2;
+  }
+
   .wrapper .facebook:hover span,
   .wrapper .facebook:hover .tooltip,
   .wrapper .facebook:hover .tooltip:before{
@@ -250,7 +287,7 @@ transform: scale(0.96);
   list-style: none;
   text-align: left;
   padding: 10px;
-  left: 26.5%;
+  left: 25.8%;
   margin: auto;
   border-bottom: 10px solid #c7404e;
   position: absolute;
@@ -323,23 +360,22 @@ color: rgb(251, 251, 251);
 transform: scale(0.96); 
     
 }
+/***********************Home button**********************/
 .colorr{
-  padding: 6px;
-  transition: 600ms;
-  border-radius: 50%;
+  background-color: #212121;
+  text-decoration: none;
 }
-.colorr:hover{
-transform: scale(1.2);  
-}
-.fa-home{
+
+.fa-house-chimney{
     color: rgb(255 255 255);
-    transition: 600ms;
+    font-size: 25px;
+    transition: 0.4s;
 
 }
-.fa-home:hover{
+.colorr:hover .fa-house-chimney {
   transform: scale(1.2); 
 }
-
+/***********************Home button**********************/
 
 
 /********************************Search Bar***************************/
