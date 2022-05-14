@@ -121,6 +121,11 @@ body {
     width: 180px;
     min-width: 180px;
     margin: 0;
+    cursor:auto;
+}
+.tool_Discord p::selection {
+  background: rgb(255, 255, 255);
+  color: #5865F2;
 }
 .wrapper .discord:hover .tool_Discord{
   transform: translatex(-100px);
@@ -128,6 +133,7 @@ body {
   background: #5865F2;
   color: rgb(255, 255, 255);
   box-shadow: 0 0 15px 2px #5865F2;
+  pointer-events:all;
 }
 
   /***********************************/
