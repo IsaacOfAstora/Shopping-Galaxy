@@ -5,8 +5,8 @@
     src: url("../fonts/SLANT.TTF");
   }
 
-  .cart{
-display: block;
+  .cartColumn{
+display: grid;
 background-color: #212121;
 width: 100%;
 max-width: 1000px;
@@ -16,9 +16,88 @@ border-top: 13px solid #c7404e;
 border-bottom: 13px solid #c7404e;
 border-radius: 25px;
 
-} 
-   /**************************footer***************************************************/
- 
-      
-         
-            /**************************footer complete***************************************************/
+  }
+  .cartTable {
+    background-color: #212121;
+    border-spacing: 0 5px;
+    margin: 15px;
+    width: 700px;
+    height: fit-content;
+}
+
+.Table_Head tr td {
+  background-color: #c7404e;
+  padding: 4px;
+  border: none;
+  margin: 0;
+  text-align: left;
+  font-size: 30px;
+  font-family: 'MGR';
+  color: #f8f8f8;
+}
+.tr_td2{
+border-radius: 0 5px 5px 0;
+}
+.tr_td1{
+  border-radius: 5px 0 0 5px;
+  }
+.cartTable_Rows {
+  width: fit-content;
+  background-color: #383535;
+  font-family: 'MGR';
+  color: #f8f8f8;
+}
+
+.amount_Calc {
+  outline: none;
+  margin: auto;
+  height: 25px;
+  width: 25px;
+  padding: 0 10px;
+  border: 2px solid #c7404e;
+  border-radius: 10px;
+
+}
+.Product{
+  display: flex;
+  font-size: 10px;
+  width: 100%;
+}
+.productImage{
+  width: 100px;
+  max-width: 100px;
+  height: 100px;
+  max-height: 100px;
+  margin: 3px;
+  border-radius: 5px;
+}
+.Product div {
+  display: flex;
+  margin: auto 0 auto 3px;
+  font-size: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.Product div p{
+  margin: 0;
+}
+.remover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  font-size: 20px;
+  margin: auto;
+  height: 35px;
+  width: 35px;
+  border: none;
+  background-color: #c7404e;
+  color: #f8f8f8;
+  border-radius: 50%;
+  transition: 0.1s;
+}
+.remover:active {
+  transform: scale(0.9);
+}

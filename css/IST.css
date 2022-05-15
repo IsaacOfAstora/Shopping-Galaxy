@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  background-image: url(https://images4.alphacoders.com/689/689588.jpg);
+  background-image: url(../assets/1186356.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,9 +22,9 @@ body {
   
 .container {
   background-color: #212121;
-  z-index: 1;
+  z-index: 9999;
+  height: fit-content;
   margin: auto;
-  padding: 10px 0 0 0;
   width: 100%;
   max-width: 1300px;
 }
@@ -36,10 +36,10 @@ body {
     /**********************Social Media Icons***********************************************/
     .wrapper {
       display: flex;
-      margin-top: 6%;
+      top: 0;
+      margin: 5px auto auto 800px;
       width: fit-content;
       margin-bottom: 1%;
-      margin-left: 58%;
   }
     
     
@@ -56,25 +56,24 @@ body {
     z-index: 2;
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-  .wrapper .icon span{
+  .wrapper .icon span {
     display: block;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background: #fff;
     border-radius: 50%;
-    position: relative;
     z-index: 2;
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
+}
   .wrapper .icon span i{
-    line-height: 50px;
-    font-size: 25px;
+    line-height: 40px;
+    font-size: 20px;
   }
   .wrapper .icon .tooltip{
     position: absolute;
     top: 0;
-    z-index: 1;
-    font-family: 'Overpass', sans-serif;
+    z-index: 9999;
+    font-family: Overpass,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
     background: rgb(33 33 33);
     color: rgb(255, 255, 255);
     padding: 10px 18px;
@@ -86,7 +85,8 @@ body {
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   .wrapper .icon:hover .tooltip {
-    top: -60px;
+    z-index: 9999;
+    top: 55px;
     opacity: 1;
     pointer-events: auto;
   }
@@ -97,7 +97,7 @@ body {
     width: 15px;
     background: rgb(33 33 33);
     left: 50%;
-    bottom: -6px;
+    top: -6px;
     transform: translateX(-50%) rotate(45deg);
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
@@ -106,7 +106,7 @@ body {
   
   .tool_Discord {
       position: absolute;
-      padding: 13px 40px 13px 10px;
+      padding: 9px 40px 9px 10px;
       z-index: 1;
       background: rgb(33 33 33);
       color: rgb(33 33 33);
@@ -195,15 +195,16 @@ body {
 
 
 .title {
-  margin: 10px auto 0;
+  position: absolute;
+  margin: 10px auto 0 40px;
   border: 0;
   z-index: 1;
+  max-width: 1300px;
   width: fit-content;
   text-align: center;
   font-family: 'MGR';
   color: rgb(255 255 255);
-  font-size: 40px;
-  font-style: normal;
+  font-size: 35px;
   transition: 600ms;
 }
 .title:hover {
@@ -211,12 +212,8 @@ body {
   color: #df4c5b;
 }
 
-
-
-
 .navs {
-
-  z-index: 9999;
+  z-index: 2;
   background-color: rgb(33 33 33);
   font-size: 30px;
   text-align: center;
@@ -224,13 +221,10 @@ body {
   display: flex;
   margin: auto;
   border-radius: 0px 0px 30px 30px;
-  border-bottom: 10px solid #c7404e;
+  border-bottom: 5px solid #c7404e;
   max-width: 1300px;
-  top: 0 ;
-  position: sticky ;
-    
-
-
+  top: 0;
+  position: sticky;
 }
 .navo {
   margin-top: 15px;
@@ -489,15 +483,15 @@ font-size: 25px;
 
 
 .swiping {
-  border-bottom: 13px solid #c7404e;
-  border-top: 13px solid #c7404e;
-  border-radius: 25px;
+  border-bottom: 5px solid #c7404e;
+  border-top: 5px solid #c7404e;
+  border-radius: 20px;
   background: rgb(33 33 33);
   display: flex;
   justify-content: center;
   margin: 40px auto 40px;
   width: 100%;
-  max-width:1000px;
+  max-width: 1000px;
   flex-grow: 1;
 }
   .swiper {
@@ -546,19 +540,16 @@ font-size: 25px;
   }
 
     /**************************footer***************************************************/
-  footer{
-    position: relative;
-    display: block;
-    background-color: rgb(33 33 33);
-    border-radius: 25px 25px 0 0;
-    width: 100%;
-    height: fit-content;
-    border-top: 20px solid #c7404e;
-    margin-top: 5px;
-   
-
-
-}
+    footer {
+      position: relative;
+      display: block;
+      background-color: rgb(33 33 33);
+      border-radius: 25px 25px 0 0;
+      width: 100%;
+      height: fit-content;
+      border-top: 5px solid #c7404e;
+      margin-top: 5px;
+  }
 
 
 
