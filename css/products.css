@@ -5,15 +5,15 @@ html{ height: 100%; width: 100%;}
 }
 
 /*****************Product Images****************/
-.columns{
+.columns {
   background-color: rgb(33 33 33);
   margin: 30px auto;
   max-width: 1000px;
-  border-top: 13px solid #c7404e;
-  border-bottom: 13px solid #c7404e;
-  border-radius: 30px;
-  flex-grow: 1; 
-    }
+  border-top: 5px solid #c7404e;
+  border-bottom: 5px solid #c7404e;
+  border-radius: 20px;
+  flex-grow: 1;
+}
     
 
     .column {

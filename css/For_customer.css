@@ -5,18 +5,18 @@
     src: url("../fonts/SLANT.TTF");
   }
 
-  .cartColumn{
-display: grid;
-background-color: #212121;
-width: 100%;
-max-width: 1000px;
-margin:30px auto;
-flex-grow: 1;
-border-top: 13px solid #c7404e;
-border-bottom: 13px solid #c7404e;
-border-radius: 25px;
+  .cartColumn {
+    display: grid;
+    background-color: #212121;
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    flex-grow: 1;
+    border-top: 5px solid #c7404e;
+    border-bottom: 5px solid #c7404e;
+    border-radius: 20px;
+}
 
-  }
   .cartTable {
     background-color: #212121;
     border-spacing: 0 5px;
