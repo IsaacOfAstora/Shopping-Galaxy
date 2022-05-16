@@ -41,14 +41,14 @@ body {
   text-align: center;
   padding: 0;
   font-size: 70px;
-  text-shadow: 0 0 20px #e1306c, 18px -10px 20px #50424f;
-  color: #fb815e;
+  text-shadow: 0 0 20px #c7404e, 18px -10px 20px #50424f;
+  color: #1e191f;
   margin: 0;
   font-family: 'MGR';
   transition: 600ms;
 }
 .cont h1:hover {
-color:rgb(199 64 78);
+color:rgb(167 133 147);
 }
 
 
@@ -60,7 +60,7 @@ color:rgb(199 64 78);
   justify-content: center;
   align-content: center;
   border-radius: 25px;
-  border: 3px solid rgb(199 64 78);
+  border: 3px solid #c7404e;
   background-color: rgb(33 33 33 / 75%);
 }
 
@@ -170,7 +170,7 @@ margin: auto;
   outline: none;
   cursor: pointer;
   border-radius: 20px;
-  border: 3px solid rgb(199 64 78);
+  border: 3px solid #c7404e;
   border: 2px bold;
   transition: 600ms;
 
@@ -210,8 +210,7 @@ margin: auto;
 
 
   .signup-form {
-    border-top: 10px solid #c7404e;
-    border-bottom: 8px solid #c7404e;
+    box-shadow: 0px -8px 20px #c7404e, 0px 11px 20px #463e4f;
     margin: 70px auto ;
     width: 300px;
     padding: 15px;
@@ -312,7 +311,7 @@ margin: auto;
   border-radius: 25px 25px 0 0;
   width: 100%;
   height: fit-content;
-  border-top: 20px solid #c7404e;
+  box-shadow: 1px -10px 20px #c7404e, 2px -16px 20px #463e4f;
 }
 
 

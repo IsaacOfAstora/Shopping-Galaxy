@@ -4,7 +4,7 @@ html{ height: 100%; width: 100%;}
   src: url("../fonts/SLANT.TTF");
 
 }
-:root{
+:root {
   --pageColor: #c7404e;
   --specialColor: #df4c5b;
   --text_Hover: #d87982;
@@ -208,7 +208,7 @@ body {
   width: fit-content;
   text-align: center;
   font-family: 'MGR';
-  text-shadow: 0 0 20px #e1306c, 18px -10px 20px #50424f;
+  text-shadow: 0 0 20px var(--pageColor), 18px -10px 20px #50424f;
   color: rgb(255 255 255);
   font-size: 35px;
   transition: 600ms;
@@ -227,7 +227,7 @@ body {
   display: flex;
   margin: auto;
   border-radius: 0px 0px 30px 30px;
-  border-bottom: 5px solid var(--pageColor);
+  box-shadow: -2px 6px 20px var(--pageColor), 0px 12px 20px #463e4f;
   max-width: 1300px;
   top: 0;
   position: sticky;
@@ -489,9 +489,8 @@ font-size: 25px;
 
 
 .swiping {
-  border-bottom: 5px solid var(--pageColor);
-  border-top: 5px solid var(--pageColor);
   border-radius: 20px;
+  box-shadow: 0px -8px 20px var(--pageColor), 0px 11px 20px #463e4f;
   background: rgb(33 33 33);
   display: flex;
   justify-content: center;
@@ -550,10 +549,10 @@ font-size: 25px;
       position: relative;
       display: block;
       background-color: rgb(33 33 33);
+      box-shadow: 1px -10px 20px var(--pageColor), 2px -16px 20px #463e4f;
       border-radius: 25px 25px 0 0;
       width: 100%;
       height: fit-content;
-      border-top: 5px solid var(--pageColor);
       margin-top: 5px;
   }
 
@@ -567,7 +566,6 @@ font-size: 25px;
       margin: auto;
       padding: 10px;
       font-family: "MGR";
-      text-shadow: 0 0 20px #e1306c, 18px -10px 20px #50424f;
       color: rgb(255 255 255);
       text-align: center;
       font-size: 30px;
