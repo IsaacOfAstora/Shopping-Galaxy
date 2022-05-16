@@ -4,9 +4,14 @@ html{ height: 100%; width: 100%;}
   src: url("../fonts/SLANT.TTF");
 
 }
+:root{
+  --pageColor: #c7404e;
+  --specialColor: #df4c5b;
+  --text_Hover: #d87982;
+}
 ::selection{
 background-color: rgb(176, 141, 141);
-color: #df4c5b;
+color: var(--specialColor);
 }
 body {
   min-height: 100vh;
@@ -203,13 +208,14 @@ body {
   width: fit-content;
   text-align: center;
   font-family: 'MGR';
+  text-shadow: 0 0 20px #e1306c, 18px -10px 20px #50424f;
   color: rgb(255 255 255);
   font-size: 35px;
   transition: 600ms;
 }
 .title:hover {
   cursor: pointer;
-  color: #df4c5b;
+  color: var(--specialColor);
 }
 
 .navs {
@@ -221,7 +227,7 @@ body {
   display: flex;
   margin: auto;
   border-radius: 0px 0px 30px 30px;
-  border-bottom: 5px solid #c7404e;
+  border-bottom: 5px solid var(--pageColor);
   max-width: 1300px;
   top: 0;
   position: sticky;
@@ -245,7 +251,7 @@ body {
 
 }
 .colorone:hover, .colortwo:hover{
-color: #d87982;
+color: var(--text_Hover);
 transform: scale(0.96);  
 }
 /********************************Drop down menu*********************************/
@@ -263,7 +269,7 @@ transform: scale(0.96);
   cursor: pointer;
 }
 .button:hover{
-color: #d87982;
+color: var(--text_Hover);
 transform: scale(0.96); 
 }
 .button span {
@@ -280,7 +286,7 @@ transform: scale(0.96);
   float: right;
   line-height: 40px;
   transition: 0.5s;
-  color: #df4c5b;
+  color: var(--specialColor);
 }
 .color:hover span {
   color:rgb(251, 251, 251);
@@ -296,7 +302,7 @@ transform: scale(0.96);
   padding: 10px;
   left: 25.6%;
   margin: auto;
-  border-bottom: 10px solid #c7404e;
+  border-bottom: 10px solid var(--pageColor);
   position: absolute;
   border-radius: 10px;
   background-color: rgb(42 42 42);
@@ -339,7 +345,7 @@ visibility: hidden;
   transition: 600ms;
 }
 .col:hover{
-  color: #d87982;
+  color: var(--text_Hover);
   transform: scale(0.96);  
 }
 
@@ -356,7 +362,7 @@ visibility: hidden;
   font-family: 'Audiowide', cursive;
   text-align: center;
   transition: 600ms;
-  color: #df4c5b;
+  color: var(--specialColor);
   text-decoration: none;
   display: inline-block;
   width: 23.75%;
@@ -404,7 +410,7 @@ transform: scale(0.96);
   height: 43px;
   width: 0;
   border-radius: 50px;
-  border-color: #c7404e;
+  border-color: var(--pageColor);
   border-style: solid;
   background: rgb(255, 255, 255);
   outline: none;
@@ -445,7 +451,7 @@ transform: scale(0.96);
   line-height: 50px; 
   width: 50px;
   font-size: 20px;
-  background: #c7404e;
+  background: var(--pageColor);
   color: rgb(255 255 255);
   transform: rotate(360deg);
 }
@@ -483,8 +489,8 @@ font-size: 25px;
 
 
 .swiping {
-  border-bottom: 5px solid #c7404e;
-  border-top: 5px solid #c7404e;
+  border-bottom: 5px solid var(--pageColor);
+  border-top: 5px solid var(--pageColor);
   border-radius: 20px;
   background: rgb(33 33 33);
   display: flex;
@@ -533,10 +539,10 @@ font-size: 25px;
     text-transform: none;
     font-variant: initial;
     line-height: 1;
-    color: #c7404e;
+    color: var(--pageColor);
   }
   .swiper-pagination-bullet-active {
-    background-color: #c7404e !important;
+    background-color: var(--pageColor) !important;
   }
 
     /**************************footer***************************************************/
@@ -547,7 +553,7 @@ font-size: 25px;
       border-radius: 25px 25px 0 0;
       width: 100%;
       height: fit-content;
-      border-top: 5px solid #c7404e;
+      border-top: 5px solid var(--pageColor);
       margin-top: 5px;
   }
 
@@ -561,6 +567,7 @@ font-size: 25px;
       margin: auto;
       padding: 10px;
       font-family: "MGR";
+      text-shadow: 0 0 20px #e1306c, 18px -10px 20px #50424f;
       color: rgb(255 255 255);
       text-align: center;
       font-size: 30px;

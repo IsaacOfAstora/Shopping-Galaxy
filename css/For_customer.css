@@ -12,8 +12,8 @@
     max-width: 1000px;
     margin: 30px auto;
     flex-grow: 1;
-    border-top: 5px solid #c7404e;
-    border-bottom: 5px solid #c7404e;
+    border-top: 5px solid var(--pageColor);
+    border-bottom: 5px solid var(--pageColor);
     border-radius: 20px;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .Table_Head tr td {
-  background-color: #c7404e;
+  background-color: var(--pageColor);
   padding: 4px;
   border: none;
   margin: 0;
@@ -54,7 +54,7 @@ border-radius: 0 5px 5px 0;
   height: 25px;
   width: 25px;
   padding: 0 10px;
-  border: 2px solid #c7404e;
+  border: 2px solid var(--pageColor);
   border-radius: 10px;
 
 }
@@ -93,7 +93,7 @@ border-radius: 0 5px 5px 0;
   height: 35px;
   width: 35px;
   border: none;
-  background-color: #c7404e;
+  background-color: var(--pageColor);
   color: #f8f8f8;
   border-radius: 50%;
   transition: 0.1s;
