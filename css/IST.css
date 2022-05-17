@@ -543,7 +543,7 @@ font-size: 25px;
 }
   .swiper {
     height: fit-content;
-    width: 500px;
+    width: 600px;
     margin:auto auto 20px auto;
     overflow: hidden;
     list-style: none;
@@ -556,7 +556,7 @@ font-size: 25px;
   }
   .swiper-slide{
     height: 350px;
-    width: 500px;
+    width: 600px;
     }
  
   .swiper-slide img{
@@ -564,7 +564,7 @@ font-size: 25px;
     margin: auto;
     position: relative;
     height: 350px;
-    width: 500px;
+    width: 600px;
     animation: slide 10s ease-in-out infinite;
     
     }
@@ -576,7 +576,7 @@ font-size: 25px;
       transform:translateX(0);
     }
     10%{
-      transform:translateX(-500px);
+      transform:translateX(-600px);
     }
   }
   /********************************Announce Column Finished***************************/
