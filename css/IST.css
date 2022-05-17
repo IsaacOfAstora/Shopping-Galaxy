@@ -538,7 +538,7 @@ font-size: 25px;
   max-width: 1000px;
   flex-grow: 1;
 }
-  .swiper,.swiper2 {
+  .swiper {
     height: fit-content;
     width: 600px;
     margin:auto auto 20px auto;
@@ -583,7 +583,7 @@ font-size: 25px;
 
 
 
-    .swiper2 .swiper-wrapper .swiper-slide img{
+.swiper2 .swiper .swiper-wrapper .swiper-slide img{
       animation: slide2 10s ease-in-out infinite; 
     }
     @keyframes slide2{
