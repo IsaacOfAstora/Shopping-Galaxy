@@ -541,7 +541,7 @@ font-size: 25px;
   max-width: 1000px;
   flex-grow: 1;
 }
-  .swiper {
+  .swiper,.swiper2 {
     height: fit-content;
     width: 600px;
     margin:auto auto 20px auto;
@@ -565,9 +565,10 @@ font-size: 25px;
     position: relative;
     height: 350px;
     width: 600px;
-    animation: slide 10s ease-in-out infinite;
+    animation: slide 10s  ease-in-out infinite;
     
     }
+  
     .auto-slider__content:hover{
       animation-play-state:paused;
   }
@@ -575,10 +576,28 @@ font-size: 25px;
     40%{
       transform:translateX(0);
     }
-    10%{
+    20%{
       transform:translateX(-600px);
     }
-  }
+    35%{
+      transform:translateX(-1200px);
+    }
+}
+
+
+
+    .swiper2 .swiper-wrapper .swiper-slide img{
+      animation: slide2 10s ease-in-out infinite; 
+    }
+    @keyframes slide2{
+      40%{
+        transform:translateX(0);
+      }
+      10%{
+        transform:translateX(-600px);
+      }
+    }
+
   /********************************Announce Column Finished***************************/
     /**************************footer***************************************************/
     footer {
