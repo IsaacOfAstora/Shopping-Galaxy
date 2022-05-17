@@ -264,9 +264,32 @@ body {
   position: sticky;
 }
 .navo {
-  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
   z-index: 9999;
   width: 70%;
+}
+
+.color{
+  border: none;
+  background: none;
+  font-size: 30px;
+  padding: auto;
+  font-family: 'Audiowide', cursive;
+  text-align: center;
+  color: var(--specialColor);
+  text-decoration: none;
+  width: 23.75%;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+.color:hover{
+color: rgb(251, 251, 251);
+transform: scale(0.96); 
+    
 }
 .colorone, .colortwo {
 
@@ -276,7 +299,7 @@ body {
   text-decoration: none;
   display: inline-block;
   width: 23.75%;
-  transition: 600ms;
+  transition: 0.3s;
 
 
 
@@ -286,62 +309,60 @@ color: var(--text_Hover);
 transform: scale(0.96);  
 }
 /********************************Drop down menu*********************************/
-.button {
+.button{
+  border: none;
+  background: none;
+  font-size: 30px;
+  padding: auto;
   font-family: 'Audiowide', cursive;
   text-align: center;
   color: rgb(255 255 255);
   text-decoration: none;
   display: inline-block;
   width: 23.75%;
-  transition: 600ms;
-  border: none;
-  background: none;
-  font-size: 30px;
   cursor: pointer;
+  transition: 0.3s;
+
 }
 .button:hover{
 color: var(--text_Hover);
 transform: scale(0.96); 
 }
-.button span {
-  font-size: 30px;
-  float: right;
-  line-height: 40px;
-  transition: 0.5s;
+.button i {
+  transition: 0.3s;
 }
-.button span.rotate{
+.button:hover i{
+  color: var(--text_Hover);
+  transform: scale(0.96);
+  }
+.button i.rotate{
   transform: rotate(-180deg);
 }
-.color span {
-  font-size: 30px;
-  float: right;
-  line-height: 40px;
-  transition: 0.5s;
+.color i {
+  transition: 0.3s;
   color: var(--specialColor);
 }
-.color:hover span {
-  color:rgb(251, 251, 251);
-}
-.color span.rotate{
+.color i.rotate{
   transform: rotate(-180deg);
 }
-
+.color:hover i {
+  color:rgb(251, 251, 251);
+}
 
 .navs .menu {
   list-style: none;
   text-align: left;
   padding: 10px;
-  left: 25.6%;
+  left: 25.1%;
   margin: auto;
   border-bottom: 10px solid var(--pageColor);
   position: absolute;
   border-radius: 10px;
   background-color: rgb(42 42 42);
-  opacity: 0; 
+  opacity: 0;
   pointer-events: none;
-  transform: translateY(0);
+  transform: translateY(50%);
   transition: all 0.4s ease-in-out;
-
 }
 
 #btn{
@@ -350,7 +371,7 @@ visibility: hidden;
 #btn:checked + .menu{
   opacity: 1;
   pointer-events: all;
-  transform: translateY(10%);
+  transform: translateY(70%);
 
 }
 .navs .menu:before{
@@ -373,7 +394,7 @@ visibility: hidden;
   color: rgb(246 255 255);
   text-decoration: none;
   display: inline-block;
-  transition: 600ms;
+  transition: 0.3s;
 }
 .col:hover{
   color: var(--text_Hover);
@@ -383,28 +404,6 @@ visibility: hidden;
 /********************************Drop down menu END*********************************/
  
 
-
-
-.color{
-  border: none;
-  background: none;
-  font-size: 30px;
-  padding: auto;
-  font-family: 'Audiowide', cursive;
-  text-align: center;
-  transition: 600ms;
-  color: var(--specialColor);
-  text-decoration: none;
-  display: inline-block;
-  width: 23.75%;
-  cursor: pointer;
-
-}
-.color:hover{
-color: rgb(251, 251, 251);
-transform: scale(0.96); 
-    
-}
 
 /***********************Home button**********************/
 .colorr{
