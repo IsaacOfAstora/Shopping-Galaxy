@@ -529,13 +529,10 @@ font-size: 25px;
   font-size: 35px;
   transition: 600ms;
 }
-.announceColumn{
-  display: flex;
-  flex-direction: column;
+.announceColumn {
   border-radius: 20px;
   box-shadow: 0px -8px 20px var(--pageColor), 0px 11px 20px #463e4f;
   background: rgb(33 33 33);
-  justify-content:flex-start;
   margin: 40px auto 40px;
   width: 100%;
   max-width: 1000px;
