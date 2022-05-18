@@ -267,7 +267,7 @@ body {
   justify-content: center;
   margin: auto;
   z-index: 9999;
-  width: 70%;
+  width: 60%;
 }
 
 .color {
@@ -401,7 +401,7 @@ transform: scale(0.95);
 /***********************Home button**********************/
 .colorr {
   background-color: #212121;
-  margin: auto;
+  margin: auto auto auto 5%;
   text-decoration: none;
 }
 
@@ -425,18 +425,19 @@ transform: scale(0.95);
   display: inline-flex;
   width: 30%;
   padding: 0;
-  margin: 0.5% 5%;
+  margin: 0.5% 5% 0.5% 0;
 }
 
 .search-box input {
   height: 43px;
   width: 0;
+  margin-left: 12px;
+  padding: 2px 0;
   border-radius: 50px;
   border-color: var(--pageColor);
   border-style: solid;
   background: rgb(255, 255, 255);
   outline: none;
-  padding: 2px 0;
   font-size: 18px;
   opacity: 0;
   transition: all 0.3s 0.2s ease-in-out;
