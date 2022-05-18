@@ -256,7 +256,7 @@ body {
   display: flex;
   margin: auto;
   border-radius: 0px 0px 30px 30px;
-  box-shadow: -2px 2px 20px #c7404e, 2px 2px 20px #c7404e, -4px 1px 20px #463e4f, 0px -36px 20px #c7404e, 0 -36px 20px #c7404e;
+  box-shadow: 0px 8px 20px #c7404e, 0px 4px 20px #463e4f, 0px -36px 20px #c7404e, 0 -36px 20px #c7404e;
   max-width: 1300px;
   top: 0;
   position: sticky;
@@ -271,6 +271,7 @@ body {
 }
 
 .color {
+  display: inline-block;
   font-family: 'Audiowide', cursive;
   text-align: center;
   color: var(--specialColor);
@@ -282,11 +283,12 @@ body {
 }
 .color:hover{
 color: rgb(251, 251, 251);
-transform: scale(0.96); 
+transform: scale(0.95); 
     
 }
 
 .colorone, .colortwo {
+  display: inline-block;
   font-family: 'Audiowide', cursive;
   margin: auto;
   text-align: center;
@@ -298,7 +300,7 @@ transform: scale(0.96);
 
 .colorone:hover, .colortwo:hover{
 color: var(--text_Hover);
-transform: scale(0.96);  
+transform: scale(0.95);  
 }
 /********************************Drop down menu*********************************/
 .button {
@@ -314,14 +316,14 @@ transform: scale(0.96);
 
 .button:hover{
 color: var(--text_Hover);
-transform: scale(0.96); 
+transform: scale(0.95); 
 }
 .button i {
   transition: 0.3s;
 }
 .button:hover i{
   color: var(--text_Hover);
-  transform: scale(0.96);
+  transform: scale(0.95);
   }
 .button i.rotate{
   transform: rotate(180deg);
@@ -355,9 +357,9 @@ transform: scale(0.96);
   transition: all 0.4s ease-in-out;
 }
 
-#btn{
-position: absolute;
-opacity: 0;
+#btn {
+  position: absolute;
+  visibility: hidden;
 }
 #btn:checked + .menu{
   opacity: 1;
@@ -377,7 +379,7 @@ opacity: 0;
   z-index: -1;
 }
 .col{
- font-size: 30px;
+  font-size: 30px;
   padding: auto;
   margin: auto;
   font-family: 'Audiowide', cursive;
@@ -389,7 +391,7 @@ opacity: 0;
 }
 .col:hover{
   color: var(--text_Hover);
-  transform: scale(0.96);  
+  transform: scale(0.95);  
 }
 
 /********************************Drop down menu END*********************************/
