@@ -57,6 +57,7 @@ body {
 }
   
 .container {
+  display: flex;
   background-color: #212121;
   z-index: 9999;
   height: fit-content;
@@ -73,10 +74,8 @@ body {
     /**********************Social Media Icons***********************************************/
     .wrapper {
       display: flex;
-      top: 0;
-      margin: 5px auto auto 800px;
+      margin: 5px 40px;
       width: fit-content;
-      margin-bottom: 1%;
   }
     
     
@@ -232,12 +231,10 @@ body {
 
 
 .title {
-  position: absolute;
-  margin: 10px auto 0 40px;
+  display: flex;
+  margin: 5px auto auto 25px;
   border: 0;
   z-index: 1;
-  max-width: 1300px;
-  width: fit-content;
   text-align: center;
   font-family: 'MGR';
   text-shadow: 0 0 20px var(--pageColor), 18px -10px 20px #50424f;
@@ -273,58 +270,48 @@ body {
   width: 70%;
 }
 
-.color{
-  border: none;
-  background: none;
-  font-size: 30px;
-  padding: auto;
+.color {
   font-family: 'Audiowide', cursive;
   text-align: center;
   color: var(--specialColor);
   text-decoration: none;
-  width: 23.75%;
+  width: fit-content;
   cursor: pointer;
+  margin: auto;
   transition: 0.3s;
-
 }
 .color:hover{
 color: rgb(251, 251, 251);
 transform: scale(0.96); 
     
 }
-.colorone, .colortwo {
 
+.colorone, .colortwo {
   font-family: 'Audiowide', cursive;
+  margin: auto;
   text-align: center;
   color: rgb(255 255 255);
   text-decoration: none;
-  display: inline-block;
-  width: 23.75%;
+  width: fit-content;
   transition: 0.3s;
-
-
-
 }
+
 .colorone:hover, .colortwo:hover{
 color: var(--text_Hover);
 transform: scale(0.96);  
 }
 /********************************Drop down menu*********************************/
-.button{
+.button {
+  margin: auto;
   border: none;
-  background: none;
-  font-size: 30px;
-  padding: auto;
   font-family: 'Audiowide', cursive;
   text-align: center;
   color: rgb(255 255 255);
   text-decoration: none;
-  display: inline-block;
-  width: 23.75%;
   cursor: pointer;
   transition: 0.3s;
-
 }
+
 .button:hover{
 color: var(--text_Hover);
 transform: scale(0.96); 
@@ -337,24 +324,26 @@ transform: scale(0.96);
   transform: scale(0.96);
   }
 .button i.rotate{
-  transform: rotate(-180deg);
+  transform: rotate(180deg);
 }
 .color i {
   transition: 0.3s;
   color: var(--specialColor);
 }
 .color i.rotate{
-  transform: rotate(-180deg);
+  transform: rotate(180deg);
 }
 .color:hover i {
   color:rgb(251, 251, 251);
 }
 
 .navs .menu {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   text-align: left;
   padding: 10px;
-  left: 25.1%;
+  left: 28.6%;
   margin: auto;
   border-bottom: 10px solid var(--pageColor);
   position: absolute;
@@ -367,7 +356,8 @@ transform: scale(0.96);
 }
 
 #btn{
-visibility: hidden;
+position: absolute;
+opacity: 0;
 }
 #btn:checked + .menu{
   opacity: 1;
@@ -407,8 +397,9 @@ visibility: hidden;
 
 
 /***********************Home button**********************/
-.colorr{
+.colorr {
   background-color: #212121;
+  margin: auto;
   text-decoration: none;
 }
 
@@ -432,9 +423,7 @@ visibility: hidden;
   display: inline-flex;
   width: 30%;
   padding: 0;
-  margin-right: 5%;
-  margin-top: 0.5%;
-  margin-bottom: 0.5%;
+  margin: 0.5% 5%;
 }
 
 .search-box input {
