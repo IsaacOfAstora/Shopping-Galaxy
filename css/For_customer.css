@@ -1,27 +1,33 @@
-
-  html{ height: 100%; width: 100%;}
-  @font-face{
-    font-family: "MGR";
-    src: url("../fonts/SLANT.TTF");
-  }
-
-  .cartColumn {
-    display: grid;
-    background-color: #212121;
-    width: 100%;
-    max-width: 1000px;
-    margin: 30px auto;
-    flex-grow: 1;
-    box-shadow: 0px -8px 20px var(--pageColor), 0px 11px 20px #463e4f;
-    border-radius: 20px;
+html {
+  height: 100%;
+  width: 100%;
+}
+@font-face {
+  font-family: "MGR";
+  src: url("../fonts/SLANT.TTF");
 }
 
-  .cartTable {
-    background-color: #212121;
-    border-spacing: 0 5px;
-    margin: 15px;
-    width: 700px;
-    height: fit-content;
+.cartColumn {
+  display: flex;
+  background-color: #212121;
+  min-height: 25vw;
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  flex-grow: 1;
+  box-shadow: 0px -8px 20px var(--pageColor), 0px 11px 20px #463e4f;
+  border-radius: 20px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.cartTable {
+  background-color: #212121;
+  border-spacing: 0 5px;
+  margin: 10px auto;
+  width: 700px;
+  height: fit-content;
 }
 
 .Table_Head tr td {
@@ -31,19 +37,19 @@
   margin: 0;
   text-align: left;
   font-size: 30px;
-  font-family: 'MGR';
+  font-family: "MGR";
   color: #f8f8f8;
 }
-.tr_td2{
-border-radius: 0 5px 5px 0;
+.tr_td2 {
+  border-radius: 0 5px 5px 0;
 }
-.tr_td1{
+.tr_td1 {
   border-radius: 5px 0 0 5px;
-  }
+}
 .cartTable_Rows {
   width: fit-content;
   background-color: #383535;
-  font-family: 'MGR';
+  font-family: "MGR";
   color: #f8f8f8;
 }
 
@@ -55,14 +61,13 @@ border-radius: 0 5px 5px 0;
   padding: 0 10px;
   border: 2px solid var(--pageColor);
   border-radius: 10px;
-
 }
-.Product{
+.Product {
   display: flex;
   font-size: 10px;
   width: 100%;
 }
-.productImage{
+.productImage {
   width: 100px;
   max-width: 100px;
   height: 100px;
@@ -79,7 +84,7 @@ border-radius: 0 5px 5px 0;
   justify-content: center;
   text-align: center;
 }
-.Product div p{
+.Product div p {
   margin: 0;
 }
 .remover {
@@ -100,3 +105,32 @@ border-radius: 0 5px 5px 0;
 .remover:active {
   transform: scale(0.9);
 }
+/***********************Total Price calculation table****************************/
+/***************************************************/
+.cartTotal {
+  top: 18%;
+  position: sticky;
+  margin: 15px auto;
+  width: 270px;
+  height: fit-content;
+  color: white;
+  font-family: MGR;
+  font-size: 30px;
+}
+.totalHead {
+  border-spacing: 0;
+  background-color: var(--pageColor);
+  padding: 4px;
+  border: none;
+  width: fit-content;
+}
+.totalHead td {
+  padding: 5px;
+}
+.totalItems {
+  background-color: #383535;
+  height: 108px;
+  text-align: center;
+}
+/***************************************************/
+/***********************Total Price calculation table Complete****************************/
