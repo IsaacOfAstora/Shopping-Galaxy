@@ -58,6 +58,7 @@ body {
 
 .container {
   display: flex;
+  align-items: center;
   background-color: #212121;
   z-index: 9999;
   height: fit-content;
@@ -243,7 +244,7 @@ body {
 }
 
 span.icon-IsaacLogo {
-  font-size: 60px;
+  font-size: 70px;
   margin: 0 10px 0 0;
   cursor: pointer;
 }
