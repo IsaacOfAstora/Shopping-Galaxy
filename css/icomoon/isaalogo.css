@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?jcks6y');
-  src:  url('fonts/icomoon.eot?jcks6y#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?jcks6y') format('truetype'),
-    url('fonts/icomoon.woff?jcks6y') format('woff'),
-    url('fonts/icomoon.svg?jcks6y#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?x1670i');
+  src:  url('fonts/icomoon.eot?x1670i#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?x1670i') format('truetype'),
+    url('fonts/icomoon.woff?x1670i') format('woff'),
+    url('fonts/icomoon.svg?x1670i#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,7 +25,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-Isaalogo:before {
+.icon-IsaacLogo:before {
   content: "\e900";
-  color: #c84250;
 }
