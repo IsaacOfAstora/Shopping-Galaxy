@@ -407,7 +407,7 @@ span.icon-IsaacLogo {
 /***********************Home button + About Button**********************/
 .homePage,
 .aboutUs {
-  background-color: #212121;
+  background-color: rgb(33 33 33);
   margin: 0 auto;
   text-decoration: none;
 }
