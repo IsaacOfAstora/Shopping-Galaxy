@@ -59,7 +59,7 @@ body {
 .container {
   display: flex;
   align-items: center;
-  background-color: #212121;
+  background-color: rgb(33 33 33);
   z-index: 9999;
   height: fit-content;
   margin: auto;
@@ -67,10 +67,7 @@ body {
   max-width: 1300px;
   box-shadow: 0px -30px 20px #c7404e, 0 -30px 20px #c7404e;
 }
-.link {
-  color: #212121;
-  text-decoration: none;
-}
+
 /**********************Social Media Icons***********************************************/
 .wrapper {
   display: flex;
@@ -94,14 +91,15 @@ body {
   display: block;
   height: 40px;
   width: 40px;
-  background: #fff;
+  background-color: rgb(33 33 33);
   border-radius: 50%;
   z-index: 2;
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .wrapper .icon span i {
+  color: #fff;
   line-height: 40px;
-  font-size: 20px;
+  font-size: 22px;
 }
 .wrapper .icon .tooltip {
   position: absolute;
@@ -144,7 +142,7 @@ body {
 }
 .tool_Discord {
   top: 1.5px;
-  right: -248%;
+  right: -60%;
   position: absolute;
   padding: 9px 40px 9px 10px;
   z-index: 0;
@@ -168,7 +166,7 @@ body {
   color: #5865f2;
 }
 .wrapper .discord:hover .tool_Discord {
-  transform: translatex(-100px);
+  transform: translatex(-12%);
   opacity: 1;
   background: #5865f2;
   color: rgb(255, 255, 255);
@@ -181,10 +179,6 @@ body {
 .wrapper .icon:hover span {
   color: #fff;
   transform: scale(0.9) rotate(360deg);
-}
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
 }
 .wrapper .discord:hover span,
 .wrapper .discord:hover .tooltip,
@@ -231,7 +225,7 @@ body {
 .title {
   display: flex;
   align-items: center;
-  margin: 5px auto auto 25px;
+  margin: 0 auto 0 4px;
   border: 0;
   z-index: 1;
   text-align: center;
@@ -275,7 +269,7 @@ span.icon-IsaacLogo {
   top: 0;
   position: sticky;
 }
-.navo {
+.navs-left {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -392,7 +386,7 @@ span.icon-IsaacLogo {
   transform: rotate(45deg);
   z-index: -1;
 }
-.col {
+.menu-item {
   font-size: 30px;
   padding: auto;
   margin: auto;
@@ -403,40 +397,41 @@ span.icon-IsaacLogo {
   display: inline-block;
   transition: 0.3s;
 }
-.col:hover {
+.menu-item:hover {
   color: var(--text_Hover);
   transform: scale(0.95);
 }
 
 /********************************Drop down menu END*********************************/
 
-/***********************Home button + Anout Button**********************/
-.colorr,
-.colorrr {
+/***********************Home button + About Button**********************/
+.homePage,
+.aboutUs {
   background-color: #212121;
-  margin: auto;
+  margin: 0 auto;
   text-decoration: none;
 }
-.colorr:hover,
-.colorrr:hover {
+.homePage:hover,
+.aboutUs:hover {
   text-shadow: 0 0 20px var(--text_Hover);
 }
 .fa-house-chimney {
   color: rgb(255 255 255);
   font-size: 20px;
-  transition: 0.4s;
+  transition: 0.3s;
 }
-.colorr:hover .fa-house-chimney {
-  transform: scale(1.2);
+.homePage:hover .fa-house-chimney {
+  transform: scale(0.95);
 }
 .fa-circle-exclamation {
   color: rgb(255 255 255);
   font-size: 20px;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
-.colorrr:hover .fa-circle-exclamation {
-  transform: scale(1.2);
+.aboutUs:hover .fa-circle-exclamation {
+  color: var(--specialColor);
+  transform: scale(0.95);
 }
 .aboutTooltip {
   transform: translatey(-100%);
@@ -466,17 +461,17 @@ span.icon-IsaacLogo {
   opacity: 0;
   transition: 0.6s;
 }
-.colorrr:hover .aboutTooltip {
+.aboutUs:hover .aboutTooltip {
   box-shadow: var(--text_Hover) 0 0 10px 0px;
   transform: translatey(50%);
 }
-.colorrr:hover .aboutTooltip,
-.colorrr:hover .aboutTooltip:before {
+.aboutUs:hover .aboutTooltip,
+.aboutUs:hover .aboutTooltip:before {
   opacity: 1;
   background-color: var(--pageColor);
 }
 
-/***********************Home button**********************/
+/***********************Home button + About Button Finished**********************/
 
 /********************************Search Bar***************************/
 
@@ -666,7 +661,7 @@ footer .paragraph {
 footer .paragraph:hover {
   transform: scale(0.9);
 }
-.wrap {
+.footer-wrapper {
   width: fit-content;
   margin: auto;
   display: flex;
@@ -676,7 +671,8 @@ footer .paragraph:hover {
   padding-bottom: 20px;
   padding-bottom: 10px;
 }
-.wrap .icon {
+.footer-wrapper .icon {
+  color: rgb(33 33 33);
   margin: 0 10px;
   text-align: center;
   cursor: pointer;
@@ -688,7 +684,7 @@ footer .paragraph:hover {
   z-index: 2;
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.wrap .icon span {
+.footer-wrapper .icon span {
   display: block;
   height: 30px;
   width: 30px;
@@ -699,31 +695,31 @@ footer .paragraph:hover {
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.wrap .icon span i {
+.footer-wrapper .icon span i {
   line-height: 30px;
   font-size: 15px;
 }
-.wrap .facebook:hover span {
+.footer-wrapper .facebook:hover span {
   color: #fff;
   transform: scale(1.2);
   background: #3b5999;
 }
-.wrap .twitter:hover span {
+.footer-wrapper .twitter:hover span {
   color: #fff;
   transform: scale(1.2);
   background: #46c1f6;
 }
-.wrap .instagram:hover span {
+.footer-wrapper .instagram:hover span {
   color: #fff;
   transform: scale(1.2);
   background: #e1306c;
 }
-.wrap .github:hover span {
+.footer-wrapper .github:hover span {
   color: #fff;
   transform: scale(1.2);
   background: #333;
 }
-.wrap .youtube:hover span {
+.footer-wrapper .youtube:hover span {
   color: #fff;
   transform: scale(1.2);
   background: #de463b;
