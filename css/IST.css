@@ -142,7 +142,7 @@ body {
 }
 .tool_Discord {
   top: 1.5px;
-  right: -60%;
+  right: -200%;
   position: absolute;
   padding: 9px 40px 9px 10px;
   z-index: 0;
@@ -166,7 +166,7 @@ body {
   color: #5865f2;
 }
 .wrapper .discord:hover .tool_Discord {
-  transform: translatex(-12%);
+  transform: translatex(-36%);
   opacity: 1;
   background: #5865f2;
   color: rgb(255, 255, 255);
