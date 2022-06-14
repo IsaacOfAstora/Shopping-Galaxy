@@ -91,25 +91,24 @@
                 <div class="aboutTooltip">About Us</div>
               </a>
           <a class= "homePage" href="../index.html"><i class="fa-solid fa-house-chimney"></i></a>       
-          <a class= "colorone" href="Main.html">Main </a>    
+          <a class= "nav-item" href="Main.html">Main </a>    
       
-          <label for="btn" class="color"> Products
-            <i class="fas fa-caret-down"></i>
-           
+          <label  class="button-Products-html"> 
+            <span>Products <i class="fas fa-caret-down"></i></span>         
+            <ul class="menu">
+              <li><a class= "menu-item" href="phones.html">Phones</a></li>
+              <li><a class= "current-nav-item" href="Accessories.html">Accessories</a></li>
+              <li><a class= "menu-item" href="perfumes.html">perfumes</a></li>
+       </ul>
           </label>
-          <input id="btn" type="checkbox" >
+
             
                   
                 
-                
-            <ul class="menu">
-                  <li><a class= "menu-item" href="products.html">Phones</a></li>
-                  <li><a class= "color" href="Accessories.html">Accessories</a></li>
-                  <li><a class= "menu-item" href="perfumes.html">perfumes</a></li>
-           </ul>
+
        
             
-          <a class= "colortwo" href="For_customer.html">Cart</a>
+          <a class= "nav-item" href="For_customer.html">Cart</a>
         </div>
          
         <div class="search-box">
@@ -231,12 +230,7 @@
     searchInput.value = "";
   }
 </script>
-<script>
-$('nav .color').click(function(){
-$('nav .color i').toggleClass("rotate");
-});
-
-</script>
+<script src="../js/main.js"></script>
 
 </body>
 </html>

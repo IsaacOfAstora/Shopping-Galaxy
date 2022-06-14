@@ -278,8 +278,8 @@ span.icon-IsaacLogo {
   width: 60%;
 }
 
-.color {
-  display: inline-block;
+.current-nav-item {
+  display: flex;
   font-family: "Audiowide", cursive;
   text-align: center;
   color: var(--specialColor);
@@ -289,14 +289,13 @@ span.icon-IsaacLogo {
   margin: auto;
   transition: 0.3s;
 }
-.color:hover {
+.current-nav-item:hover {
   color: rgb(251, 251, 251);
   transform: scale(0.95);
 }
 
-.colorone,
-.colortwo {
-  display: inline-block;
+.nav-item {
+  display: flex;
   font-family: "Audiowide", cursive;
   margin: auto;
   text-align: center;
@@ -306,13 +305,14 @@ span.icon-IsaacLogo {
   transition: 0.3s;
 }
 
-.colorone:hover,
-.colortwo:hover {
+.nav-item:hover {
   color: var(--text_Hover);
   transform: scale(0.95);
 }
 /********************************Drop down menu*********************************/
 .button {
+  display: flex;
+  align-items: center;
   margin: auto;
   border: none;
   font-family: "Audiowide", cursive;
@@ -322,39 +322,60 @@ span.icon-IsaacLogo {
   cursor: pointer;
   transition: 0.3s;
 }
-
-.button:hover {
+.button span {
+  transition: 0.3s;
+}
+.button span:hover {
   color: var(--text_Hover);
   transform: scale(0.95);
 }
 .button i {
   transition: 0.3s;
 }
-.button:hover i {
+.button span:hover i {
   color: var(--text_Hover);
   transform: scale(0.95);
 }
-.button i.rotate {
+.button span i.rotate {
   transform: rotate(180deg);
 }
-.color i {
-  transition: 0.3s;
+/****************************************************************/
+.button-Products-html {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  border: none;
+  font-family: "Audiowide", cursive;
+  text-align: center;
   color: var(--specialColor);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.color i.rotate {
+.button-Products-html span {
+  transition: 0.3s;
+}
+.button-Products-html span:hover {
+  color: rgb(251, 251, 251);
+  transform: scale(0.95);
+}
+.button-Products-html i {
+  transition: 0.3s;
+}
+.button-Products-html span i.rotate {
   transform: rotate(180deg);
 }
-.color:hover i {
+.button-Products-html span:hover i {
   color: rgb(251, 251, 251);
 }
-
-.navs .menu {
+/********************************************************************/
+.menu {
   display: flex;
+  transform: translate(-6.5%, 50%);
   flex-direction: column;
   list-style: none;
   text-align: left;
   padding: 10px;
-  left: 32%;
   margin: auto;
   border-bottom: 10px solid var(--pageColor);
   position: absolute;
@@ -362,20 +383,20 @@ span.icon-IsaacLogo {
   background-color: rgb(42 42 42);
   opacity: 0;
   pointer-events: none;
-  transform: translateY(50%);
   transition: all 0.4s ease-in-out;
 }
-
-#btn {
-  position: absolute;
-  visibility: hidden;
-}
-#btn:checked + .menu {
+.button .menu.dropDown {
   opacity: 1;
   pointer-events: all;
-  transform: translateY(70%);
+  transform: translate(-6.5%, 70%);
 }
-.navs .menu:before {
+.button-Products-html .menu.dropDown {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-6.5%, 70%);
+}
+
+.menu:before {
   position: absolute;
   content: "";
   height: 20px;
@@ -386,6 +407,21 @@ span.icon-IsaacLogo {
   transform: rotate(45deg);
   z-index: -1;
 }
+.current-menu-item {
+  font-size: 30px;
+  padding: auto;
+  margin: auto;
+  font-family: "Audiowide", cursive;
+  text-align: center;
+  color: var(--specialColor);
+  text-decoration: none;
+  display: flex;
+  transition: 0.3s;
+}
+.current-menu-item:hover {
+  color: rgb(246 255 255);
+  transform: scale(0.95);
+}
 .menu-item {
   font-size: 30px;
   padding: auto;
@@ -394,7 +430,7 @@ span.icon-IsaacLogo {
   text-align: center;
   color: rgb(246 255 255);
   text-decoration: none;
-  display: inline-block;
+  display: flex;
   transition: 0.3s;
 }
 .menu-item:hover {
