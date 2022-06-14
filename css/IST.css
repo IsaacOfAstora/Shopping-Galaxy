@@ -377,13 +377,24 @@ span.icon-IsaacLogo {
   text-align: left;
   padding: 10px;
   margin: auto;
-  border-bottom: 10px solid var(--pageColor);
+  box-shadow: 0px 0 20px var(--specialColor);
   position: absolute;
   border-radius: 10px;
-  background-color: rgb(42 42 42);
+  background-color: rgb(33 33 33);
   opacity: 0;
   pointer-events: none;
   transition: all 0.4s ease-in-out;
+}
+.menu:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: rgb(33 33 33);
+  right: 20px;
+  top: -10px;
+  transform: rotate(45deg);
+  z-index: -1;
 }
 .button .menu.dropDown {
   opacity: 1;
@@ -396,17 +407,6 @@ span.icon-IsaacLogo {
   transform: translate(-6.5%, 70%);
 }
 
-.menu:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  background: rgb(42 42 42);
-  right: 20px;
-  top: -10px;
-  transform: rotate(45deg);
-  z-index: -1;
-}
 .current-menu-item {
   font-size: 30px;
   padding: auto;
