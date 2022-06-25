@@ -54,7 +54,7 @@ body {
   flex-direction: row;
   align-items: center;
 }
-.cont {
+.title {
   display: flex;
   text-align: center;
   align-items: center;
