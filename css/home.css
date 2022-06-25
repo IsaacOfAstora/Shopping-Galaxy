@@ -61,6 +61,7 @@ body {
   padding: 0;
   max-width: 1300px;
   justify-content: center;
+  flex-grow: 1;
 }
 .title h1 {
   width: fit-content;

@@ -9,6 +9,7 @@
 /*<!-Removing a Cart element with profficional CSS animation-!>*/
 
 let cartItemRemover = document.getElementsByClassName("remover");
+let crto = document.querySelector(".remover");
 
 for (let i = 0; i < cartItemRemover.length; i++) {
   let removeButton = cartItemRemover[i];

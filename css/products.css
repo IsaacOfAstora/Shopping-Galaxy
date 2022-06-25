@@ -17,6 +17,7 @@
   flex-wrap: nowrap;
   align-content: flex-start;
 }
+
 .products {
   display: flex;
   gap: 40px;
@@ -26,12 +27,10 @@
   justify-content: flex-start;
   padding: 0;
   margin: 4%;
-  text-align: center;
   background-color: rgb(33 33 33);
   color: #f8f8f8;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "MGR";
-
   list-style: none;
 }
 .product-item {
@@ -48,9 +47,22 @@
   border-radius: 15px;
   transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
-.product-item h3,
-.product-item p {
+.product-info {
+  display: block;
+}
+.product-info p {
   margin: 0;
+  text-align: left;
+}
+.product-info-title {
+  color: var(--pageColor) !important;
+}
+
+.product-info p span {
+  color: var(--New);
+}
+.used {
+  color: var(--Used) !important;
 }
 .product-item:hover {
   transform: scale(0.97);
@@ -62,8 +74,9 @@
   width: 200px;
   border-radius: 15px 15px 0 0;
 }
-
-/*****Buy Icons *****/
+/**************************************/
+/*************Buy Buttons *************/
+/**************************************/
 .buy {
   margin-bottom: 3%;
   width: 40px;
@@ -91,7 +104,6 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  text-align: center;
   font-family: "MGR";
   width: 90px;
   height: 40px;
@@ -129,6 +141,99 @@
   color: #f8f8f8;
 }
 
-/*****Buy Complete *****/
+/**************************************/
+/***********Buy Buttons End ***********/
+/**************************************/
+
+/*<!----------------------JS CSS colmun to row Changing------------------------!>*/
+.changeLook {
+  display: flex;
+  margin: 10px;
+  text-align: center;
+  border-radius: 15px;
+  transition: all 0.3s ease 0s;
+}
+.changeLook button {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  border: none;
+  margin: 10px;
+  transition: 0.3s ease-in-out;
+}
+.rowLook.inUse {
+  color: var(--pageColor);
+}
+
+.columnLook.inUse {
+  color: var(--pageColor);
+}
+/*<!----------------------------------------------------------!>*/
+/*<!-----------------------WARNING!!!!!!!!!!!!!---------------!>*/
+/*<!----------------------------------------------------------!>*/
+.products.its-row-time {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 4%;
+  background-color: rgb(33 33 33);
+  color: #f8f8f8;
+  font-size: 18px;
+  font-family: "MGR";
+  list-style: none;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.product-item.its-row-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 200px;
+  width: 100%;
+  position: relative;
+  background-color: #383535;
+  box-shadow: 0 0 15px 0 #383535;
+  border-radius: 15px;
+  transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  align-items: center;
+}
+.product-item-image.its-row-time {
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+}
+.product-info.its-row-time {
+  display: flex;
+  font-size: 40px;
+  margin: 0 auto 0 10px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.buy.its-row-time {
+  width: 70px;
+  height: 70px;
+  margin-right: 5%;
+  background: var(--pageColor);
+  color: #28292a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  z-index: 1;
+}
+/*<!----------------------------------------------------------!>*/
+/*<!-----------------------WARNING END------------------------!>*/
+/*<!----------------------------------------------------------!>*/
+
+/*<!----------------------JS CSS colmun to row Changing End--------------------!>*/
 
 /*****************Product Images complete****************/
