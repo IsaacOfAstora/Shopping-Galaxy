@@ -1,6 +1,7 @@
 html {
   height: 100%;
   width: 100%;
+  /* zoom: 150%; */
 }
 @font-face {
   font-family: "MGR";
@@ -16,8 +17,8 @@ html {
 /*---------------------------Scrollbar---------------------------------------------------------------*/
 ::-webkit-scrollbar {
   background-color: transparent;
-  width: 1.1vw;
-  height: 1.1vw;
+  width: 1vw;
+  height: 1vw;
 }
 
 /*-----------لي يتحرك يا جحــــش-----------*/
@@ -99,7 +100,7 @@ body {
 .wrapper .icon span i {
   color: #fff;
   line-height: 40px;
-  font-size: 22px;
+  font-size: 25px;
 }
 .wrapper .icon .tooltip {
   position: absolute;
@@ -134,10 +135,10 @@ body {
   transform: translateX(-50%) rotate(45deg);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.icon.discord {
-  display: block;
+.icon .discord {
+  display: flex;
 }
-.icon.discord .tooltip {
+.icon .discord .tooltip {
   right: -85%;
 }
 .tool_Discord {
@@ -263,7 +264,7 @@ span.icon-IsaacLogo {
   display: flex;
   margin: auto;
   border-radius: 0px 0px 30px 30px;
-  box-shadow: 0px 8px 20px #c7404e, 0px 4px 20px #463e4f, 0px -36px 20px #c7404e,
+  box-shadow: 0px 4px 20px #c7404e, 0px 4px 20px #463e4f, 0px -36px 20px #c7404e,
     0 -36px 20px #c7404e;
   max-width: 1300px;
   top: 0;
@@ -454,7 +455,7 @@ span.icon-IsaacLogo {
 .fa-house-chimney {
   color: rgb(255 255 255);
   font-size: 20px;
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
 }
 .homePage:hover .fa-house-chimney {
   transform: scale(0.95);
@@ -462,7 +463,7 @@ span.icon-IsaacLogo {
 .fa-circle-exclamation {
   color: rgb(255 255 255);
   font-size: 20px;
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
 }
 
 .aboutUs:hover .fa-circle-exclamation {
@@ -569,16 +570,16 @@ span.icon-IsaacLogo {
   transform: rotate(360deg);
 }
 .fa-search {
-  transition: 0.4s;
+  transition: 0.2s ease-in-out;
 }
 .fa-search:hover {
-  transform: scale(1.18);
+  transform: scale(0.9);
 }
 
 .search-box .cancel-icon {
   position: absolute;
   right: 30%;
-  top: 26%;
+  top: 32%;
   font-size: 25px;
   cursor: pointer;
   transition: all 0.3s 0.3s ease-in-out;

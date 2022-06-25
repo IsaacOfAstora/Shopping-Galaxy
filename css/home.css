@@ -1,6 +1,7 @@
 html {
   height: 100%;
   width: 100%;
+  /* zoom: 150%; */
 }
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 @font-face {
@@ -44,38 +45,37 @@ body {
   overflow: overlay;
 }
 .container {
+  display: flex;
   text-align: right;
-  align-items: center;
   padding: 0;
   width: 100%;
-  max-width: 1300px;
-  margin: auto;
+  margin: 0;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 }
 .cont {
-  flex-grow: 1;
-  height: fit-content;
-  justify-content: center;
   display: flex;
   text-align: center;
   align-items: center;
   padding: 0;
   max-width: 1300px;
-  margin: auto;
+  justify-content: center;
 }
-.cont h1 {
+.title h1 {
   width: fit-content;
   cursor: pointer;
   text-align: center;
   padding: 0;
   font-size: 70px;
   text-shadow: 0 0 20px #c7404e, 18px -10px 20px #50424f;
-  color: #1e191f;
+  color: rgb(227 201 204);
   margin: 0;
   font-family: "MGR";
   transition: 600ms;
 }
-.cont h1:hover {
-  color: rgb(167 133 147);
+.title h1:hover {
+  color: rgb(248, 107, 135);
 }
 
 /***********************navigation bar-mini******************************/
@@ -85,7 +85,7 @@ body {
   justify-content: center;
   align-content: center;
   border-radius: 25px;
-  border: 3px solid #c7404e;
+  box-shadow: 0 0 10px 0px #c7404e;
   background-color: rgb(33 33 33 / 75%);
 }
 
@@ -175,7 +175,6 @@ body {
   top: 0;
   margin: 10px;
   left: auto;
-  position: absolute;
   color: rgb(219 225 231);
   font-family: "MGR" !important;
   padding: 8px;
@@ -188,8 +187,7 @@ body {
   outline: none;
   cursor: pointer;
   border-radius: 20px;
-  border: 3px solid #c7404e;
-  border: 2px bold;
+  box-shadow: 0 0 10px 0px #c7404e;
   transition: 600ms;
 }
 .sign-up:hover,
@@ -313,7 +311,7 @@ footer {
   border-radius: 25px 25px 0 0;
   width: 100%;
   height: fit-content;
-  box-shadow: 1px -10px 20px #c7404e, 2px -16px 20px #463e4f;
+  box-shadow: rgb(199 64 78) 1px -6px 11px, rgb(70 62 79) 0px -7px 14px;
 }
 
 footer .paragraph {

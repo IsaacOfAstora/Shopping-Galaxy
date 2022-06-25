@@ -112,7 +112,7 @@
         </div>
          
         <div class="search-box">
-            <input class="B" type="text" placeholder="Search your product..">
+            <input class="input-box" type="text" placeholder="Search your product..">
             <div class="search-icon">
               <i class="fas fa-search"></i>
             </div>
@@ -123,10 +123,12 @@
       </div>
         
         </nav> 
+      <!-------------------------------------------------------------------------->
+      <!-------------------------Products  Section ------------------------------->
+      <!-------------------------------------------------------------------------->
       
         <div class="product-section">
-            
-            
+ 
            
         <ul class="products">
             <li class="product-item">
@@ -161,7 +163,9 @@
     </div>
      
 
-
+      <!-------------------------------------------------------------------------->
+      <!-------------------------Products  Section End---------------------------->
+      <!-------------------------------------------------------------------------->
 
  
     <footer>
@@ -209,27 +213,6 @@
     </div>
     
     </footer>
-<script>
-  const searchBox = document.querySelector(".search-box");
-  const searchBtn = document.querySelector(".search-icon");
-  const cancelBtn = document.querySelector(".cancel-icon");
-  const searchInput = document.querySelector(".B");
-  searchBtn.onclick =()=>{
-    searchBox.classList.add("active");
-    searchBtn.classList.add("active");
-    searchInput.classList.add("active");
-    cancelBtn.classList.add("active");
-    searchInput.focus();
-   
-  }
-  cancelBtn.onclick =()=>{
-    searchBox.classList.remove("active");
-    searchBtn.classList.remove("active");
-    searchInput.classList.remove("active");
-    cancelBtn.classList.remove("active");
-    searchInput.value = "";
-  }
-</script>
 <script src="../js/main.js"></script>
 
 </body>
