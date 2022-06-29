@@ -21,7 +21,7 @@
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-  gap: 40px 0;
+  gap: 40px;
   padding: 0;
   margin: 4%;
   background-color: rgb(33 33 33);
@@ -29,7 +29,6 @@
   font-size: 18px;
   font-family: "MGR";
   list-style: none;
-  justify-items: center;
 }
 .product-item {
   display: flex;
