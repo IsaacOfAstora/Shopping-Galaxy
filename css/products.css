@@ -19,12 +19,9 @@
 }
 
 .products {
-  display: flex;
-  gap: 40px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+  gap: 40px 0;
   padding: 0;
   margin: 4%;
   background-color: rgb(33 33 33);
@@ -32,6 +29,7 @@
   font-size: 18px;
   font-family: "MGR";
   list-style: none;
+  justify-items: center;
 }
 .product-item {
   display: flex;
@@ -106,7 +104,7 @@
   position: absolute;
   font-family: "MGR";
   width: 90px;
-  height: 40px;
+  height: 30px;
   border-radius: 25px;
   font-size: 18px;
   color: #f8f8f8;
@@ -118,7 +116,7 @@
   z-index: 9999;
 }
 .buy:hover .add-toCart-tooltip {
-  transform: translateX(90px);
+  transform: translateX(80px);
   opacity: 1;
 }
 .add-toCart-tooltip p {
@@ -126,12 +124,12 @@
 }
 .add-toCart-tooltip::after {
   content: "";
-  height: 18px;
-  width: 18px;
+  height: 14px;
+  width: 14px;
   background-color: var(--pageColor);
-  top: 32%;
+  top: 31%;
   transform: rotate(45deg);
-  left: -2px;
+  left: -3px;
   z-index: -1;
   position: absolute;
 }
@@ -176,13 +174,6 @@
   gap: 40px;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 4%;
-  background-color: rgb(33 33 33);
-  color: #f8f8f8;
-  font-size: 18px;
-  font-family: "MGR";
-  list-style: none;
   justify-content: flex-start;
   align-content: flex-start;
 }
@@ -201,8 +192,6 @@
   align-items: center;
 }
 .product-item-image.its-row-time {
-  height: 200px;
-  width: 200px;
   border-radius: 15px;
 }
 .product-info.its-row-time {
@@ -215,9 +204,9 @@
   justify-content: center;
 }
 .buy.its-row-time {
-  width: 70px;
-  height: 70px;
-  margin-right: 5%;
+  width: 50px;
+  height: 50px;
+  margin: 5%;
   background: var(--pageColor);
   color: #28292a;
   display: flex;
@@ -229,6 +218,10 @@
   text-decoration: none;
   transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   z-index: 1;
+}
+.product-item:hover {
+  transform: scale(0.97);
+  box-shadow: 0 0 15px 0 rgb(227 201 204);
 }
 /*<!----------------------------------------------------------!>*/
 /*<!-----------------------WARNING END------------------------!>*/
