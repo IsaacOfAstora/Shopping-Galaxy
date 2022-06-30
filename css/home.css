@@ -60,6 +60,7 @@ body {
   text-align: center;
   align-items: center;
   padding: 0;
+  margin: auto;
   max-width: 1300px;
   justify-content: center;
   flex-grow: 1;

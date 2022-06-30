@@ -149,7 +149,17 @@
   text-align: center;
   border-radius: 15px;
   transition: all 0.3s ease 0s;
+  align-items: center;
 }
+.changeLook h1 {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: "MGR";
+  text-shadow: 0 0 20px var(--pageColor), 18px -10px 20px #50424f;
+  color: rgb(255 255 255);
+}
+
 .changeLook button {
   background-color: transparent;
   color: rgb(255, 255, 255);
@@ -169,26 +179,21 @@
 /*<!-----------------------WARNING!!!!!!!!!!!!!---------------!>*/
 /*<!----------------------------------------------------------!>*/
 .products.its-row-time {
-  display: flex;
+  display: grid;
   gap: 40px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
+  grid-template-columns: 100%;
 }
 
 .product-item.its-row-time {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
   width: 100%;
   position: relative;
   background-color: #383535;
   box-shadow: 0 0 15px 0 #383535;
   border-radius: 15px;
   transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  align-items: center;
+  justify-content: start;
 }
 .product-item-image.its-row-time {
   border-radius: 15px;
@@ -196,7 +201,7 @@
 .product-info.its-row-time {
   display: flex;
   font-size: 40px;
-  margin: 0 auto 0 10px;
+  margin: 0;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: flex-start;
@@ -205,7 +210,7 @@
 .buy.its-row-time {
   width: 50px;
   height: 50px;
-  margin: 5%;
+  margin: 0;
   background: var(--pageColor);
   color: #28292a;
   display: flex;
