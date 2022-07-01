@@ -7,7 +7,7 @@
 .product-section {
   display: flex;
   background-color: rgb(33 33 33);
-  margin: 30px auto;
+  margin: 30px 0;
   width: 100%;
   max-width: 1000px;
   box-shadow: 0px -8px 20px var(--pageColor), 0px 11px 20px #463e4f;
@@ -152,11 +152,11 @@
   align-items: center;
 }
 .changeLook h1 {
+  letter-spacing: 1px;
   margin: 0;
-  color: rgb(255, 255, 255);
   font-size: 20px;
   font-family: "MGR";
-  text-shadow: 0 0 20px var(--pageColor), 18px -10px 20px #50424f;
+  text-shadow: 0 0 7px #c7404e, 0 0 4px #c7404e;
   color: rgb(255 255 255);
 }
 

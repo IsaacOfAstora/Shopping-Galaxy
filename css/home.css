@@ -3,6 +3,16 @@ html {
   width: 100%;
   /* zoom: 150%; */
 }
+:root {
+  --pageColor: #c7404e;
+  --specialColor: #df4c5b;
+  --text_Hover: #d87982;
+  --selectionColor: rgb(176, 141, 141);
+}
+::selection {
+  background-color: var(--selectionColor);
+  color: var(--specialColor);
+}
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 @font-face {
   font-family: "MGR";
@@ -71,7 +81,7 @@ body {
   text-align: center;
   padding: 0;
   font-size: 70px;
-  text-shadow: 0 0 20px #c7404e, 18px -10px 20px #50424f;
+  text-shadow: 0 0 20px var(--pageColor), 18px -10px 20px #50424f;
   color: rgb(227 201 204);
   margin: 0;
   font-family: "MGR";
@@ -88,7 +98,7 @@ body {
   justify-content: center;
   align-content: center;
   border-radius: 25px;
-  box-shadow: 0 0 10px 0px #c7404e;
+  box-shadow: 0 0 10px 0px var(--pageColor);
   background-color: rgb(33 33 33 / 75%);
 }
 
@@ -190,12 +200,12 @@ body {
   outline: none;
   cursor: pointer;
   border-radius: 20px;
-  box-shadow: 0 0 10px 0px #c7404e;
+  box-shadow: 0 0 10px 0px var(--pageColor);
   transition: 600ms;
 }
 .sign-up:hover,
 .log-in:hover {
-  color: #c7404e;
+  color: var(--pageColor);
   transform: scale(1.01);
 }
 
@@ -216,7 +226,7 @@ body {
   border-radius: 25px;
 }
 .mainPage:hover {
-  color: #c7404e;
+  color: var(--pageColor);
   transform: scale(1.01);
 }
 
@@ -224,7 +234,7 @@ body {
 
 .log-in-form,
 .sign-up-form {
-  box-shadow: 0px -8px 20px #c7404e, 0px 11px 20px #463e4f;
+  box-shadow: 0px -8px 20px var(--pageColor), 0px 11px 20px #463e4f;
   margin: 70px auto;
   width: 300px;
   padding: 15px;
@@ -250,7 +260,7 @@ body {
 .log-in-form h1:hover,
 .sign-up-form h1:hover {
   transform: scale(1.01);
-  color: #c7404e;
+  color: var(--pageColor);
 }
 .log-in-form input,
 .sign-up-form input {
@@ -262,7 +272,7 @@ body {
   outline: none;
   border: 1px bold;
   border-style: solid;
-  border-color: #c7404e;
+  border-color: var(--pageColor);
   border-radius: 15px;
 }
 .txtb {
@@ -314,7 +324,7 @@ footer {
   border-radius: 25px 25px 0 0;
   width: 100%;
   height: fit-content;
-  box-shadow: rgb(199 64 78) 1px -6px 11px, rgb(70 62 79) 0px -7px 14px;
+  box-shadow: var(--pageColor) 1px -6px 11px, rgb(70 62 79) 0px -7px 14px;
 }
 
 footer .paragraph {

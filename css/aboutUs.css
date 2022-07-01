@@ -7,6 +7,7 @@ html {
   --pageColor: #c7404e;
   --specialColor: #df4c5b;
   --text_Hover: #d87982;
+  --selectionColor: rgb(176, 141, 141);
 }
 ::-webkit-scrollbar {
   background-color: transparent;
@@ -30,7 +31,7 @@ html {
 }
 
 ::selection {
-  background-color: rgb(176, 141, 141);
+  background-color: var(--selectionColor);
   color: var(--specialColor);
 }
 @font-face {
@@ -116,7 +117,7 @@ h3 {
   margin: 0 auto;
   color: rgb(255 255 255);
   font-family: "mgr";
-  text-shadow: 0px 0 20px #df4c5b, 0 0 20px #933b44;
+  text-shadow: 0px 0 20px var(--pageColor), 0px 0 20px var(--pageColor);
 }
 .ourInfo {
   font-family: "Audiowide", cursive;

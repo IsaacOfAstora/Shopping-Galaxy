@@ -12,6 +12,7 @@ html {
   --pageColor: #c7404e;
   --specialColor: #df4c5b;
   --text_Hover: #d87982;
+  --selectionColor: rgb(176, 141, 141);
   --New: #49c740;
   --Used: #c7c740;
 }
@@ -42,12 +43,13 @@ html {
 /*---------------------------Scrollbar Finished------------------------------------------------------*/
 
 ::selection {
-  background-color: rgb(176, 141, 141);
+  background-color: var(--selectionColor);
   color: var(--specialColor);
 }
 body {
   min-height: 100vh;
   display: flex;
+  align-items: center;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -60,21 +62,60 @@ body {
 }
 
 .container {
-  display: flex;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, minmax(500px, auto));
   align-items: center;
-  background-color: rgb(33 33 33);
+  background-color: rgb(33, 33, 33);
   z-index: 9999;
   height: fit-content;
-  margin: auto;
+  margin: 0;
   width: 100%;
   max-width: 1300px;
-  box-shadow: 0px -30px 20px #c7404e, 0 -30px 20px #c7404e;
+  box-shadow: 0px -30px 20px var(--pageColor), 0 -30px 20px #c7404e;
 }
+/***********************************************************************************/
+/******************_________________Title___________________************************/
+/***********************************************************************************/
+.title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 1%;
+  border: 0;
+  z-index: 1;
+  text-align: center;
+  font-family: "MGR";
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px var(--pageColor), 18px -10px 20px #50424f;
+  color: rgb(255 255 255);
+  transition: 0.6s;
+}
+
+span.icon-IsaacLogo {
+  font-size: 70px;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+.icon-IsaacLogo:before {
+  content: "\e900";
+  color: #ffffff !important;
+  transition: 0.6s;
+}
+.title:hover {
+  cursor: pointer;
+  color: var(--specialColor);
+}
+.title:hover .icon-IsaacLogo:before {
+  color: var(--specialColor) !important;
+}
+/***********************************************************************************/
+/******************____________Title Complete_______________************************/
+/***********************************************************************************/
 
 /**********************Social Media Icons***********************************************/
 .wrapper {
   display: flex;
-  margin: 5px 40px;
+  margin: 0 0 0 10%;
   width: fit-content;
 }
 
@@ -225,60 +266,22 @@ body {
 
 /******************************Social Media Complete**********************************************************************/
 
-.title {
-  display: flex;
-  align-items: center;
-  margin: 0 auto 0 4px;
-  border: 0;
-  z-index: 1;
-  text-align: center;
-  font-family: "MGR";
-  letter-spacing: 2px;
-  text-shadow: 0 0 20px var(--pageColor), 18px -10px 20px #50424f;
-  color: rgb(255 255 255);
-  font-size: 35px;
-  transition: 600ms;
-}
-
-span.icon-IsaacLogo {
-  font-size: 70px;
-  margin: 0 10px 0 0;
-  cursor: pointer;
-}
-.icon-IsaacLogo:before {
-  content: "\e900";
-  color: #ffffff !important;
-  transition: 0.6s;
-}
-.title:hover {
-  cursor: pointer;
-  color: var(--specialColor);
-}
-.title:hover .icon-IsaacLogo:before {
-  color: var(--specialColor) !important;
-}
 .navs {
+  display: grid;
+  grid-template-columns: repeat(5, auto) 35%;
   z-index: 2;
   background-color: rgb(33 33 33);
-  font-size: 30px;
-  text-align: center;
-  width: 100%;
-  display: flex;
-  margin: auto;
-  border-radius: 0px 0px 30px 30px;
-  box-shadow: 0px 4px 20px #c7404e, 0px 4px 20px #463e4f, 0px -36px 20px #c7404e,
-    0 -36px 20px #c7404e;
   max-width: 1300px;
+  width: 100%;
+  font-size: 30px;
+  margin: 0;
+  border-radius: 0px 0px 30px 30px;
+  box-shadow: 0px 4px 20px var(--pageColor), 0px 4px 20px #463e4f,
+    0px -36px 20px var(--pageColor), 0 -36px 20px var(--pageColor);
   top: 0;
   position: sticky;
-}
-.navs-left {
-  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin: auto;
-  z-index: 9999;
-  width: 60%;
 }
 
 .current-nav-item {
@@ -446,9 +449,12 @@ span.icon-IsaacLogo {
 /***********************Home button + About Button**********************/
 .homePage,
 .aboutUs {
+  display: flex;
   background-color: rgb(33 33 33);
-  margin: 0 auto;
+  margin: 0;
   text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 .homePage:hover,
 .aboutUs:hover {
@@ -473,8 +479,6 @@ span.icon-IsaacLogo {
   transform: scale(0.95);
 }
 .aboutTooltip {
-  transform: translatey(-100%);
-  left: 2.7%;
   width: fit-content;
   position: absolute;
   text-align: center;
@@ -502,7 +506,7 @@ span.icon-IsaacLogo {
 }
 .aboutUs:hover .aboutTooltip {
   box-shadow: var(--text_Hover) 0 0 10px 0px;
-  transform: translatey(50%);
+  transform: translatey(110%);
 }
 .aboutUs:hover .aboutTooltip,
 .aboutUs:hover .aboutTooltip:before {
@@ -515,14 +519,15 @@ span.icon-IsaacLogo {
 /********************************Search Bar***************************/
 
 .search-box {
-  display: inline-flex;
-  width: 30%;
+  display: flex;
+  width: 85%;
   padding: 0;
-  margin: 0.5% 5% 0.5% 0;
+  margin: 1% 0;
+  align-items: center;
 }
 
 .search-box input {
-  height: 43px;
+  height: 42px;
   width: 0;
   margin-left: 12px;
   padding: 2px 0;
@@ -546,19 +551,20 @@ span.icon-IsaacLogo {
 }
 
 .search-box .search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   right: 30%;
-  height: 55px;
-  width: 55px;
+  height: 45px;
+  width: 45px;
   background: rgb(33 33 33);
   border-radius: 50%;
-  text-align: center;
-  line-height: 55px;
-  font-size: 22px;
-  color: rgb(255 255 255);
+  font-size: 20px;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   z-index: 1;
-  transition: all 0.5s 0.1s cubic-bezier(0.8, -0.45, 0.28, 1.55);
+  transition: all 0.5s cubic-bezier(0.8, -0.45, 0.28, 1.55) 0.1s;
 }
 
 .search-box .search-icon.active {
@@ -581,7 +587,6 @@ span.icon-IsaacLogo {
 .search-box .cancel-icon {
   position: absolute;
   right: 30%;
-  top: 32%;
   font-size: 25px;
   cursor: pointer;
   transition: all 0.3s 0.3s ease-in-out;
@@ -601,30 +606,34 @@ span.icon-IsaacLogo {
 /********************************Search Bar Finished***************************/
 
 /********************************Announce Column***************************/
+.announceColumn {
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 0px -8px 20px var(--pageColor), 0px 11px 20px #463e4f;
+  background: rgb(33 33 33);
+  margin: 30px 0;
+  width: 100%;
+  max-width: 1000px;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+}
 .subTitle {
-  margin: auto;
+  margin: 0;
   z-index: 1;
   width: fit-content;
   text-align: center;
   font-family: "MGR";
-  text-shadow: 0px -7px 20px #df4c5b, 1px 11px 20px #933b44;
+  text-shadow: 0px 0 20px var(--pageColor), 0 0 20px var(--pageColor);
   color: rgb(255 255 255);
   font-size: 35px;
   transition: 600ms;
 }
-.announceColumn {
-  border-radius: 20px;
-  box-shadow: 0px -8px 20px var(--pageColor), 0px 11px 20px #463e4f;
-  background: rgb(33 33 33);
-  margin: 40px auto 40px;
-  width: 100%;
-  max-width: 1000px;
-  flex-grow: 1;
-}
+
 .swiper {
   height: fit-content;
   width: 600px;
-  margin: auto auto 20px auto;
+  margin: 0;
   overflow: hidden;
   list-style: none;
   z-index: 1;
