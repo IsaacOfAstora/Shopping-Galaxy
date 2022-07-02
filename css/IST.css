@@ -63,16 +63,16 @@ body {
 
 .container {
   display: grid;
-  justify-content: space-between;
-  grid-template-columns: repeat(2, minmax(500px, auto));
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(440px, auto));
   background-color: rgb(33, 33, 33);
   z-index: 9999;
   height: fit-content;
-  margin: 0;
+  margin: 0px;
   width: 100%;
   max-width: 1300px;
   box-shadow: 0px -30px 20px var(--pageColor), 0 -30px 20px #c7404e;
+  place-items: center;
+  justify-content: space-between;
 }
 /***********************************************************************************/
 /******************_________________Title___________________************************/
@@ -80,7 +80,7 @@ body {
 .title {
   display: flex;
   align-items: center;
-  margin: 0 0 0 1%;
+  margin: 0;
   border: 0;
   z-index: 1;
   text-align: center;
@@ -93,7 +93,7 @@ body {
 
 span.icon-IsaacLogo {
   font-size: 70px;
-  margin: 0 10px 0 0;
+  margin: 0;
   cursor: pointer;
 }
 .icon-IsaacLogo:before {
@@ -115,8 +115,10 @@ span.icon-IsaacLogo {
 /**********************Social Media Icons***********************************************/
 .wrapper {
   display: flex;
-  margin: 0 0 0 10%;
+  margin: 0 6% 0 0;
   width: fit-content;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper .icon {
@@ -268,13 +270,14 @@ span.icon-IsaacLogo {
 
 .navs {
   display: grid;
-  grid-template-columns: repeat(5, auto) 35%;
+  grid-template-columns: repeat(5, auto) 30%;
   z-index: 2;
   background-color: rgb(33 33 33);
   max-width: 1300px;
   width: 100%;
   font-size: 30px;
   margin: 0;
+  padding-bottom: 2px;
   border-radius: 0px 0px 30px 30px;
   box-shadow: 0px 4px 20px var(--pageColor), 0px 4px 20px #463e4f,
     0px -36px 20px var(--pageColor), 0 -36px 20px var(--pageColor);
@@ -282,6 +285,8 @@ span.icon-IsaacLogo {
   position: sticky;
   flex-direction: row;
   align-items: center;
+  justify-items: start;
+  justify-content: space-around;
 }
 
 .current-nav-item {
@@ -318,18 +323,21 @@ span.icon-IsaacLogo {
 /********************************Drop down menu*********************************/
 .button {
   display: flex;
-  align-items: center;
-  margin: auto;
+  margin: 0;
   border: none;
   font-family: "Audiowide", cursive;
-  text-align: center;
   color: rgb(255 255 255);
   text-decoration: none;
   cursor: pointer;
+  flex-direction: column;
   transition: 0.3s;
 }
 .button span {
+  display: flex;
+  gap: 10px;
   transition: 0.3s;
+  align-items: center;
+  flex-direction: row;
 }
 .button span:hover {
   color: var(--text_Hover);
@@ -348,18 +356,21 @@ span.icon-IsaacLogo {
 /****************************************************************/
 .button-Products-html {
   display: flex;
-  align-items: center;
-  margin: auto;
+  margin: 0;
   border: none;
   font-family: "Audiowide", cursive;
-  text-align: center;
-  color: var(--specialColor);
+  color: var(--pageColor);
   text-decoration: none;
   cursor: pointer;
+  flex-direction: column;
   transition: 0.3s;
 }
 .button-Products-html span {
+  display: flex;
+  gap: 10px;
   transition: 0.3s;
+  align-items: center;
+  flex-direction: row;
 }
 .button-Products-html span:hover {
   color: rgb(251, 251, 251);
@@ -377,7 +388,7 @@ span.icon-IsaacLogo {
 /********************************************************************/
 .menu {
   display: flex;
-  transform: translate(-6.5%, 50%);
+  transform: translate(-6.5%, 10%);
   flex-direction: column;
   list-style: none;
   text-align: left;
@@ -405,12 +416,12 @@ span.icon-IsaacLogo {
 .button .menu.dropDown {
   opacity: 1;
   pointer-events: all;
-  transform: translate(-6.5%, 70%);
+  transform: translate(-6.5%, 30%);
 }
 .button-Products-html .menu.dropDown {
   opacity: 1;
   pointer-events: all;
-  transform: translate(-6.5%, 70%);
+  transform: translate(-6.5%, 30%);
 }
 
 .current-menu-item {
@@ -516,94 +527,111 @@ span.icon-IsaacLogo {
 
 /***********************Home button + About Button Finished**********************/
 
-/********************************Search Bar***************************/
-
-.search-box {
+/*
+<!------------------------------------------------------!>
+<!--------------Search Bar Styling Start----------------!>                
+<!------------------------------------------------------!>
+ */
+.search-bar {
   display: flex;
-  width: 85%;
-  padding: 0;
-  margin: 1% 0;
+  justify-content: flex-start;
   align-items: center;
-}
-
-.search-box input {
-  height: 42px;
+  flex-direction: row-reverse;
+  height: 40px;
   width: 0;
-  margin-left: 12px;
-  padding: 2px 0;
-  border-radius: 50px;
-  border-color: var(--pageColor);
-  border-style: solid;
-  background: rgb(255, 255, 255);
-  outline: none;
-  font-size: 18px;
-  opacity: 0;
-  transition: all 0.3s 0.2s ease-in-out;
+  border-radius: 25px;
+  border: solid 4px transparent;
+  font-size: 20px;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-.search-box input.active {
-  width: 100%;
-  opacity: 1;
-  padding: 2px 50px 2px 15px;
-}
-
-.search-box input::placeholder {
-  color: #a6a6a6;
-}
-
-.search-box .search-icon {
+.search-icon {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  right: 30%;
-  height: 45px;
-  width: 45px;
-  background: rgb(33 33 33);
-  border-radius: 50%;
-  font-size: 20px;
-  color: rgb(255, 255, 255);
   cursor: pointer;
-  z-index: 1;
-  transition: all 0.5s cubic-bezier(0.8, -0.45, 0.28, 1.55) 0.1s;
-}
-
-.search-box .search-icon.active {
-  right: 5%;
-  height: 50px;
-  line-height: 50px;
-  width: 50px;
-  font-size: 20px;
-  background: var(--pageColor);
+  position: absolute;
   color: rgb(255 255 255);
-  transform: rotate(360deg);
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-.fa-search {
-  transition: 0.2s ease-in-out;
-}
-.fa-search:hover {
+.search-icon i:active {
   transform: scale(0.9);
 }
-
-.search-box .cancel-icon {
-  position: absolute;
-  right: 30%;
-  font-size: 25px;
-  cursor: pointer;
-  transition: all 0.3s 0.3s ease-in-out;
-  opacity: 0;
-}
-.search-box .cancel-icon.active {
-  opacity: 1;
+.search-input {
+  color: rgb(255 255 255);
+  caret-color: var(--pageColor);
+  background-color: transparent;
+  font-size: 20px;
+  font-family: "MGR";
+  letter-spacing: 1px;
+  padding: 5% 15% 5% 5%;
+  width: 0;
+  border-radius: 25px;
+  border-style: none;
+  pointer-events: none;
   outline: none;
-  right: 25px;
-  transform: rotate(360deg);
-  color: #ffffff;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-.fa-times {
-  font-size: 25px;
+.search-bar-remover {
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  color: rgb(255 255 255);
+  background-color: transparent;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-/********************************Search Bar Finished***************************/
+/*
+<!------------------------------------------------------!>
+<!----------------Search Bar Styling End----------------!>                
+<!------------------------------------------------------!>
+ */
+
+/*
+>>>><<<<>>>><<<<>>>><<<<>>>><<<< 
+>>>><<<<>>>><<<<>>>><<<<>>>><<<<
+>>>><<<<>>>><<<<>>>><<<<>>>><<<<
+>>>><<<<>>>><<<<>>>><<<<>>>><<<<
+>>>><<<<>>>><<<<>>>><<<<>>>><<<<
+*/
+
+/*
+<!------------------------------------------------------!>
+<!-----------------Search Bar JS Style------------------!>
+<!------------------------------------------------------!>
+ */
+.search-bar.expanded {
+  width: 90%;
+  border: solid 4px var(--pageColor);
+}
+.search-icon.expanded {
+  color: rgb(255 255 255);
+  background-color: var(--pageColor);
+  transform: rotate(360deg);
+}
+.search-input.expanded {
+  width: 100%;
+  pointer-events: all;
+}
+.search-bar-remover.expanded {
+  opacity: 1;
+  transform: translateX(20px) rotate(360deg);
+}
+.search-bar-remover.expanded:active {
+  transform: translateX(20px) rotate(360deg) scale(0.9);
+}
+/*
+<!------------------------------------------------------!>
+<!---------------Search Bar JS Style END----------------!>
+<!------------------------------------------------------!>
+ */
 
 /********************************Announce Column***************************/
 .announceColumn {
