@@ -565,8 +565,7 @@ span.icon-IsaacLogo {
   caret-color: var(--pageColor);
   background-color: transparent;
   font-size: 20px;
-  font-family: "MGR";
-  letter-spacing: 1px;
+  font-family: "Audiowide", cursive;
   padding: 5% 15% 5% 5%;
   width: 0;
   border-radius: 25px;
