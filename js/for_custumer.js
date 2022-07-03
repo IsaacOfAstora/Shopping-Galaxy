@@ -11,12 +11,12 @@ let removeButton = document.getElementsByClassName("cartRemover");
 
 for (let i = 0; i < removeButton.length; i++) {
   let buttonRemove = removeButton[i];
-  buttonRemove.addEventListener("click", function (params) {
-    let Removing =
-      params.target.parentElement.parentElement.classList.add("vanquish") +
+  buttonRemove.addEventListener("click", function (item) {
+    let Removing = item.target.parentElement.parentElement;
+    Removing.classList.add("vanquish") +
       setTimeout(() => {
-        params.target.parentElement.parentElement.remove();
-      }, 200);
+        Removing.remove();
+      }, 300);
   });
 }
 

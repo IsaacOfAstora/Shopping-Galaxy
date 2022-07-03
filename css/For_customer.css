@@ -42,7 +42,7 @@
   background-color: #383535;
   height: 80px;
   font-size: var(--ItemFontSize);
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .cartItem-image {
@@ -88,7 +88,7 @@
 .cartTotal {
   display: grid;
   position: sticky;
-  top: 0;
+  top: 20%;
   background-color: transparent;
   grid-template-columns: repeat(1, minmax(200px, auto));
   font-family: "MGR";
@@ -133,7 +133,7 @@
 <!=======!>======JS Removing Cart Items =======<!=======!>
 <!=========================!><!=========================!>
 */
-.vanquish {
+.cartItem.vanquish {
   transform: translateX(-10%);
 }
 /*
