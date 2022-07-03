@@ -1,151 +1,143 @@
-@font-face {
-  font-family: "MGR";
-  src: url("../fonts/SLANT.TTF");
+:root {
+  --TitleFontSize: 25px;
+  --ItemFontSize: 15px;
 }
-
 .cartColumn {
-  display: flex;
-  background-color: #212121;
+  display: grid;
+  background-color: rgb(33 33 33);
+  font-size: var(--TitleFontSize);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   min-height: 25vw;
-  width: 100%;
-  max-width: 1000px;
-  margin: 30px 0;
-  flex-grow: 1;
   box-shadow: 0px -8px 20px var(--pageColor), 0px 11px 20px #463e4f;
-  border-radius: 20px;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  flex-direction: row;
-}
-
-.cartTable {
-  background-color: #212121;
-  border-spacing: 0 5px;
-  margin: 10px auto;
-  width: 500px;
-  height: fit-content;
-}
-
-.cartTable-Head tr td {
-  background-color: var(--pageColor);
-  padding: 4px;
-  border: none;
-  margin: 0;
-  text-align: left;
-  font-size: 30px;
-  font-family: "MGR";
-  color: #f8f8f8;
-}
-.tr_td2 {
-  border-radius: 0 5px 5px 0;
-  width: 100.46px;
-}
-.tr_td1 {
-  border-radius: 5px 0 0 5px;
-  width: 263.8px;
-}
-.cartTable-Row {
-  width: fit-content;
-  background-color: #383535;
-  font-family: "MGR";
-  color: #f8f8f8;
-  transition: 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
-}
-.vanquish {
-  transform: translatex(-20px);
-  opacity: 0;
-}
-.amount_Calc {
-  outline: none;
-  margin: auto;
-  height: 25px;
-  width: 25px;
-  padding: 0 10px;
-  border: 2px solid var(--pageColor);
-  border-radius: 10px;
-}
-.Product {
-  display: flex;
-  font-size: 10px;
+  gap: 10px;
   width: 100%;
+  margin: 30px 0;
+  max-width: 1000px;
+  border-radius: 20px;
+  align-items: start;
+  flex-grow: 1;
 }
-.productImage {
-  width: 100px;
-  max-width: 100px;
-  height: 100px;
-  max-height: 100px;
-  margin: 3px;
+.cart {
+  display: grid;
+  background-color: transparent;
+  grid-template-columns: repeat(1, 1fr);
+  font-family: "MGR";
+  margin: 3% 3% 3% 10%;
+  gap: 5px;
+}
+.cartTitles,
+.cartItem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  color: rgb(255 255 255);
+  align-items: center;
   border-radius: 5px;
 }
-.Product div {
-  display: flex;
-  margin: auto 0 auto 3px;
-  font-size: 15px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.Product div p {
-  margin: 0;
-}
-
-.remover {
-  display: flex;
-  transform: translate(-120%, 100%);
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-  font-size: 20px;
-  margin: auto;
-  height: 35px;
-  width: 35px;
-  border: none;
+.cartTitles {
   background-color: var(--pageColor);
-  color: #f8f8f8;
-  border-radius: 50%;
-  transition: 0.1s;
-}
-.remover:active {
-  transform: translate(-120%, 100%) scale(0.9);
-}
-
-/***********************Total Price calculation table****************************/
-/***************************************************/
-.cartTotal {
-  top: 18%;
-  position: sticky;
-  margin: 15px auto;
-  width: 270px;
-  height: fit-content;
-  color: white;
-  font-family: MGR;
-  font-size: 30px;
-}
-.cartTotal-Head {
-  border-spacing: 0;
-  background-color: var(--pageColor);
-  padding: 4px;
-  border: none;
-  width: fit-content;
-}
-
-.cartTotal-Head td {
   padding: 5px;
 }
-.th_td1 {
-  border-radius: 5px 0 0 5px;
-}
-.th_td2 {
-  border-radius: 0 5px 5px 0;
-}
-.cartTotal-Items {
+.cartItem {
   background-color: #383535;
-  height: 108px;
-  font-size: 20px;
-  text-align: center;
+  height: 80px;
+  font-size: var(--ItemFontSize);
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-/***************************************************/
-/***********************Total Price calculation table Complete****************************/
+.cartItem-image {
+  height: 80px;
+  border-radius: 5px;
+}
+.amount {
+  display: flex;
+  width: 40px;
+  height: 20px;
+  color: rgb(33 33 33);
+  outline: none;
+  font-weight: bold;
+  caret-color: var(--pageColor);
+  border: solid 2px var(--pageColor);
+  border-radius: 8px;
+}
+.cartRemover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  background-color: var(--pageColor);
+  color: rgb(255 255 255);
+  position: absolute;
+  transform: translatex(-110%);
+  transition: 0.1s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+.cartRemover:active {
+  transform: translatex(-110%) scale(0.95);
+}
+
+/*
+<!=========================!><!=========================!>
+<!========!>=========Cart Total Calc==========<!========!>
+<!=========================!><!=========================!>
+*/
+.cartTotal {
+  display: grid;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  grid-template-columns: repeat(1, minmax(200px, auto));
+  font-family: "MGR";
+  text-align: center;
+  margin: 3%;
+  gap: 5px;
+  justify-content: center;
+}
+.cartTotal-Titles,
+.cartTotal-Item {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, auto));
+  gap: 10px;
+  color: rgb(255 255 255);
+  align-items: center;
+  border-radius: 5px;
+}
+.cartTotal-Titles {
+  background-color: var(--pageColor);
+  font-size: var(--TitleFontSize);
+  padding: 5px;
+}
+.cartTotal-Item {
+  background-color: rgb(56, 53, 53);
+  font-size: var(--ItemFontSize);
+  height: 80px;
+}
+.cartItem-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/*
+<!=========================!><!=========================!>
+<!========!>=======Cart Total Calc End========<!========!>
+<!=========================!><!=========================!>
+
+*/
+/*
+<!=========================!><!=========================!>
+<!=======!>======JS Removing Cart Items =======<!=======!>
+<!=========================!><!=========================!>
+*/
+.vanquish {
+  transform: translateX(-10%);
+}
+/*
+<!=========================!><!=========================!>
+<!===========!>===========JS End===========<!===========!>
+<!=========================!><!=========================!>
+*/

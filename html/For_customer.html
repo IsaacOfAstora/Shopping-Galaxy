@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="../css/For_customer.css">
     <link rel="stylesheet" href="../css/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="../css/icomoon/my-Ico-moon-Icons.css"/>
-
-
    
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
@@ -114,87 +112,57 @@
 
 
 
-<div class="cartColumn">
+
 <!--////////////////////////////////isaac Cart////////////////////////////////-->
-          <table class="cartTable">
-
-              <thead class="cartTable-Head">
-                <tr>
-                  <td class="tr_td1">Products</td>
-                  <td>Amount</td>
-                  <td class="tr_td2">Price</td>
-                </tr>
-              </thead>
-                  <tr class="cartTable-Row">
-                      <td class="tr_td1">
-                        <button class="remover"><i class="fa-solid fa-trash"></i></button>
-                        <div class="Product">
-                          <img class="productImage" src="../assets/note 10 s.jpg" alt="">
-                          <div>
-                          <p>Redmi Note 10S</p>
-                          <p>40000 DA</p>
-                          </div>
-                          
-                        </div>
-                      </td>
-                      <td><input class="amount_Calc"  id="" type="number" value="1" ></td>
-                      <td class="tr_td2">40000 DA</td>
-                  </tr>
-                  <!---->
-                  <!---->
-                  <!---->
-                  <tr class="cartTable-Row">
-                    <td class="tr_td1">
-                      <button class="remover"><i class="fa-solid fa-trash"></i></button>
-                      <div class="Product">
-                        <img class="productImage" src="../assets/USB 3.0 flash drive 32 gb.png" alt="">
-                        <div>
-                          <p>Flash Drive 3.0 </p>
-                          <p>34000 DA</p>
-                        </div>
-                        
-                      </div>
-                    </td>
-                    <td><input class="amount_Calc"  id="" type="number" value="1" ></td>
-                    <td class="tr_td2">40000 DA</td>
-                </tr>
-                  <!---->
-                  <!---->
-                  <!---->
-                  <tr class="cartTable-Row">
-                    <td class="tr_td1">
-                      <button class="remover"><i class="fa-solid fa-trash"></i></button>
-                      <div class="Product">
-                        <img class="productImage" src="../assets/Realme Band 2.png" alt="">
-                        <div>
-                          <p>Realme Band 2</p>
-                          <p>6500 DA</p>
-                        </div>
-                        
-                      </div>
-                    </td>
-                    <td><input class="amount_Calc"  id="" type="number" value="1" ></td>
-                    <td class="tr_td2">40000 DA</td>
-                </tr>
-          </table>
-          </table>
-          
-
-<!--////////////////////////////////Total price Table////////////////////////////////-->
-      <table class="cartTotal">
-        <thead class="cartTotal-Head">
-              <td class="th_td1">In Cart</td>
-              <td class="th_td2">Total Price</td>
-        </thead >
-        <tr class="cartTotal-Items">
-              <td class="th_td1">1</td>
-              <td class="th_td2">40000 DA</td>
-        </tr>
-      </table>
+<div class="cartColumn">
+  <div class="cart">
+    <div class="cartTitles">
+      <span>Product</span>
+      <span>Amount</span>
+      <span>Price</span>
+    </div>
+    <div class="cartItem">
+      <button type="button" class="cartRemover">
+        <i class="fa-solid fa-trash"></i>
+      </button>
+      <div class="cartItem-name">
+        <img class="cartItem-image" src="/assets/pco x3 gt.jpg" alt="" />
+        Pocco X3 GT
+      </div>
+      <input type="number" name="12" class="amount" />
+      <span class="totalPrice">500 DA</span>
+    </div>
+    <div class="cartItem">
+      <button type="button" class="cartRemover">
+        <i class="fa-solid fa-trash"></i>
+      </button>
+      <div class="cartItem-name">
+        <img class="cartItem-image" src="/assets/note 11 s.jpg" alt="" />
+        Redmi Note 11s
+      </div>
+      <input type="number" name="12" class="amount" />
+      <span class="totalPrice">500 DA</span>
+    </div>
+  </div>
+  
+  <!---->
+  <!---->
+  <!---->
+  <!--////////////////////////////////Total price Table////////////////////////////////-->
+  <div class="cartTotal">
+    <div class="cartTotal-Titles">
+      <span>In cart</span>
+      <span>Total price</span>
+    </div>
+    <div class="cartTotal-Item">
+      <span class="total">1</span>
+      <span class="price">500 DA</span>
+    </div>
+  </div>
+</div>
 <!--////////////////////////////////Total price Table End////////////////////////////////-->
 <!--////////////////////////////////Isaac Cart End////////////////////////////////-->
 
-</div>
 
 
       <footer>

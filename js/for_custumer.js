@@ -7,21 +7,17 @@
 /*<!-----!>*/
 
 /*<!-Removing a Cart element with profficional CSS animation-!>*/
+let removeButton = document.getElementsByClassName("cartRemover");
 
-let cartItemRemover = document.getElementsByClassName("remover");
-let crto = document.querySelector(".remover");
-
-for (let i = 0; i < cartItemRemover.length; i++) {
-  let removeButton = cartItemRemover[i];
-
-  removeButton.addEventListener("click", function (param) {
-    buttonRemoving =
-      param.target.parentElement.parentElement.parentElement.classList.add(
-        "vanquish"
-      );
-    +setTimeout(function () {
-      param.target.parentElement.parentElement.parentElement.remove();
-    }, 400);
+for (let i = 0; i < removeButton.length; i++) {
+  let buttonRemove = removeButton[i];
+  buttonRemove.addEventListener("click", function (params) {
+    let Removing =
+      params.target.parentElement.parentElement.classList.add("vanquish") +
+      setTimeout(() => {
+        params.target.parentElement.parentElement.remove();
+      }, 200);
   });
 }
+
 /*<!-Removing a Cart element with profficional CSS animation End-!>*/
