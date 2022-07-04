@@ -23,7 +23,7 @@ html {
   background-color: rgb(65 65 65 / 80%);
 }
 ::-webkit-scrollbar-thumb:active {
-  background-color: rgba(199 64 78 / 80%);
+  background-color: var(--pageColor);
 }
 
 ::-webkit-scrollbar-corner {
