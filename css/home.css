@@ -5,13 +5,12 @@ html {
 }
 :root {
   --pageColor: #c7404e;
-  --specialColor: #df4c5b;
-  --text_Hover: #d87982;
+  --text_Hover: rgb(248, 107, 135);
   --selectionColor: rgb(176, 141, 141);
 }
 ::selection {
   background-color: var(--selectionColor);
-  color: var(--specialColor);
+  color: var(--text_Hover);
 }
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 @font-face {
@@ -40,7 +39,7 @@ html {
 }
 ::selection {
   background-color: rgb(176, 141, 141);
-  color: var(--specialColor);
+  color: var(--text_Hover);
 }
 
 body {
@@ -54,54 +53,65 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: overlay;
+  align-items: center;
 }
-.container {
+header {
   display: flex;
-  text-align: right;
   padding: 0;
   width: 100%;
   margin: 0;
-  justify-content: space-between;
   flex-direction: row;
   align-items: center;
-}
-.title {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  padding: 0;
-  margin: auto;
-  max-width: 1300px;
   justify-content: center;
-  flex-grow: 1;
 }
-.title h1 {
-  width: fit-content;
-  cursor: pointer;
-  text-align: center;
-  padding: 0;
-  font-size: 70px;
-  text-shadow: 0 0 20px var(--pageColor), 18px -10px 20px #50424f;
-  color: rgb(227 201 204);
-  margin: 0;
-  font-family: "MGR";
-  transition: 600ms;
-}
-.title h1:hover {
-  color: rgb(248, 107, 135);
-}
-
 /***********************navigation bar-mini******************************/
 .navs {
-  margin: 10px;
-  display: inline-flex;
-  justify-content: center;
-  align-content: center;
+  margin: 25px;
+  display: flex;
+  gap: 10px;
   border-radius: 25px;
-  box-shadow: 0 0 10px 0px var(--pageColor);
-  background-color: rgb(33 33 33 / 75%);
+  box-shadow: 0 0 10px 0px var(--text_Hover);
+  background-color: rgba(33, 33, 33, 0.75);
+  align-items: center;
 }
-
+.myLogo {
+  position: absolute;
+  background-color: rgb(33 33 33);
+  box-shadow: 0 0 10px 0px var(--text_Hover);
+  transform: translateX(-80%);
+  border-radius: 50%;
+  height: 80px;
+  z-index: 1;
+  width: 80px;
+}
+.icon-IsaacLogo {
+  font-size: 80px;
+  position: absolute;
+  z-index: 1;
+  text-shadow: 0 0 20px var(--pageColor), 18px -10px 20px #50424f;
+  color: rgb(227, 201, 204);
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+.myLogo:hover .icon-IsaacLogo {
+  color: var(--text_Hover);
+  transform: rotate(360deg);
+}
+.mainPage {
+  display: flex;
+  color: rgb(219 225 231);
+  font-family: "MGR";
+  font-size: 20px;
+  padding: 0px 0px 0px 30px;
+  text-decoration: none;
+  flex-direction: row;
+  align-items: center;
+  transition: 0.6s ease-in-out;
+}
+.mainPage:hover {
+  color: var(--pageColor);
+  transform: scale(0.95);
+}
 /**********************************social media *********************/
 .link {
   color: rgb(40 41 42);
@@ -110,36 +120,37 @@ body {
 .wrapper {
   width: fit-content;
   display: flex;
+  gap: 10px;
+  padding: 5px;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 .wrapper .icon {
-  margin: 0 8px;
-  text-align: center;
+  margin: 0;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: rgb(33 33 33 / 0);
   position: relative;
   z-index: 2;
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .wrapper .icon span {
-  display: block;
+  display: flex;
   height: 30px;
   width: 30px;
-  background: #0e061f00;
+  background: rgb(33 33 33 / 0);
   border-radius: 10px;
   position: relative;
   z-index: 2;
-  box-shadow: 0px 20px 20px rgb(0 0 0 / 20%);
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  justify-content: center;
+  align-items: center;
 }
 .wrapper .icon span i {
-  line-height: 30px;
-  font-size: 15px;
   color: #dbe1e7;
 }
 
@@ -172,86 +183,82 @@ body {
 /**********************************social media complete*********************/
 
 /**********************************navigation bar-mini complete*********************/
-.cont {
-  display: grid;
-  text-align: center;
-  align-items: center;
-  padding: 0;
-  max-width: 1300px;
-  margin: auto;
-}
 
 /************************************************************/
-.sign-up,
-.log-in {
-  font-size: 20px;
-  top: 0;
-  margin: 10px;
-  left: auto;
-  color: rgb(219 225 231);
-  font-family: "MGR" !important;
-  padding: 8px;
-  background: rgba(33, 33, 33, 0);
-  text-decoration: none;
-  display: block;
-  width: fit-content;
-  text-align: center;
-  box-sizing: border-box;
-  outline: none;
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  letter-spacing: 2px;
+  width: 100%;
+  padding: 0px;
+  flex-grow: 1;
+  justify-content: space-around;
+  margin: 1% 0;
+}
+.title {
+  display: flex;
+  padding: 0px;
+  font-size: 28px;
+  text-shadow: 0 0 20px var(--pageColor), 18px -10px 20px #50424f;
+  color: rgb(227, 201, 204);
+  margin: 0;
+  font-family: "MGR";
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.title h1,
+.title p {
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   cursor: pointer;
-  border-radius: 20px;
-  box-shadow: 0 0 10px 0px var(--pageColor);
-  transition: 600ms;
 }
-.sign-up:hover,
-.log-in:hover {
-  color: var(--pageColor);
-  transform: scale(1.01);
+.title p:hover,
+.title h1:hover {
+  color: var(--text_Hover);
 }
-
-.mainPage {
-  font-size: 20px;
-  color: rgb(219 225 231);
-  font-family: "MGR" !important;
-  padding: 10px;
-  background: rgba(33, 33, 33, 0);
-  text-decoration: none;
-  display: block;
-  width: fit-content;
-  text-align: center;
-  box-sizing: border-box;
-  outline: none;
-  border: 2px bold;
-  transition: 600ms;
-  border-radius: 25px;
+.title p {
+  max-width: 600px;
 }
-.mainPage:hover {
-  color: var(--pageColor);
-  transform: scale(1.01);
-}
-
 /***_______________________Sign Up + Log in _____________________***/
+.loginANDsignup {
+  display: flex;
+}
+.log-in-form.vanquish {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.sign-up-form.vanquish {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: none !important;
+}
 
 .log-in-form,
 .sign-up-form {
-  box-shadow: 0px -8px 20px var(--pageColor), 0px 11px 20px #463e4f;
-  margin: 70px auto;
-  width: 300px;
-  padding: 15px;
-  justify-items: center;
-  align-items: center;
+  display: flex;
+  opacity: 1;
+  z-index: 0;
+  height: fit-content;
+  width: 250px;
+  box-shadow: 1px -8px 20px var(--pageColor), 0px 11px 20px #463e4f;
+  margin: 0;
+  padding: 10px;
+  gap: 10px;
   background-color: rgb(33 33 33 / 75%);
-  position: relative;
-  overflow: hidden;
   border-radius: 25px;
-  transition: 600ms;
+  transition: 0.6s;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s ease-in-out;
 }
 
 .log-in-form h1,
 .sign-up-form h1 {
+  display: flex;
   cursor: pointer;
-  text-align: center;
-  margin: 5px auto 50px auto;
+  margin: 0;
   font-family: "MGR";
   color: rgb(219 225 231);
   font-size: 40px;
@@ -262,85 +269,93 @@ body {
   transform: scale(1.01);
   color: var(--pageColor);
 }
-.log-in-form input,
-.sign-up-form input {
-  display: block;
+.sign-up-form input,
+.log-in-form input {
+  display: flex;
   width: 100%;
+  margin: 0;
   height: 44px;
-  text-align: center;
   box-sizing: border-box;
+  border: solid 2px var(--pageColor);
   outline: none;
-  border: 1px bold;
-  border-style: solid;
-  border-color: var(--pageColor);
   border-radius: 15px;
-}
-.txtb {
+  justify-content: center;
   font-size: 20px;
   color: rgb(219 225 231);
   font-family: "MGR" !important;
-  margin: 20px 0;
   background: rgb(176 168 169 / 12%);
+  text-align: center;
 }
+
 .txtb ::placeholder {
   color: rgb(219 225 231) !important;
 }
 .sign-up-btn,
 .log-in-btn {
   font-family: "MGR" !important;
-  font-size: 30px !important;
+  font-size: 20px !important;
   margin: 50px auto auto auto;
-  background-color: rgb(33 33 33);
+  background-color: rgb(33 33 33) !important;
   color: rgb(219 225 231);
   cursor: pointer;
-  transition: 0.8s;
+  transition: 0.3s ease-in-out;
 }
 .sign-up-btn:hover,
 .log-in-btn:hover {
-  transform: scale(1.03);
+  transform: scale(0.95);
 }
 .log,
 .sign {
   text-decoration: none;
   font-size: 20px;
   color: rgb(219 225 231);
+  background-color: transparent;
   font-family: "MGR" !important;
   outline: none;
+  border: none;
 }
 .log p,
 .sign p {
-  transition: 600ms;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
 }
-.log p:hover,
-.sign p:hover {
-  transform: scale(1.02) !important;
+.log p:active,
+.sign p:active {
+  transform: scale(0.95) !important;
 }
 
 /****************************Sign Up + Log in complete********************************/
 /**************************footer***************************************************/
 footer {
-  display: block;
-  background-color: rgb(33 33 33);
-  border-radius: 25px 25px 0 0;
+  display: flex;
+  background-color: rgba(33, 33, 33, 0.75);
+  border-radius: 25px 25px 0px 0px;
   width: 100%;
-  height: fit-content;
+  margin: 0;
+  position: relative;
   box-shadow: var(--pageColor) 1px -6px 11px, rgb(70 62 79) 0px -7px 14px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-footer .paragraph {
+.paragraph {
+  display: flex;
   width: fit-content;
-  margin: auto;
   padding: 10px;
-  font-family: "MGR";
-  color: rgb(255 255 255);
-  text-align: center;
+  margin: 0;
+  font-family: MGR;
+  color: rgb(255, 255, 255);
   font-size: 30px;
-  position: relative;
   cursor: pointer;
-  transition: 600ms;
+  transition: all 600ms ease 0s;
+  flex-direction: column;
+  align-items: center;
 }
-footer .paragraph:hover {
+.paragraph:hover {
   transform: scale(0.9);
 }
-
+.paragraph p {
+  display: flex;
+  margin: 0;
+}
 /**************************footer complete***************************************************/
