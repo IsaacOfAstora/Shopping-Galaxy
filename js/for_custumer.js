@@ -16,7 +16,7 @@ for (let i = 0; i < removeButton.length; i++) {
     Removing.classList.add("vanquish") +
       setTimeout(() => {
         Removing.remove();
-      }, 300);
+      }, 400);
   });
 }
 

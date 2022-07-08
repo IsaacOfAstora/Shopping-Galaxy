@@ -15,6 +15,16 @@ html {
   --selectionColor: rgb(176, 141, 141);
   --New: #49c740;
   --Used: #c7c740;
+  /**/
+  --bossContainers: 1300px;
+  --soldierContainers: calc(var(--bossContainers) - 300px);
+  /**/
+  --slider_special_width: 600px;
+  --slider_special_height: calc(var(--slider_special_width) - 250px);
+  --slider_special_width_negative: -600px;
+  --slider_special_width_negative_big: calc(
+    var(--slider_special_width_negative) * 2
+  );
 }
 
 /*---------------------------Scrollbar---------------------------------------------------------------*/
@@ -62,17 +72,17 @@ body {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(440px, auto));
+  display: flex;
   background-color: rgb(33, 33, 33);
   z-index: 9999;
   height: fit-content;
-  margin: 0px;
+  margin: 0;
   width: 100%;
-  max-width: 1300px;
+  max-width: var(--bossContainers);
   box-shadow: 0px -30px 20px var(--pageColor), 0 -30px 20px #c7404e;
-  place-items: center;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 /***********************************************************************************/
 /******************_________________Title___________________************************/
@@ -80,10 +90,9 @@ body {
 .title {
   display: flex;
   align-items: center;
-  margin: 0;
+  margin: 0 0 0 2%;
   border: 0;
   z-index: 1;
-  text-align: center;
   font-family: "MGR";
   letter-spacing: 2px;
   text-shadow: 0 0 20px var(--pageColor), 18px -10px 20px #50424f;
@@ -92,7 +101,7 @@ body {
 }
 
 span.icon-IsaacLogo {
-  font-size: 70px;
+  font-size: 75px;
   margin: 0;
   cursor: pointer;
 }
@@ -115,10 +124,9 @@ span.icon-IsaacLogo {
 /**********************Social Media Icons***********************************************/
 .wrapper {
   display: flex;
-  margin: 0 6% 0 0;
+  margin: 0 2% 0 0;
   width: fit-content;
   align-items: center;
-  justify-content: center;
 }
 
 .wrapper .icon {
@@ -273,7 +281,7 @@ span.icon-IsaacLogo {
   grid-template-columns: repeat(5, auto) 30%;
   z-index: 2;
   background-color: rgb(33 33 33);
-  max-width: 1300px;
+  max-width: var(--bossContainers);
   width: 100%;
   font-size: 30px;
   margin: 0;
@@ -388,7 +396,7 @@ span.icon-IsaacLogo {
 /********************************************************************/
 .menu {
   display: flex;
-  transform: translate(-6.5%, 10%);
+  transform: translate(-6.5%, -50%) rotate3d(1, 0, 0, 180deg);
   flex-direction: column;
   list-style: none;
   text-align: left;
@@ -416,12 +424,14 @@ span.icon-IsaacLogo {
 .button .menu.dropDown {
   opacity: 1;
   pointer-events: all;
-  transform: translate(-6.5%, 30%);
+  transform: translate(-6.5%, 30%) rotate3d(1, 0, 0, 360deg);
+  transform-origin: top center;
 }
 .button-Products-html .menu.dropDown {
   opacity: 1;
   pointer-events: all;
-  transform: translate(-6.5%, 30%);
+  transform: translate(-6.5%, 30%) rotate3d(1, 0, 0, 360deg);
+  transform-origin: top center;
 }
 
 .current-menu-item {
@@ -640,7 +650,7 @@ span.icon-IsaacLogo {
   background: rgb(33 33 33);
   margin: 30px 0;
   width: 100%;
-  max-width: 1000px;
+  max-width: var(--soldierContainers);
   flex-grow: 1;
   flex-direction: column;
   align-items: center;
@@ -659,7 +669,7 @@ span.icon-IsaacLogo {
 
 .swiper {
   height: fit-content;
-  width: 600px;
+  width: var(--slider_special_width);
   margin: 0;
   overflow: hidden;
   list-style: none;
@@ -669,15 +679,15 @@ span.icon-IsaacLogo {
   border-radius: 15px;
 }
 .swiper-slide {
-  height: 350px;
-  width: 600px;
+  height: var(--slider_special_height);
+  width: var(--slider_special_width);
 }
 
 .swiper-slide img {
   margin: auto;
   position: relative;
-  height: 350px;
-  width: 600px;
+  height: var(--slider_special_height);
+  width: var(--slider_special_width);
   animation: slide 10s ease-in-out infinite;
 }
 
@@ -689,10 +699,10 @@ span.icon-IsaacLogo {
     transform: translateX(0);
   }
   20% {
-    transform: translateX(-600px);
+    transform: translateX(var(--slider_special_width_negative));
   }
   35% {
-    transform: translateX(-1200px);
+    transform: translateX(var(--slider_special_width_negative_big));
   }
 }
 
@@ -704,21 +714,21 @@ span.icon-IsaacLogo {
     transform: translateX(0);
   }
   10% {
-    transform: translateX(-600px);
+    transform: translateX(var(--slider_special_width_negative));
   }
 }
 
 /********************************Announce Column Finished***************************/
 /**************************footer***************************************************/
 footer {
-  position: relative;
-  display: block;
+  display: flex;
   background-color: rgb(33 33 33);
-  box-shadow: 1px -10px 20px var(--pageColor), 2px -16px 20px #463e4f;
+  box-shadow: 1px -5px 20px var(--pageColor), 2px -5px 20px #463e4f;
   border-radius: 25px 25px 0 0;
   width: 100%;
   height: fit-content;
-  margin-top: 5px;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer .paragraph {

@@ -65,11 +65,12 @@ header {
   justify-content: center;
 }
 /***********************navigation bar-mini******************************/
+
 .navs {
   margin: 25px;
   display: flex;
   gap: 10px;
-  border-radius: 25px;
+  border-radius: 0 25px 25px 0;
   box-shadow: 0 0 10px 0px var(--text_Hover);
   background-color: rgba(33, 33, 33, 0.75);
   align-items: center;
@@ -78,11 +79,12 @@ header {
   position: absolute;
   background-color: rgb(33 33 33);
   box-shadow: 0 0 10px 0px var(--text_Hover);
-  transform: translateX(-80%);
+  transform: translateX(-70%);
   border-radius: 50%;
   height: 80px;
   z-index: 1;
   width: 80px;
+  transition: 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
 .icon-IsaacLogo {
   font-size: 80px;
@@ -91,31 +93,27 @@ header {
   text-shadow: 0 0 20px var(--pageColor), 18px -10px 20px #50424f;
   color: rgb(227, 201, 204);
   cursor: pointer;
-  transition: 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
-.myLogo:hover .icon-IsaacLogo {
+.myLogo:hover {
   color: var(--text_Hover);
-  transform: rotate(360deg);
+  transform: translateX(-70%) rotate3D(0, 1, 0, 360deg);
 }
 .mainPage {
   display: flex;
   color: rgb(219 225 231);
   font-family: "MGR";
+  width: 120px;
   font-size: 20px;
-  padding: 0px 0px 0px 30px;
   text-decoration: none;
   flex-direction: row;
   align-items: center;
-  transition: 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  justify-content: flex-end;
 }
-user agent stylesheet a:-webkit-any-link {
-  color: -webkit-link;
-  cursor: pointer;
-  text-decoration: underline;
-}
+
 .mainPage:hover {
   color: var(--pageColor);
-  transform: scale(0.95);
+  transform: scale(0.95) rotate3d(1, 0, 0, 360deg);
 }
 /**********************************social media *********************/
 .link {
@@ -221,9 +219,13 @@ user agent stylesheet a:-webkit-any-link {
 .title h1:hover {
   color: var(--text_Hover);
 }
+.title h1 {
+  font-size: 65px;
+}
 .title p {
   max-width: 600px;
 }
+
 /***_______________________Sign Up + Log in _____________________***/
 .loginANDsignup {
   display: flex;
@@ -312,7 +314,9 @@ user agent stylesheet a:-webkit-any-link {
 .log,
 .sign {
   text-decoration: none;
+  margin: 10% 0;
   font-size: 20px;
+  cursor: pointer;
   color: rgb(219 225 231);
   background-color: transparent;
   font-family: "MGR" !important;
@@ -322,6 +326,7 @@ user agent stylesheet a:-webkit-any-link {
 .log p,
 .sign p {
   letter-spacing: 1px;
+  margin: 0;
   transition: 0.3s ease-in-out;
 }
 .log p:active,
