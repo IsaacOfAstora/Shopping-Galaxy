@@ -282,7 +282,7 @@ section {
 .log-in-btn {
   font-family: "MGR" !important;
   font-size: 20px !important;
-  width: 100px !important;
+  width: 50% !important;
   margin: 50px auto auto auto;
   background-color: rgb(33 33 33) !important;
   color: rgb(219 225 231);
