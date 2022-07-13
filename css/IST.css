@@ -675,10 +675,10 @@ nav a i {
   animation: slide2 10s ease-in-out infinite;
 }
 @keyframes slide2 {
-  40% {
+  0% {
     transform: translateX(0);
   }
-  80% {
+  40% {
     transform: translateX(var(--slider_special_width_negative));
   }
 }
