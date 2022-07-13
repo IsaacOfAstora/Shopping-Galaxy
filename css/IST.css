@@ -76,13 +76,12 @@ header {
   background-color: rgb(33, 33, 33);
   z-index: 9999;
   height: fit-content;
-  margin: 0;
+  margin: 0px;
   width: 100%;
   max-width: var(--bossContainers);
-  box-shadow: 0px -30px 20px var(--pageColor), 0 -30px 20px #c7404e;
+  box-shadow: 3px -30px 20px var(--pageColor), 0 -30px 20px #c7404e;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 /***********************************************************************************/
 /******************_________________Title___________________************************/
@@ -121,168 +120,106 @@ span.icon-IsaacLogo {
 /******************____________Title Complete_______________************************/
 /***********************************************************************************/
 
-/**********************Social Media Icons***********************************************/
+/***********************************************************************************/
+/******************____________Social Media_______________**************************/
+/***********************************************************************************/
 .wrapper {
   display: flex;
-  gap: 15px;
-  margin: 0 2% 0 0;
-  width: fit-content;
   align-items: center;
-}
-.wrapper a {
-  text-decoration: none;
-}
-.wrapper .icon {
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 2;
-  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   justify-content: center;
-  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  gap: 50px;
+  margin: 0 2% 0 0;
 }
-.wrapper .icon span {
+.social {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40px;
+  width: fit-content;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social span {
+  display: flex;
+  opacity: 0;
+  width: 0;
+  color: transparent;
+  align-items: center;
+  justify-content: flex-end;
+  pointer-events: none;
+  font-size: 20px;
+  font-family: Overpass, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 500;
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.social:hover span {
+  opacity: 1;
+  color: #fff;
+  pointer-events: all;
+  padding: 0 40px 0 5px;
+  width: 100%;
+}
+.social i {
   display: flex;
   height: 40px;
   width: 40px;
+  position: absolute;
   background-color: transparent;
-  border: none;
-  z-index: 2;
-  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 25px;
-}
-
-.wrapper .icon .tooltip {
-  display: flex;
-  position: absolute;
-  top: 0;
-  z-index: 9999;
-  font-family: Overpass, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: transparent;
-  padding: 10px;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  font-weight: 500;
-  border-radius: 25px;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   align-items: center;
   justify-content: center;
-}
-.wrapper .icon:hover .tooltip {
-  top: 55px;
-  opacity: 1;
-  pointer-events: all;
-}
-.wrapper .icon .tooltip:before {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  content: "";
-  height: 15px;
-  width: 15px;
-  background: rgb(33 33 33);
-  top: -6px;
-  transform: rotate(45deg);
-  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.tool_Discord {
-  display: flex;
-  align-items: center;
-  padding: 5px 10px;
-  justify-content: center;
-  position: absolute;
-  height: 30px;
-  width: fit-content;
-  font-size: 15px;
-  font-family: "Audiowide", cursive;
-  z-index: 0;
-  background: rgb(33 33 33);
-  color: rgb(33 33 33);
-  opacity: 0;
-  border-radius: 25px;
-  pointer-events: none;
-  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.tool_Discord p {
-  margin: 0;
-  width: 200px;
-}
-.tool_Discord p::selection {
-  background: rgb(255, 255, 255);
-  color: #5865f2;
-}
-
-.discord:hover .tool_Discord {
-  transform: translatex(-42%);
-  opacity: 1;
-  background: #5865f2;
-  color: rgb(255, 255, 255);
-  box-shadow: 0 0 15px 2px #5865f2;
-  pointer-events: all;
-}
-
-/***********************************/
-
-.wrapper .icon:hover span {
-  color: #fff;
   border-radius: 50%;
-  transform: scale(0.9) rotate(360deg);
+  cursor: pointer;
+  font-size: 25px;
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-.wrapper .discord:hover span,
-.wrapper .discord:hover .tooltip,
-.wrapper .discord:hover .tooltip:before {
-  background: #5865f2;
-  box-shadow: 0 0 20px 3px #5865f2;
+.social:hover i {
+  transform: rotate(360deg);
 }
 
-.wrapper .facebook:hover span,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip:before {
-  background: #3b5999;
-  box-shadow: 0 0 20px 3px #3b5999;
+.facebook:hover {
+  background-color: #1877f2;
+  box-shadow: 0 0 20px 0 #1877f2;
 }
-.wrapper .twitter:hover span,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip:before {
-  background: #46c1f6;
-  box-shadow: 0 0 20px 1px #46c1f6;
+.youtube:hover {
+  background-color: #ff0000;
+  box-shadow: 0 0 20px 0 #ff0000;
 }
-.wrapper .instagram:hover span,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip:before {
-  background: #e1306c;
-  box-shadow: 0 0 20px 1px #e1306c;
+.discord:hover {
+  background-color: #5865f2;
+  box-shadow: 0 0 20px 0 #5865f2;
 }
-.wrapper .github:hover span,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip:before {
-  background: #333;
-  box-shadow: 0 0 20px 1px #333;
+.twitter:hover {
+  background-color: #1da1f2;
+  box-shadow: 0 0 20px 0 #1da1f2;
 }
-.wrapper .youtube:hover span,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip:before {
-  background: #de463b;
-  box-shadow: 0 0 20px 1px #de463b;
+.github:hover {
+  background-color: #333;
+  box-shadow: 0 0 20px 0 #333;
 }
-.wrapper .aboutUs:hover span,
-.wrapper .aboutUs:hover .tooltip,
-.wrapper .aboutUs:hover .tooltip:before {
-  background: var(--pageColor);
-  box-shadow: 0 0 20px 1px var(--pageColor);
+.instagram:hover {
+  background-color: #c32aa3;
+  box-shadow: 0 0 20px 0 #c32aa3;
 }
+.aboutus:hover {
+  background-color: var(--pageColor);
+  box-shadow: 0 0 20px 0 var(--pageColor);
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap");
 
-/******************************Social Media Complete**********************************************************************/
+/***********************************************************************************/
+/**********************____________Social Media End_______________******************/
+/***********************************************************************************/
 
+/***********************************************************************************/
+/**********************____________Navigation Bar_______________********************/
+/***********************************************************************************/
 nav {
   display: grid;
   grid-template-columns: repeat(4, auto) 30%;
@@ -473,7 +410,7 @@ nav a i {
 
 /********************************Drop down menu END*********************************/
 
-/***********************Home button + About Button**********************/
+/***********************Home button **********************/
 .homePage {
   display: flex;
   background-color: rgb(33 33 33);
@@ -489,7 +426,7 @@ nav a i {
   transform: scale(0.95);
 }
 
-/***********************Home button + About Button Finished**********************/
+/***********************Home button Finished**********************/
 
 /*
 <!------------------------------------------------------!>
@@ -595,6 +532,10 @@ nav a i {
 <!---------------Search Bar JS Style END----------------!>
 <!------------------------------------------------------!>
  */
+
+/***********************************************************************************/
+/*******************____________Navigation Bar End_______________********************/
+/***********************************************************************************/
 
 /********************************Announce Column***************************/
 .announceColumn {

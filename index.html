@@ -36,46 +36,23 @@
         <div class="myLogo"><span class="icon-IsaacLogo"></span></div>
         <a class="mainPage" href="./html/Main.html">Main Page</a>
         <div class="wrapper">
-          <a
-            class="link"
-            href="https://www.facebook.com/isaac.Rodin.00/"
-            target="blank"
-          >
-            <div class="icon facebook">
-              <span><i class="fab fa-facebook-f"></i></span>
-            </div>
+          <a href="https://www.facebook.com/isaac.Rodin.00/" target="blank">
+            <span class="icon facebook"><i class="fab fa-facebook-f"></i></span>
           </a>
-          <a class="link" href="https://twitter.com/0xc0000007b" target="blank">
-            <div class="icon twitter">
-              <span><i class="fab fa-twitter"></i></span>
-            </div>
+          <a href="https://twitter.com/0xc0000007b" target="blank">
+            <span class="icon twitter"><i class="fab fa-twitter"></i></span>
+          </a>
+          <a href="https://www.instagram.com/dionysus_00q/" target="blank">
+            <span class="icon instagram"><i class="fab fa-instagram"></i></span>
+          </a>
+          <a href="https://github.com/IsaacOfAstora" target="blank">
+            <span class="icon github"><i class="fab fa-github"></i></span>
           </a>
           <a
-            class="link"
-            href="https://www.instagram.com/dionysus_00q/"
-            target="blank"
-          >
-            <div class="icon instagram">
-              <span><i class="fab fa-instagram"></i></span>
-            </div>
-          </a>
-          <a
-            class="link"
-            href="https://github.com/IsaacOfAstora"
-            target="blank"
-          >
-            <div class="icon github">
-              <span><i class="fab fa-github"></i></span>
-            </div>
-          </a>
-          <a
-            class="link"
             href="https://www.youtube.com/channel/UCOpVKDJZ-OPvxw7po3fBwww"
             target="blank"
           >
-            <div class="icon youtube">
-              <span><i class="fab fa-youtube"></i></span>
-            </div>
+            <span class="icon youtube"><i class="fab fa-youtube"></i></span>
           </a>
         </div>
       </nav>
@@ -85,7 +62,7 @@
     <!-------------------------------------------------------------------------->
 
     <!-------------------------------------------------------------------------->
-    <!-------------------------Container Section ------------------------------->
+    <!---------------------------Form Section ---------------------------------->
     <!-------------------------------------------------------------------------->
 
     <section>
@@ -100,16 +77,19 @@
       <!---->
       <!---->
       <div class="loginANDsignup">
-        <form class="log-in-form" action="" method="post">
+        <form class="log-in-form" action="" method="get">
           <h1>Log in</h1>
+
           <input type="text" placeholder="User Name" required class="txtb" />
+
           <input
             type="password"
             required
             class="txtb"
             placeholder="your password"
+            minlength="10"
           />
-          <input type="submit" value="login" class="log-in-btn" />
+          <input class="log-in-btn" type="submit" value="login" />
           <label class="log">
             <p>don't have an account ?</p>
           </label>
@@ -117,26 +97,40 @@
         <!---->
         <!---->
         <!---->
-        <form class="sign-up-form" action="" method="post">
+        <form class="sign-up-form" action="" method="get">
           <h1>Sign Up</h1>
-          <input type="text" placeholder="User Name" required class="txtb" />
+          <input
+            type="text"
+            placeholder="User Name"
+            required
+            class="txtb"
+            name="urName"
+          />
+
           <input
             type="email"
             placeholder="exemple@gmail.com"
             required
             class="txtb"
+            name="urMail"
           />
+
           <input
             type="password"
             required
             class="txtb"
             placeholder="New password"
+            name="urPass"
+            minlength="10"
           />
+
           <input
             type="password"
             required
             class="txtb"
             placeholder="confirm password"
+            name="passConfirm"
+            minlength="10"
           />
           <input type="submit" value="sign up" class="sign-up-btn" />
           <label class="sign"><p>Already have an account ?</p></label>
@@ -144,7 +138,7 @@
       </div>
     </section>
     <!-------------------------------------------------------------------------->
-    <!-------------------------Container Section End---------------------------->
+    <!---------------------------Form Section End---------------------------------->
     <!-------------------------------------------------------------------------->
     <footer>
       <span class="paragraph">

@@ -116,7 +116,7 @@
   font-size: var(--ItemFontSize);
   height: 80px;
 }
-.cartItem-name {
+.cartItem-info {
   display: flex;
   align-items: center;
   gap: 5px;
