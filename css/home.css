@@ -66,7 +66,7 @@ header {
 }
 /***********************navigation bar-mini******************************/
 
-.navs {
+nav {
   margin: 25px;
   display: flex;
   gap: 10px;
@@ -189,7 +189,7 @@ header {
 
 /************************************************************/
 
-.container {
+section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   letter-spacing: 2px;

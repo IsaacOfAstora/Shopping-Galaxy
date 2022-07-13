@@ -71,7 +71,7 @@ body {
   overflow: overlay;
 }
 
-.container {
+header {
   display: flex;
   background-color: rgb(33, 33, 33);
   z-index: 9999;
@@ -176,27 +176,33 @@ span.icon-IsaacLogo {
   justify-content: center;
 }
 .wrapper .icon:hover .tooltip {
-  z-index: 9999;
   top: 55px;
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: all;
 }
-.icon .tooltip:before {
+.wrapper .icon .tooltip:before {
+  display: flex;
+  justify-content: center;
   position: absolute;
   content: "";
   height: 15px;
   width: 15px;
   background: rgb(33 33 33);
-  left: 50%;
   top: -6px;
-  transform: translateX(-50%) rotate(45deg);
+  transform: rotate(45deg);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .tool_Discord {
-  transform: translateX(0);
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  justify-content: center;
   position: absolute;
-  padding: 9px 40px 9px 10px;
+  height: 30px;
+  width: fit-content;
+  font-size: 15px;
+  font-family: "Audiowide", cursive;
   z-index: 0;
   background: rgb(33 33 33);
   color: rgb(33 33 33);
@@ -206,18 +212,15 @@ span.icon-IsaacLogo {
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .tool_Discord p {
-  font-size: 15px;
-  font-family: "Audiowide", cursive;
-  width: 180px;
-  min-width: 180px;
   margin: 0;
-  cursor: auto;
+  width: 200px;
 }
 .tool_Discord p::selection {
   background: rgb(255, 255, 255);
   color: #5865f2;
 }
-.wrapper .discord:hover .tool_Discord {
+
+.discord:hover .tool_Discord {
   transform: translatex(-42%);
   opacity: 1;
   background: #5865f2;
@@ -280,7 +283,7 @@ span.icon-IsaacLogo {
 
 /******************************Social Media Complete**********************************************************************/
 
-.navs {
+nav {
   display: grid;
   grid-template-columns: repeat(4, auto) 30%;
   z-index: 2;
@@ -300,14 +303,13 @@ span.icon-IsaacLogo {
   justify-items: start;
   justify-content: space-around;
 }
-.navs a i {
+nav a i {
   font-size: 20px;
 }
 .current-nav-item {
   display: flex;
   align-items: center;
   font-family: "Audiowide", cursive;
-  text-align: center;
   color: var(--specialColor);
   text-decoration: none;
   width: fit-content;
@@ -325,8 +327,7 @@ span.icon-IsaacLogo {
   display: flex;
   align-items: center;
   font-family: "Audiowide", cursive;
-  margin: auto;
-  text-align: center;
+  margin: 0;
   color: rgb(255 255 255);
   text-decoration: none;
   width: fit-content;
@@ -366,7 +367,7 @@ span.icon-IsaacLogo {
 }
 
 .button span i.rotate {
-  transform: rotate(180deg);
+  transform: rotate3D(1, 0, 0, 180deg);
 }
 /****************************************************************/
 .button-Products-html {
@@ -395,7 +396,7 @@ span.icon-IsaacLogo {
   transition: 0.3s;
 }
 .button-Products-html span i.rotate {
-  transform: rotate(180deg);
+  transform: rotate3D(1, 0, 0, 180deg);
 }
 .button-Products-html span:hover i {
   color: rgb(251, 251, 251);
@@ -403,7 +404,7 @@ span.icon-IsaacLogo {
 /********************************************************************/
 .menu {
   display: flex;
-  transform: translate(-14.2%, -50%) rotate3d(1, 0, 0, 180deg);
+  transform: translate(-14.2%, -60%) rotate3d(1, 0, 0, 180deg);
   flex-direction: column;
   list-style: none;
   text-align: left;
@@ -431,13 +432,13 @@ span.icon-IsaacLogo {
 .button .menu.dropDown {
   opacity: 1;
   pointer-events: all;
-  transform: translate(-14.2%, 30%) rotate3d(1, 0, 0, 360deg);
+  transform: translate(-14.2%, 35%) rotate3d(1, 0, 0, 360deg);
   transform-origin: top center;
 }
 .button-Products-html .menu.dropDown {
   opacity: 1;
   pointer-events: all;
-  transform: translate(-14.2%, 30%) rotate3d(1, 0, 0, 360deg);
+  transform: translate(-14.2%, 35%) rotate3d(1, 0, 0, 360deg);
   transform-origin: top center;
 }
 
@@ -692,6 +693,7 @@ footer {
   max-width: var(--bossContainers);
   box-shadow: 1px -5px 20px var(--pageColor), 2px -5px 20px #463e4f;
   border-radius: 25px 25px 0 0;
+  padding-bottom: 10px;
 }
 .first {
   display: flex;
@@ -767,64 +769,55 @@ footer {
   transform: scale(0.9);
 }
 .footer-wrapper {
-  width: fit-content;
-  margin: auto;
   display: flex;
   text-align: center;
+  gap: 10px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
-  padding-bottom: 10px;
+  flex-direction: row;
+}
+.footer-wrapper a {
+  text-decoration: none;
 }
 .footer-wrapper .icon {
-  color: rgb(33 33 33);
-  margin: 0 10px;
-  text-align: center;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: rgb(33 33 33);
+  border-radius: 10px;
+  background: #fff;
+  margin: 0;
+  cursor: pointer;
   position: relative;
   z-index: 2;
-  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.footer-wrapper .icon span {
-  display: block;
   height: 30px;
   width: 30px;
-  background: #fff;
-  border-radius: 10px;
-  position: relative;
-  z-index: 2;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.footer-wrapper .icon span i {
-  line-height: 30px;
-  font-size: 15px;
-}
-.footer-wrapper .facebook:hover span {
+
+.footer-wrapper .facebook:hover {
   color: #fff;
   transform: scale(1.2);
   background: #3b5999;
 }
-.footer-wrapper .twitter:hover span {
+.footer-wrapper .twitter:hover {
   color: #fff;
   transform: scale(1.2);
   background: #46c1f6;
 }
-.footer-wrapper .instagram:hover span {
+.footer-wrapper .instagram:hover {
   color: #fff;
   transform: scale(1.2);
   background: #e1306c;
 }
-.footer-wrapper .github:hover span {
+.footer-wrapper .github:hover {
   color: #fff;
   transform: scale(1.2);
   background: #333;
 }
-.footer-wrapper .youtube:hover span {
+.footer-wrapper .youtube:hover {
   color: #fff;
   transform: scale(1.2);
   background: #de463b;
