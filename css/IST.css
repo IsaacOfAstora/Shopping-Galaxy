@@ -33,8 +33,7 @@ html {
   width: 1vw;
   height: 1vw;
 }
-
-/*-----------لي يتحرك يا جحــــش-----------*/
+/*--------------لي يتحرك----------*/
 ::-webkit-scrollbar-thumb {
   background-color: rgb(88 90 90 / 80%);
   border-radius: 6px;
@@ -180,6 +179,10 @@ span.icon-IsaacLogo {
 }
 .social:hover i {
   transform: rotate(360deg);
+  animation-name: heart;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .facebook:hover {
@@ -209,6 +212,17 @@ span.icon-IsaacLogo {
 .aboutus:hover {
   background-color: var(--pageColor);
   box-shadow: 0 0 20px 0 var(--pageColor);
+}
+
+@keyframes heart {
+  25%,
+  50% {
+    transform: scale(1.1);
+  }
+  50%,
+  75% {
+    transform: scale(1);
+  }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap");
@@ -275,7 +289,9 @@ nav a i {
   color: var(--text_Hover);
   transform: scale(0.95);
 }
-/********************************Drop down menu*********************************/
+/***********************************************************************************/
+/**********************____________Dropdown Menu_______________*********************/
+/***********************************************************************************/
 .button {
   display: flex;
   margin: 0;
@@ -284,7 +300,10 @@ nav a i {
   color: rgb(255 255 255);
   text-decoration: none;
   cursor: pointer;
+  perspective: 400px;
+  perspective-origin: bottom;
   flex-direction: column;
+  transform-style: preserve-3d;
   transition: 0.3s;
 }
 .button span {
@@ -294,7 +313,7 @@ nav a i {
   align-items: center;
   flex-direction: row;
 }
-.button i {
+.button span i {
   transition: 0.3s;
 }
 .button span:hover,
@@ -307,6 +326,8 @@ nav a i {
   transform: rotate3D(1, 0, 0, 180deg);
 }
 /****************************************************************/
+/*_________________2nd button (other html files)________________*/
+/****************************************************************/
 .button-Products-html {
   display: flex;
   margin: 0;
@@ -315,7 +336,10 @@ nav a i {
   color: var(--pageColor);
   text-decoration: none;
   cursor: pointer;
+  perspective: 300px;
+  perspective-origin: bottom;
   flex-direction: column;
+  transform-style: preserve-3d;
   transition: 0.3s;
 }
 .button-Products-html span {
@@ -339,44 +363,39 @@ nav a i {
   color: rgb(251, 251, 251);
 }
 /********************************************************************/
+/*__________________________(Menu Style)____________________________*/
+/********************************************************************/
 .menu {
   display: flex;
-  transform: translate(-14.2%, -60%) rotate3d(1, 0, 0, 180deg);
+  transform: translate(-19.5%, 0%) rotate3d(1, 0, 0, -180deg);
   flex-direction: column;
+  margin: 0;
   list-style: none;
-  text-align: left;
   padding: 10px;
-  margin: auto;
   box-shadow: 0px 0 20px var(--specialColor);
   position: absolute;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: rgb(33 33 33);
   opacity: 0;
   pointer-events: none;
   transition: all 0.4s ease-in-out;
+  transform-origin: top left;
 }
 .menu:before {
   position: absolute;
   content: "";
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   background: rgb(33 33 33);
-  right: 20px;
-  top: -10px;
+  right: 8px;
+  top: -5px;
   transform: rotate(45deg);
   z-index: -1;
 }
-.button .menu.dropDown {
+.menu.dropDown {
   opacity: 1;
   pointer-events: all;
-  transform: translate(-14.2%, 35%) rotate3d(1, 0, 0, 360deg);
-  transform-origin: top center;
-}
-.button-Products-html .menu.dropDown {
-  opacity: 1;
-  pointer-events: all;
-  transform: translate(-14.2%, 35%) rotate3d(1, 0, 0, 360deg);
-  transform-origin: top center;
+  transform: translate(-19.5%, 35%) rotate3d(1, 0, 0, -360deg);
 }
 
 .current-menu-item {
@@ -407,8 +426,13 @@ nav a i {
   color: var(--text_Hover);
   transform: scale(0.95);
 }
+.icon-cosmetic_icon {
+  font-size: 25px;
+}
 
-/********************************Drop down menu END*********************************/
+/***********************************************************************************/
+/******************____________Dropdown Menu End_______________*********************/
+/***********************************************************************************/
 
 /***********************Home button **********************/
 .homePage {
@@ -426,7 +450,7 @@ nav a i {
   transform: scale(0.95);
 }
 
-/***********************Home button Finished**********************/
+/********************Home button Finished******************/
 
 /*
 <!------------------------------------------------------!>
@@ -533,11 +557,13 @@ nav a i {
 <!------------------------------------------------------!>
  */
 
-/***********************************************************************************/
+/************************************************************************************/
 /*******************____________Navigation Bar End_______________********************/
 /***********************************************************************************/
 
-/********************************Announce Column***************************/
+/***********************************************************************************/
+/*******************____________Announce Column_______________**********************/
+/***********************************************************************************/
 .announceColumn {
   display: flex;
   border-radius: 20px;
@@ -624,8 +650,13 @@ nav a i {
   }
 }
 
-/********************************Announce Column Finished***************************/
-/**************************footer***************************************************/
+/***********************************************************************************/
+/***************____________Announce Column Finished_______________*****************/
+/***********************************************************************************/
+
+/***********************************************************************************/
+/************************____________Footer_______________**************************/
+/***********************************************************************************/
 footer {
   display: grid;
   grid-template-columns: repeat(3, minmax(30%, auto));
@@ -673,13 +704,21 @@ footer {
   width: 50px;
   border-radius: 50%;
   transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.goUp:hover {
-  background-color: var(--specialColor);
-  transform: rotate3D(1, 0, 0, -360deg);
+  animation-name: upDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 .goUp:active {
-  transform: scale(0.95) rotate(360deg);
+  transform: scale(0.95);
+}
+@keyframes upDown {
+  25% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
 }
 
 .middle {
@@ -764,7 +803,6 @@ footer {
   background: #de463b;
 }
 
-/******************wavy background*****************/
-
-/******************wavy background complete*****************/
-/**************************footer complete***************************************************/
+/***********************************************************************************/
+/**********************____________Footer End_______________************************/
+/***********************************************************************************/

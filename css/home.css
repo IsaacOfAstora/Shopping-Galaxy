@@ -184,7 +184,6 @@ section {
   display: flex;
   padding: 0px;
   font-size: 28px;
-  text-shadow: 0 0 20px var(--pageColor), 18px -10px 20px #50424f;
   color: rgb(227, 201, 204);
   margin: 0;
   font-family: "MGR";
@@ -201,9 +200,20 @@ section {
   color: var(--text_Hover);
 }
 .title h1 {
-  letter-spacing: 2px;
   font-size: 65px;
+  background-image: linear-gradient(
+    45deg,
+    #867877 0%,
+    #252525 20%,
+    #c7404e 60%,
+    rgb(63 0 9) 80%
+  );
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
 }
+
 .title p {
   max-width: 600px;
 }

@@ -3,7 +3,9 @@
   src: url("../fonts/SLANT.TTF");
 }
 
-/*****************Product Images****************/
+/***********************************************************************************/
+/********************____________Product Section_______________*********************/
+/***********************************************************************************/
 .product-section {
   display: flex;
   background-color: rgb(33 33 33);
@@ -42,7 +44,7 @@
   background-color: #383535;
   box-shadow: 0 0 15px 0 #383535;
   border-radius: 15px;
-  transition: 0.6s ease-in-out;
+  transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 .product-info {
   display: block;
@@ -62,7 +64,7 @@
   color: var(--Used) !important;
 }
 .product-item:hover {
-  transform: scale(0.95) rotate3d(0, 1, 0, 360deg);
+  transform: scale(0.95);
   box-shadow: 0 0 15px 0 rgb(227 201 204);
 }
 
@@ -196,6 +198,11 @@
   transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   justify-content: start;
 }
+.product-item.its-row-time:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 15px 0 rgb(227 201 204);
+}
+
 .product-item-image.its-row-time {
   border-radius: 15px;
 }
@@ -230,4 +237,6 @@
 
 /*<!----------------------JS CSS colmun to row Changing End--------------------!>*/
 
-/*****************Product Images complete****************/
+/***********************************************************************************/
+/******************____________Product Section End_______________*******************/
+/***********************************************************************************/
