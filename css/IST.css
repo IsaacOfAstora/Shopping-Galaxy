@@ -215,7 +215,38 @@ span.icon-IsaacLogo {
   background-color: var(--pageColor);
   box-shadow: 0 0 20px 0 var(--pageColor);
 }
+.discord-id {
+  display: flex;
+  background-color: #5865f2;
+  transform: translate(-2%, 0%);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  font-family: "Audiowide", cursive;
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
 
+.discord-id::before {
+  content: "";
+  position: absolute;
+  right: 3px;
+  background-color: #5865f2;
+  top: -3px;
+  transform: rotate(45deg);
+  height: 10px;
+  width: 10px;
+  z-index: 0;
+}
+.discord:hover .discord-id {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-2%, 112%);
+}
 @keyframes heart {
   25%,
   50% {
