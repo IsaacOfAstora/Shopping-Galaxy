@@ -9,10 +9,11 @@ html {
 }
 
 :root {
+  --CommanderColer: rgb(33 33 33);
   --pageColor: #c7404e;
-  --specialColor: #df4c5b;
   --text_Hover: #d87982;
   --selectionColor: rgb(176, 141, 141);
+  --specialColor: #df4c5b;
   --New: #49c740;
   --Used: #c7c740;
   /**/
@@ -72,7 +73,7 @@ body {
 
 header {
   display: flex;
-  background-color: rgb(33, 33, 33);
+  background-color: var(--CommanderColer);
   z-index: 9999;
   height: fit-content;
   margin: 0px;
@@ -88,10 +89,11 @@ header {
 .title {
   display: flex;
   align-items: center;
-  margin: 0 0 0 2%;
+  margin: 0 0 0 1%;
   border: 0;
   z-index: 1;
   font-family: "MGR";
+  gap: 10px;
   letter-spacing: 2px;
   text-shadow: 0 0 20px var(--pageColor), 18px -10px 20px #50424f;
   color: rgb(255 255 255);
@@ -238,7 +240,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, auto) 30%;
   z-index: 2;
-  background-color: rgb(33 33 33);
+  background-color: var(--CommanderColer);
   max-width: var(--bossContainers);
   width: 100%;
   font-size: 30px;
@@ -375,7 +377,7 @@ nav a i {
   box-shadow: 0px 0 20px var(--specialColor);
   position: absolute;
   border-radius: 15px;
-  background-color: rgb(33 33 33);
+  background-color: var(--CommanderColer);
   opacity: 0;
   pointer-events: none;
   transition: all 0.4s ease-in-out;
@@ -386,7 +388,7 @@ nav a i {
   content: "";
   height: 18px;
   width: 18px;
-  background: rgb(33 33 33);
+  background: var(--CommanderColer);
   right: 8px;
   top: -5px;
   transform: rotate(45deg);
@@ -437,7 +439,7 @@ nav a i {
 /***********************Home button **********************/
 .homePage {
   display: flex;
-  background-color: rgb(33 33 33);
+  background-color: var(--CommanderColer);
   color: white;
   margin: 0;
   text-decoration: none;
@@ -568,7 +570,7 @@ nav a i {
   display: flex;
   border-radius: 20px;
   box-shadow: 0px -8px 20px var(--pageColor), 0px 11px 20px #463e4f;
-  background: rgb(33 33 33);
+  background: var(--CommanderColer);
   margin: 30px 0;
   width: 100%;
   max-width: var(--soldierContainers);
@@ -660,7 +662,7 @@ nav a i {
 footer {
   display: grid;
   grid-template-columns: repeat(3, minmax(30%, auto));
-  background-color: rgb(33 33 33);
+  background-color: var(--CommanderColer);
   width: 100%;
   max-width: var(--bossContainers);
   box-shadow: 1px -5px 20px var(--pageColor), 2px -5px 20px #463e4f;
@@ -764,7 +766,7 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: rgb(33 33 33);
+  color: var(--CommanderColer);
   border-radius: 10px;
   background: #fff;
   margin: 0;
