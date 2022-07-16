@@ -4,9 +4,9 @@ html {
   /* zoom: 150%; */
 }
 :root {
-  --pageColor: #c93d1a;
-  --text_Hover: #e96326;
-  --selectionColor: rgb(240 219 221);
+  --pageColor: #c7404e;
+  --text_Hover: #f86077;
+  --selectionColor: rgb(176, 141, 141);
 }
 ::selection {
   background-color: var(--selectionColor);
@@ -79,7 +79,8 @@ nav {
 .myLogo {
   position: absolute;
   background-color: rgb(33 33 33);
-  box-shadow: 0 0 10px 0px var(--text_Hover);
+  box-shadow: 0 0 20px 0px var(--text_Hover);
+  color: rgb(240 219 221);
   transform: translateX(-70%);
   border-radius: 50%;
   height: 80px;
@@ -95,8 +96,6 @@ nav {
   font-size: 80px;
   position: absolute;
   z-index: 1;
-  text-shadow: 0 0 20px #030303, 18px -10px 20px #50424f;
-  color: rgb(240 219 221);
   cursor: pointer;
 }
 
@@ -184,7 +183,7 @@ section {
   display: flex;
   padding: 0px;
   font-size: 28px;
-  color: var(--selectionColor);
+  color: rgb(255, 255, 255);
   margin: 0;
   font-family: "MGR";
   justify-content: flex-start;
@@ -204,9 +203,10 @@ section {
   background-image: linear-gradient(
     45deg,
     #867877 0%,
-    #252525 20%,
-    #c7404e 60%,
-    rgb(63 0 9) 80%
+    #1c1414 15%,
+    var(--pageColor) 25%,
+    70%,
+    #291114 80%
   );
   color: #fff;
   -webkit-background-clip: text;
@@ -215,6 +215,7 @@ section {
 }
 
 .title p {
+  text-shadow: 0 0 20px var(--text_Hover);
   max-width: 600px;
 }
 
