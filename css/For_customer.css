@@ -26,7 +26,7 @@
   display: grid;
   background-color: transparent;
   grid-template-columns: repeat(1, 1fr);
-  font-family: "MGR";
+  font-family: var(--MainFont);
   margin: 3% 3% 3% 10%;
   gap: 5px;
 }
@@ -47,7 +47,7 @@
   background-color: #383535;
   height: 80px;
   font-size: var(--ItemFontSize);
-  font-family: "Audiowide", cursive !important;
+  font-family: var(--SecondFont) !important;
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
@@ -101,7 +101,8 @@
   top: 20%;
   background-color: transparent;
   grid-template-columns: repeat(1, minmax(200px, auto));
-  font-family: "MGR";
+  font-family: var(--MainFont);
+  font-size: var(--TitleFontSize);
   text-align: center;
   margin: 3%;
   gap: 5px;
@@ -118,13 +119,12 @@
 }
 .cartTotal-Titles {
   background-color: var(--pageColor);
-  font-size: var(--TitleFontSize);
   padding: 5px;
 }
 .cartTotal-Item {
   background-color: rgb(56, 53, 53);
   font-size: var(--ItemFontSize);
-  font-family: "Audiowide", cursive !important;
+  font-family: var(--SecondFont) !important;
   height: 80px;
 }
 .cartItem-info {

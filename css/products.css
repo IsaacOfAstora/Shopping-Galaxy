@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "MGR";
-  src: url("../fonts/SLANT.TTF");
-}
+
 /*
 <!------------------------------------------------------------!>
 <!--________________(Products section Start)________________--!>
@@ -28,7 +25,7 @@
 .changeLook {
   display: flex;
   align-items: center;
-  font-family: "MGR";
+  font-family: var(--MainFont);
   justify-content: flex-start;
   margin: 1%;
   gap: 20px;
@@ -88,7 +85,7 @@
   box-shadow: 0 0 15px 0 #383535;
   border-radius: 15px;
   margin: 0;
-  font-family: "MGR";
+  font-family: var(--MainFont);
   transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .product-item:hover {
@@ -154,7 +151,7 @@
 }
 .product-item > span {
   margin: 0;
-  font-family: "Audiowide", Cursive;
+  font-family: var(--SecondFont);
   opacity: 0.7;
   color: rgb(255 255 255);
 }
@@ -168,7 +165,7 @@
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  font-family: "Audiowide", Cursive;
+  font-family: var(--SecondFont);
   border-radius: 5px;
   color: rgb(255 255 255);
   background-color: transparent;

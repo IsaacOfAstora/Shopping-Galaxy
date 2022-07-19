@@ -8,6 +8,12 @@ html {
   --specialColor: #df4c5b;
   --text_Hover: #d87982;
   --selectionColor: rgb(176, 141, 141);
+  --SecondFont:"audioWide";
+}
+
+@font-face {
+  font-family: "audioWide";
+  src: url("/fonts/Audiowide-Regular.ttf");
 }
 ::-webkit-scrollbar {
   background-color: transparent;
@@ -35,7 +41,7 @@ html {
   color: var(--specialColor);
 }
 @font-face {
-  font-family: "MGR";
+  font-family: var(--MainFont);
   src: url("../fonts/SLANT.TTF");
 }
 body {
@@ -116,11 +122,11 @@ h3 {
   font-size: 30px;
   margin: 0 auto;
   color: rgb(255 255 255);
-  font-family: "mgr";
+  font-family: var(--MainFont);
   text-shadow: 0px 0 20px var(--pageColor), 0px 0 20px var(--pageColor);
 }
 .ourInfo {
-  font-family: "Audiowide", cursive;
+  font-family: var(--SecondFont);
   color: rgb(255 255 255);
   font-size: 20px;
   max-width: 850px;

@@ -1,194 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Cart</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/Isaalogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/IST.css">
-    <link rel="stylesheet" href="../css/For_customer.css">
-    <link rel="stylesheet" href="../css/fontawesome-free-6.1.1-web/css/all.min.css">
-    <link rel="stylesheet" href="../css/icomoon/my-Ico-moon-Icons.css"/>
-   
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/Isaalogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/IST.css">
+  <link rel="stylesheet" href="../css/For_customer.css">
+  <link rel="stylesheet" href="../css/fontawesome-free-6.1.1-web/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="../css/icomoon/my-Ico-moon-Icons.css" />
 </head>
+
 <body>
-    
+
 
   <header>
-       
-    <h1  class="title">
+
+    <h1 class="title">
       <span class="icon-IsaacLogo"></span>
-      Shopper Galaxy 
+      Shopper Galaxy
     </h1>
-        <!-------------------------------------------------------------------------->
-        <!-------------------------Social Media Section ---------------------------->
-        <!--------------------------------------------------------------------------> 
-        <div class="wrapper">
-          <div class="social discord">
-            <span>Discord</span>
-            <i class="fa-brands fa-discord"></i>
-          </div>
-          <a href="" class="social youtube">
-            <span>Youtube</span>
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-          <a href="" class="social facebook">
-            <span>Facebook</span>
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-          <a href="" class="social twitter">
-            <span>Twitter</span>
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="" class="social github">
-            <span>Github</span>
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="" class="social instagram">
-            <span>Instagram</span>
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="./aboutUs.html" class="social aboutus">
-            <span>About</span>
-            <i class="fa-solid fa-address-card"></i>
-          </a>
+    <!-------------------------------------------------------------------------->
+    <!-------------------------Social Media Section ---------------------------->
+    <!-------------------------------------------------------------------------->
+    <div class="wrapper">
+      <div class="social discord">
+        <span>Discord</span>
+        <i class="fa-brands fa-discord"></i>
+        <label class="discord-id">isaac Miyazaki#8986</label>
+      </div>
+      <a href="" class="social youtube">
+        <span>Youtube</span>
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="" class="social facebook">
+        <span>Facebook</span>
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="" class="social twitter">
+        <span>Twitter</span>
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="" class="social github">
+        <span>Github</span>
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="" class="social instagram">
+        <span>Instagram</span>
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="./aboutUs.html" class="social aboutus">
+        <span>About</span>
+        <i class="fa-solid fa-address-card"></i>
+      </a>
+    </div>
+
+    <!-------------------------------------------------------------------------->
+    <!-----------------------Social Media Section End -------------------------->
+    <!-------------------------------------------------------------------------->
+  </header>
+  </div>
+  <nav>
+    <a class="homePage" href="../index.html"><i class="fa-solid fa-user-plus"></i></a>
+    <a class="nav-item" href="Main.html"><i class="fa-solid fa-house-chimney"></i>Main</a>
+
+    <label class="button">
+      <span>Products <i class="fas fa-caret-up"></i></span>
+      <ul class="menu">
+        <li><a class="menu-item" href="phones.html"><i class="fa-solid fa-mobile-button"></i>Phones</a></li>
+        <li><a class="menu-item" href="Accessories.html"></i><i class="fa-solid fa-headphones"></i>Accessories</a></li>
+        <li><a class="menu-item" href="perfumes.html"><i class="icon-cosmetic_icon"></i>cosmetics</a></a></li>
+      </ul>
+    </label>
+    <a class="current-nav-item" href="For_customer.html"><i class="fa-solid fa-cart-flatbed"></i>Cart</a>
+    <div class="search-bar">
+      <span class="search-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+      <input type="text" class="search-input" placeholder="search your product"></input>
+      <span class="search-bar-remover"><i class="fa-solid fa-xmark"></i></span>
+    </div>
+
+  </nav>
+
+
+
+
+  <!--////////////////////////////////isaac Cart////////////////////////////////-->
+  <section class="cartColumn">
+    <div class="cart">
+      <div class="cartTitles">
+        <span>Product</span>
+        <span>Amount</span>
+        <span>Price</span>
+      </div>
+      <div class="cartItem">
+        <button type="button" class="cartRemover">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+        <div class="cartItem-info">
+          <img class="cartItem-image" src="../assets/pco x3 gt.jpg" alt="" />
+          Pocco X3 GT
         </div>
+        <input type="number" class="amount" min="0" max="3" />
+        <span class="totalPrice">500 DA</span>
+      </div>
+      <!---->
+      <!---->
+      <div class="cartItem">
+        <button type="button" class="cartRemover">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+        <div class="cartItem-info">
+          <img class="cartItem-image" src="../assets/note 11 s.jpg" alt="" />
+          Redmi Note 11s
+        </div>
+        <input type="number" name="12" class="amount" />
+        <span class="totalPrice">500 DA</span>
+      </div>
+    </div>
+
+    <!---->
+    <!---->
+    <!---->
+    <!--////////////////////////////////Total price Table////////////////////////////////-->
+    <div class="cartTotal">
+      <div class="cartTotal-Titles">
+        <span>In cart</span>
+        <span>Total price</span>
+      </div>
+      <div class="cartTotal-Item">
+        <span class="total">1</span>
+        <span class="price">500 DA</span>
+      </div>
+    </div>
+  </section>
+  <!--////////////////////////////////Total price Table End////////////////////////////////-->
+  <!--////////////////////////////////Isaac Cart End////////////////////////////////-->
+
+
 
   <!-------------------------------------------------------------------------->
-  <!-----------------------Social Media Section End -------------------------->
-  <!--------------------------------------------------------------------------> 
-</header>  
-  </div>
-        <nav >
-        <a class= "homePage" href="../index.html"><i class="fa-solid fa-user-plus"></i></a>  
-        <a class= "nav-item" href="Main.html"><i class="fa-solid fa-house-chimney"></i>Main</a>   
-          
-        <label  class="button"> 
-          <span>Products <i class="fas fa-caret-up"></i></span>
-          <ul class="menu">
-            <li><a class="menu-item" href="phones.html"><i class="fa-solid fa-mobile-button"></i>Phones</a></li>
-            <li><a class="menu-item" href="Accessories.html"></i><i class="fa-solid fa-headphones"></i>Accessories</a></li>
-            <li><a class="menu-item" href="perfumes.html"><i class="icon-cosmetic_icon"></i>cosmetics</a></a></li>
-     </ul>
-        </label>
-        <a class="current-nav-item" href="For_customer.html"><i class="fa-solid fa-cart-flatbed"></i>Cart</a>    
-        <div class="search-bar">
-          <span class="search-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
-              <input type="text" class="search-input" placeholder="search your product"></input>
-          <span class="search-bar-remover"><i class="fa-solid fa-xmark"></i></span>
-      </div>
-      
-      </nav> 
-
-
-
-
-<!--////////////////////////////////isaac Cart////////////////////////////////-->
-<section class="cartColumn">
-  <div class="cart">
-    <div class="cartTitles">
-      <span>Product</span>
-      <span>Amount</span>
-      <span>Price</span>
-    </div>
-    <div class="cartItem">
-      <button type="button" class="cartRemover">
-        <i class="fa-solid fa-trash"></i>
-      </button>
-      <div class="cartItem-info">
-        <img class="cartItem-image" src="../assets/pco x3 gt.jpg" alt="" />
-        Pocco X3 GT
-      </div>
-      <input type="number" class="amount" min="0" max="3"/>
-      <span class="totalPrice">500 DA</span>
-    </div>
+  <!-------------------------Footer  Section --------------------------------->
+  <!-------------------------------------------------------------------------->
+  <footer>
+    <article class="first">
+      <span class="icon-IsaacLogo"></span>
+      <a href="./aboutUs.html">About us</a>
+    </article>
     <!---->
     <!---->
-    <div class="cartItem">
-      <button type="button" class="cartRemover">
-        <i class="fa-solid fa-trash"></i>
-      </button>
-      <div class="cartItem-info">
-        <img class="cartItem-image" src="../assets/note 11 s.jpg" alt="" />
-        Redmi Note 11s
-      </div>
-      <input type="number" name="12" class="amount" />
-      <span class="totalPrice">500 DA</span>
-    </div>
-  </div>
-  
-  <!---->
-  <!---->
-  <!---->
-  <!--////////////////////////////////Total price Table////////////////////////////////-->
-  <div class="cartTotal">
-    <div class="cartTotal-Titles">
-      <span>In cart</span>
-      <span>Total price</span>
-    </div>
-    <div class="cartTotal-Item">
-      <span class="total">1</span>
-      <span class="price">500 DA</span>
-    </div>
-  </div>
-</section>
-<!--////////////////////////////////Total price Table End////////////////////////////////-->
-<!--////////////////////////////////Isaac Cart End////////////////////////////////-->
-
-
-
-      <!-------------------------------------------------------------------------->
-      <!-------------------------Footer  Section --------------------------------->
-      <!--------------------------------------------------------------------------> 
-      <footer>
-        <article class="first">
-          <span class="icon-IsaacLogo"></span>
-          <a href="./aboutUs.html">About us</a>
-        </article>
-        <!---->
-        <!---->
-        <!---->
-        <article class="middle">
-          <span class="paragraph">
-          <p>© Designed in 2022 by Isaac</p>
-          <p>© all rights reserved</p>
-        </span>
-        <div class="footer-wrapper">
-          <a  href="https://www.facebook.com/isaac.Rodin.00/" target="blank">
-             <span class="icon facebook"><i class="fab fa-facebook-f"></i></span>
-          </a>
-          <a  href="https://twitter.com/0xc0000007b" target="blank">
-             <span class="icon twitter"><i class="fab fa-twitter"></i></span>
+    <!---->
+    <article class="middle">
+      <span class="paragraph">
+        <p>© Designed in 2022 by Isaac</p>
+        <p>© all rights reserved</p>
+      </span>
+      <div class="footer-wrapper">
+        <a href="https://www.facebook.com/isaac.Rodin.00/" target="blank">
+          <span class="icon facebook"><i class="fab fa-facebook-f"></i></span>
         </a>
-        <a  href="https://www.instagram.com/dionysus_00q/" target="blank">
-             <span class="icon instagram"><i class="fab fa-instagram"></i></span>
+        <a href="https://twitter.com/0xc0000007b" target="blank">
+          <span class="icon twitter"><i class="fab fa-twitter"></i></span>
         </a>
-        <a  href="https://github.com/IsaacOfAstora" target="blank">
-             <span class="icon github"><i class="fab fa-github"></i></span>
+        <a href="https://www.instagram.com/dionysus_00q/" target="blank">
+          <span class="icon instagram"><i class="fab fa-instagram"></i></span>
         </a>
-        <a  href="https://www.youtube.com/channel/UCOpVKDJZ-OPvxw7po3fBwww" target="blank">
-             <span class="icon youtube"><i class="fab fa-youtube"></i></span>
+        <a href="https://github.com/IsaacOfAstora" target="blank">
+          <span class="icon github"><i class="fab fa-github"></i></span>
         </a>
-        </article>
-      <!---->
-      <!---->
-      <!---->
-      <article class="end">
-        <button class="goUp" type="button"><i class="fa-solid fa-arrow-up-from-ground-water"></i></button>
-      </article>
-      </footer>
-            <!-------------------------------------------------------------------------->
-            <!-------------------------Footer  Section End ----------------------------->
-            <!--------------------------------------------------------------------------> 
-<script src="../js/main.js"></script>
+        <a href="https://www.youtube.com/channel/UCOpVKDJZ-OPvxw7po3fBwww" target="blank">
+          <span class="icon youtube"><i class="fab fa-youtube"></i></span>
+        </a>
+    </article>
+    <!---->
+    <!---->
+    <!---->
+    <article class="end">
+      <button class="goUp" type="button"><i class="fa-solid fa-arrow-up-from-ground-water"></i></button>
+    </article>
+  </footer>
+  <!-------------------------------------------------------------------------->
+  <!-------------------------Footer  Section End ----------------------------->
+  <!-------------------------------------------------------------------------->
+  <script src="../js/main.js"></script>
 
-<script src="../js/for_custumer.js"></script>   
+  <script src="../js/for_custumer.js"></script>
 </body>
+
 </html>
