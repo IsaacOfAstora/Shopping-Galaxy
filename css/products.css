@@ -2,11 +2,12 @@
   font-family: "MGR";
   src: url("../fonts/SLANT.TTF");
 }
-
-/***********************************************************************************/
-/********************____________Product Section_______________*********************/
-/***********************************************************************************/
-.product-section {
+/*
+<!------------------------------------------------------------!>
+<!--________________(Products section Start)________________--!>
+<!------------------------------------------------------------!>
+*/
+.products-section {
   display: flex;
   background-color: var(--CommanderColer);
   margin: 30px 0;
@@ -19,158 +20,41 @@
   flex-wrap: nowrap;
   align-content: flex-start;
 }
-
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-  gap: 40px;
-  padding: 0;
-  margin: 4%;
-  background-color: var(--CommanderColer);
-  color: #f8f8f8;
-  font-size: 18px;
-  font-family: "MGR";
-  list-style: none;
-}
-.product-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  height: fit-content;
-  width: 200px;
-  position: relative;
-  background-color: #383535;
-  box-shadow: 0 0 15px 0 #383535;
-  border-radius: 15px;
-  transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-}
-.product-info {
-  display: flex;
-  flex-direction: column;
-}
-.product-info p {
-  margin: 0;
-  text-align: left;
-}
-.product-info-title {
-  color: var(--pageColor) !important;
-}
-
-.product-info p span {
-  color: var(--New);
-}
-.used {
-  color: var(--Used) !important;
-}
-.product-item:hover {
-  transform: scale(0.95);
-  box-shadow: 0 0 15px 0 rgb(227 201 204);
-}
-
-.product-item-image {
-  height: 200px;
-  width: 200px;
-  border-radius: 15px 15px 0 0;
-  cursor: pointer;
-}
-/**************************************/
-/*************Buy Buttons *************/
-/**************************************/
-.buy {
-  margin-bottom: 3%;
-  width: 40px;
-  height: 40px;
-  background: var(--pageColor);
-  color: #28292a;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border-radius: 50%;
-  border: none;
-  text-decoration: none;
-  transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  z-index: 1;
-}
-.buy:active {
-  transform: scale(0.95);
-}
-
-.add-toCart-tooltip {
-  padding: 0 5px;
-  display: flex;
-  transform: translateX(50px);
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  font-family: "MGR";
-  width: 90px;
-  height: 30px;
-  border-radius: 25px;
-  font-size: 18px;
-  color: #f8f8f8;
-  background-color: var(--pageColor);
-  box-shadow: 0 0 20px 1px var(--pageColor);
-  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  pointer-events: none;
-  opacity: 0;
-  z-index: 9999;
-}
-.buy:hover .add-toCart-tooltip {
-  transform: translateX(80px);
-  opacity: 1;
-}
-.add-toCart-tooltip p {
-  margin: auto;
-}
-.add-toCart-tooltip::after {
-  content: "";
-  height: 14px;
-  width: 14px;
-  background-color: var(--pageColor);
-  top: 31%;
-  transform: rotate(45deg);
-  left: -3px;
-  z-index: -1;
-  position: absolute;
-}
-
-.fa-cart-plus {
-  font-size: 20px;
-  color: #f8f8f8;
-}
-
-/**************************************/
-/***********Buy Buttons End ***********/
-/**************************************/
-
-/*<!----------------------JS CSS colmun to row Changing------------------------!>*/
+/*
+<!------------------------------------------------------------!>
+<!--_________________(Look changing icons)__________________--!>
+<!------------------------------------------------------------!>
+*/
 .changeLook {
   display: flex;
-  margin: 10px;
-  text-align: center;
-  border-radius: 15px;
-  transition: all 0.3s ease 0s;
   align-items: center;
+  font-family: "MGR";
+  justify-content: flex-start;
+  margin: 1%;
+  gap: 20px;
 }
 .changeLook h1 {
   letter-spacing: 1px;
-  margin: 0;
-  font-size: 20px;
-  font-family: "MGR";
-  text-shadow: 0 0 7px #c7404e, 0 0 4px #c7404e;
   color: rgb(255 255 255);
+  text-shadow: 0 0 8px var(--pageColor), 0 0 8px var(--pageColor);
 }
-
-.changeLook button {
+.rowLook,
+.columnLook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
-  color: rgb(255, 255, 255);
+  color: rgb(255 255 255);
+  outline: none;
+  border-style: none;
   font-size: 30px;
-  border: none;
-  margin: 10px;
-  transition: 0.3s ease-in-out;
+  padding: 0;
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.rowLook:active,
+.columnLook:active {
+  transform: scale(0.9);
 }
 .rowLook.inUse {
   color: var(--pageColor);
@@ -179,65 +63,229 @@
 .columnLook.inUse {
   color: var(--pageColor);
 }
-/*<!----------------------------------------------------------!>*/
-/*<!-----------------------WARNING!!!!!!!!!!!!!---------------!>*/
-/*<!----------------------------------------------------------!>*/
-.products.its-row-time {
+/*
+<!------------------------------------------------------------!>
+<!--_______________(Look changing Icons End)________________--!>
+<!------------------------------------------------------------!>
+*/
+/*
+<!------------------------------------------------------------!>
+<!--_________________(Products List Style )_________________--!>
+<!------------------------------------------------------------!>
+*/
+.products-list {
   display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
   gap: 40px;
-  grid-template-columns: 100%;
+  margin: 4%;
 }
-
-.product-item.its-row-time {
+.product-item {
   display: grid;
-  grid-template-columns: 1fr 500px 1fr;
-  width: 100%;
-  position: relative;
+  grid-template-rows: 200px auto auto;
+  justify-items: center;
+  gap: 20px;
   background-color: #383535;
   box-shadow: 0 0 15px 0 #383535;
   border-radius: 15px;
-  transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  justify-content: start;
+  margin: 0;
+  font-family: "MGR";
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.product-item.its-row-time:hover {
+.product-item:hover {
   transform: scale(0.95);
   box-shadow: 0 0 15px 0 rgb(227 201 204);
 }
-
-.product-item-image.its-row-time {
-  border-radius: 15px;
-}
-.product-info.its-row-time {
-  display: flex;
-  font-size: 40px;
+.product-item-state {
+  display: grid;
+  place-items: center;
+  place-self: flex-start;
+  transform: translateX(235%);
+  color: rgb(255, 255, 255);
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 4px var(--New), 0 0 4px var(--New), 0 0 4px var(--New);
+  box-shadow: rgb(56 53 53) -5px 5px 2px 1px;
+  width: 60px;
   margin: 0;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  justify-content: center;
+  height: 25px;
+  position: absolute;
+  background-color: var(--pageColor);
+  border-radius: 0px 15px 0px 8px;
+  font-family: MGR;
+  font-size: 15px;
 }
-.buy.its-row-time {
-  width: 50px;
-  height: 50px;
-  margin-left: 20%;
-  background: var(--pageColor);
-  color: #28292a;
+.product-item-state::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 5px;
+  height: 100px;
+  place-self: end;
+  transform: translateY(98%);
+  border-radius: 5px;
+  box-shadow: -2px 5px 2px 2px #383535;
+  background-color: var(--pageColor);
+}
+.product-item-state::after {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  transform: translatex(-95%);
+  place-self: flex-start;
+  border-radius: 5px;
+  box-shadow: rgb(56 53 53) -6px 2px 1px 2px;
+  background-color: var(--pageColor);
+}
+.product-item-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px 15px 5px 5px;
+  margin: 0;
+}
+
+.product-item h1 {
+  color: rgb(255 255 255);
+  text-shadow: 0 0 10px var(--specialColor);
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+.product-item > span {
+  margin: 0;
+  font-family: "Audiowide", Cursive;
+  opacity: 0.7;
+  color: rgb(255 255 255);
+}
+/*
+<!------------------------------------------------------------!>
+<!--_________________(Add to Cart Button)___________________--!>
+<!------------------------------------------------------------!>
+*/
+.add-to-cart {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  border-radius: 50%;
-  border: none;
-  text-decoration: none;
-  transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  z-index: 1;
+  font-size: 20px;
+  font-family: "Audiowide", Cursive;
+  border-radius: 5px;
+  color: rgb(255 255 255);
+  background-color: transparent;
+  margin-bottom: 5%;
+  padding: 2px;
+  height: 30px;
 }
-/*<!----------------------------------------------------------!>*/
-/*<!-----------------------WARNING END------------------------!>*/
-/*<!----------------------------------------------------------!>*/
+.add-to-cart i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: var(--pageColor);
+  box-shadow: 0 15px 20px 0px rgb(33 33 33);
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.add-to-cart span {
+  opacity: 0;
+  font-size: 15px;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+/*------------------------------------*/
+/**_-_-_-_-_Hovering effects_-_-_-_-_**/
+/*----------________________----------*/
 
-/*<!----------------------JS CSS colmun to row Changing End--------------------!>*/
+.add-to-cart:active {
+  transform: scale(0.95);
+}
+.add-to-cart:hover {
+  background-color: var(--pageColor);
+  box-shadow: 0 15px 20px 0px rgb(33 33 33);
+}
 
-/***********************************************************************************/
-/******************____________Product Section End_______________*******************/
-/***********************************************************************************/
+.add-to-cart:hover i {
+  transform: translateX(-170%);
+  background-color: transparent;
+  box-shadow: none;
+}
+.add-to-cart:hover span {
+  opacity: 1;
+  padding-left: 30px;
+}
+/*
+<!------------------------------------------------------------!>
+<!--________________(Add to Cart Button End)________________--!>
+<!------------------------------------------------------------!>
+*/
+/*
+<!------------------------------------------------------------!>
+<!--_______________(Products List Style End )_______________--!>
+<!------------------------------------------------------------!>
+*/
+/*
+<!------------------------------------------------------------!>
+<!--_________________(Products Section End)_________________--!>
+<!------------------------------------------------------------!>
+*/
+
+/*
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<!----------(Products Section modified by javascript)---------!>
+////////////////////////////////////////////////////////////////
+*/
+.products-list.mostaqim {
+  grid-template-columns: 100%;
+  gap: 40px;
+  justify-items: start;
+  align-items: center;
+}
+.product-item.mostaqim {
+  display: grid;
+  grid-template-columns: 200px repeat(3, 1fr);
+  grid-template-rows: 200px;
+  width: 80%;
+  align-items: center;
+  justify-items: start;
+}
+.product-item-state.mostaqim {
+  place-self: flex-start;
+  transform: translateX(235%);
+}
+.product-item-image.mostaqim {
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+}
+.add-to-cart.mostaqim {
+  justify-content: flex-start;
+  margin: 0;
+  gap: 2px;
+}
+.add-to-cart.mostaqim span {
+  justify-content: center;
+  pointer-events: none;
+  font-size: 13px;
+  width: 90px;
+  transform: translateX(-10%);
+}
+
+.add-to-cart.mostaqim i {
+  position: static;
+}
+.add-to-cart.mostaqim:hover span {
+  transform: translateX(5%);
+  pointer-events: all;
+  padding: 0;
+}
+.add-to-cart.mostaqim:hover i {
+  transform: none;
+  background-color: var(--pageColor);
+}
+
+/*
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<!---------(Products Section modified by javascript End)-------!>
+////////////////////////////////////////////////////////////////
+*/

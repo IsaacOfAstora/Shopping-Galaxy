@@ -1,32 +1,46 @@
-const in_Row = document.querySelector(".rowLook");
-const in_Col = document.querySelector(".columnLook");
-let RowContainer = document.querySelector(".products");
-let RowContainerChild0 = document.getElementsByClassName("product-item");
-let RowContainerChild1 = document.getElementsByClassName("product-item-image");
-let RowContainerChild2 = document.getElementsByClassName("product-info");
-let RowContainerChild3 = document.getElementsByClassName("buy");
-console.log(RowContainerChild3);
-in_Col.classList.add("inUse");
+/*
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<!((------(-From Column to Row Icons pseudo classes-)------))!>
+////////////////////////////////////////////////////////////////
+ */
+const Amoudi = document.querySelector(".columnLook");
+const Mostaqim = document.querySelector(".rowLook");
+/*
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<!((------(-From Column to Row HTML elements-)------))!>
+////////////////////////////////////////////////////////////////
+ */
+const productList = document.querySelector(".products-list");
+let productItem = document.getElementsByClassName("product-item");
+let productItemState = document.getElementsByClassName("product-item-state");
+let productItemImage = document.getElementsByClassName("product-item-image");
+let AddToCartButton = document.getElementsByClassName("add-to-cart");
+/*
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<!((------(-From Column to Row Coding Start-)------))!>
+////////////////////////////////////////////////////////////////
+ */
+Amoudi.classList.add("inUse");
 
-in_Row.onclick = () => {
-  in_Row.classList.add("inUse");
-  in_Col.classList.remove("inUse");
-  RowContainer.classList.add("its-row-time");
-  for (let i = 0; i < RowContainerChild3.length; i++) {
-    RowContainerChild0[i].classList.add("its-row-time");
-    RowContainerChild1[i].classList.add("its-row-time");
-    RowContainerChild2[i].classList.add("its-row-time");
-    RowContainerChild3[i].classList.add("its-row-time");
+Mostaqim.onclick = () => {
+  Mostaqim.classList.add("inUse");
+  Amoudi.classList.remove("inUse");
+  productList.classList.add("mostaqim");
+  for (let i = 0; i < AddToCartButton.length; i++) {
+    productItem[i].classList.add("mostaqim");
+    productItemState[i].classList.add("mostaqim");
+    productItemImage[i].classList.add("mostaqim");
+    AddToCartButton[i].classList.add("mostaqim");
   }
 };
-in_Col.onclick = () => {
-  in_Col.classList.add("inUse");
-  in_Row.classList.remove("inUse");
-  RowContainer.classList.remove("its-row-time");
-  for (let i = 0; i < RowContainerChild3.length; i++) {
-    RowContainerChild0[i].classList.remove("its-row-time");
-    RowContainerChild1[i].classList.remove("its-row-time");
-    RowContainerChild2[i].classList.remove("its-row-time");
-    RowContainerChild3[i].classList.remove("its-row-time");
+Amoudi.onclick = () => {
+  Amoudi.classList.add("inUse");
+  Mostaqim.classList.remove("inUse");
+  productList.classList.remove("mostaqim");
+  for (let i = 0; i < AddToCartButton.length; i++) {
+    productItem[i].classList.remove("mostaqim");
+    productItemState[i].classList.remove("mostaqim");
+    productItemImage[i].classList.remove("mostaqim");
+    AddToCartButton[i].classList.remove("mostaqim");
   }
 };

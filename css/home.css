@@ -212,8 +212,12 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 2px;
+  animation: spaceLand 1s linear infinite;
 }
-
+@keyframes spaceLand {
+  to {
+  }
+}
 .title p {
   text-shadow: 0 0 20px var(--text_Hover);
   max-width: 600px;

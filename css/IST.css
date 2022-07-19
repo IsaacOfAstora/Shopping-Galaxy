@@ -182,9 +182,10 @@ span.icon-IsaacLogo {
 .social:hover i {
   transform: rotate(360deg);
   animation-name: heart;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-direction: alternate;
 }
 
 .facebook:hover {
@@ -248,13 +249,8 @@ span.icon-IsaacLogo {
   transform: translate(-2%, 112%);
 }
 @keyframes heart {
-  25%,
-  50% {
+  to {
     transform: scale(1.1);
-  }
-  50%,
-  75% {
-    transform: scale(1);
   }
 }
 
@@ -736,21 +732,23 @@ footer {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  cursor: pointer;
   transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-name: upDown;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .goUp:active {
   transform: scale(0.95);
 }
+.goUp:hover {
+  animation-play-state: paused;
+}
 @keyframes upDown {
-  25% {
+  to {
     transform: translateY(-10%);
-  }
-  50% {
-    transform: translateY(0%);
   }
 }
 
