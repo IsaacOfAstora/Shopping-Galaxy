@@ -6,7 +6,7 @@
 */
 .products-section {
   display: flex;
-  background-color: var(--CommanderColer);
+  background-color: var(--CommanderColor);
   margin: 30px 0;
   width: 100%;
   max-width: var(--soldierContainers);
@@ -73,8 +73,9 @@
 .products-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
-  gap: 40px;
+  row-gap: 40px;
   margin: 4%;
+  justify-content: space-between;
 }
 .product-item {
   display: grid;
@@ -234,7 +235,6 @@
 */
 .products-list.mostaqim {
   grid-template-columns: 100%;
-  gap: 40px;
   justify-items: start;
   align-items: center;
 }

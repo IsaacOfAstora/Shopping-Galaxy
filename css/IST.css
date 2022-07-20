@@ -13,7 +13,7 @@ html {
 }
 
 :root {
-  --CommanderColer: rgb(33 33 33);
+  --CommanderColor: rgb(33 33 33);
   --pageColor: #c7404e;
   --text_Hover: #d87982;
   --selectionColor: rgb(176, 141, 141);
@@ -21,8 +21,8 @@ html {
   --New: #49c740;
   --Used: #c7c740;
   /**/
-  --bossContainers: 1300px;
-  --soldierContainers: calc(var(--bossContainers) - 300px);
+  --bossContainers: 1400px;
+  --soldierContainers: calc(var(--bossContainers) - 400px);
   /**/
   --slider_special_width: 600px;
   --slider_special_height: calc(var(--slider_special_width) - 250px);
@@ -80,7 +80,7 @@ body {
 
 header {
   display: flex;
-  background-color: var(--CommanderColer);
+  background-color: var(--CommanderColor);
   z-index: 9999;
   height: fit-content;
   margin: 0px;
@@ -274,7 +274,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, auto) 30%;
   z-index: 2;
-  background-color: var(--CommanderColer);
+  background-color: var(--CommanderColor);
   max-width: var(--bossContainers);
   width: 100%;
   font-size: 30px;
@@ -411,7 +411,7 @@ nav a i {
   box-shadow: 0px 0 20px var(--specialColor);
   position: absolute;
   border-radius: 15px;
-  background-color: var(--CommanderColer);
+  background-color: var(--CommanderColor);
   opacity: 0;
   pointer-events: none;
   transition: all 0.4s ease-in-out;
@@ -422,7 +422,7 @@ nav a i {
   content: "";
   height: 18px;
   width: 18px;
-  background: var(--CommanderColer);
+  background: var(--CommanderColor);
   right: 8px;
   top: -5px;
   transform: rotate(45deg);
@@ -473,7 +473,7 @@ nav a i {
 /***********************Home button **********************/
 .homePage {
   display: flex;
-  background-color: var(--CommanderColer);
+  background-color: var(--CommanderColor);
   color: white;
   margin: 0;
   text-decoration: none;
@@ -604,7 +604,7 @@ nav a i {
   display: flex;
   border-radius: 20px;
   box-shadow: 0px -8px 20px var(--pageColor), 0px 11px 20px #463e4f;
-  background: var(--CommanderColer);
+  background: var(--CommanderColor);
   margin: 30px 0;
   width: 100%;
   max-width: var(--soldierContainers);
@@ -696,7 +696,7 @@ nav a i {
 footer {
   display: grid;
   grid-template-columns: repeat(3, minmax(30%, auto));
-  background-color: var(--CommanderColer);
+  background-color: var(--CommanderColor);
   width: 100%;
   max-width: var(--bossContainers);
   box-shadow: 1px -5px 20px var(--pageColor), 2px -5px 20px #463e4f;
@@ -728,11 +728,9 @@ footer {
   margin: 0;
 }
 .goUp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  outline: none;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
   border: none;
   background-color: transparent;
   color: rgb(255 255 255);
@@ -787,57 +785,40 @@ footer {
   transform: scale(0.9);
 }
 .footer-wrapper {
-  display: flex;
-  text-align: center;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.footer-wrapper a {
-  text-decoration: none;
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+  gap: 5px;
 }
 .footer-wrapper .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: var(--CommanderColer);
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  color: var(--CommanderColor);
+  background-color: rgb(255 255 255);
   border-radius: 10px;
-  background: #fff;
-  margin: 0;
   cursor: pointer;
-  position: relative;
-  z-index: 2;
   height: 30px;
   width: 30px;
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 20px 20px rgb(0 0 0 / 20%);
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
-.footer-wrapper .facebook:hover {
-  color: #fff;
+.footer-wrapper .icon:hover{
   transform: scale(1.2);
+  color:rgb(246 255 255)
+}
+.footer-wrapper .facebook:hover {
   background: #3b5999;
 }
 .footer-wrapper .twitter:hover {
-  color: #fff;
-  transform: scale(1.2);
   background: #46c1f6;
 }
 .footer-wrapper .instagram:hover {
-  color: #fff;
-  transform: scale(1.2);
   background: #e1306c;
 }
 .footer-wrapper .github:hover {
-  color: #fff;
-  transform: scale(1.2);
   background: #333;
 }
 .footer-wrapper .youtube:hover {
-  color: #fff;
-  transform: scale(1.2);
   background: #de463b;
 }
 
