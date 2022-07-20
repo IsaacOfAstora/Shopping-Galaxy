@@ -13,7 +13,7 @@ html {
 
 @font-face {
   font-family: "audioWide";
-  src: url("/fonts/Audiowide-Regular.ttf");
+  src: url("../fonts/Audiowide-Regular.ttf");
 }
 ::-webkit-scrollbar {
   background-color: transparent;
