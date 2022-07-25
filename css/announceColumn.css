@@ -1,0 +1,150 @@
+/*
+<!------------------------------------------------------------!>
+<!--____________(Announce Column section Start)_____________--!>
+<!------------------------------------------------------------!>
+*/
+.announceColumn {
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 0px -8px 20px var(--pageColor), 0px 11px 20px #463e4f;
+  background: var(--CommanderColor);
+  margin: 30px 0;
+  width: 100%;
+  max-width: var(--soldierContainers);
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.announce-title {
+  font-size: 30px;
+  color: rgb(255 255 255);
+  font-family: var(--MainFont);
+  text-shadow: 0px 0 20px var(--pageColor), 0px 0 20px var(--pageColor);
+}
+.announce-title:nth-of-type(1) {
+  margin-top: 50px;
+}
+/*
+  <!------------------------------------------------------------!>
+  <!--__________(The Wonderful Isaac Slider Styling)__________--!>
+  <!------------------------------------------------------------!>
+  */
+
+.isaac-slider {
+  display: grid;
+  grid-template-columns: var(--slider_special_width);
+  box-shadow: 0 0 18px 2px var(--selectionColor);
+  grid-template-rows: repeat(3, auto);
+  border-radius: 15px;
+  justify-items: center;
+  overflow: hidden;
+}
+/*<!--___________((slider images))__________--!>*/
+.slider-images {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-images img {
+  width: var(--slider_special_width);
+  height: var(--slider_special_height);
+}
+/*<!--________((slider images End))_________--!>*/
+/*<!--___________((Arrows Start))___________--!>*/
+.leftRightarrow {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  width: var(--slider_special_width);
+  position: absolute;
+  color: var(--specialColor);
+  text-shadow: 0 5px 10px black, 0 5px 10px black, 0 5px 10px black,
+    0 5px 10px black;
+  font-size: 70px;
+  align-self: center;
+  justify-self: center;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.leftRightarrow i {
+  text-shadow: 0 5px 10px black, 0 5px 10px black, 0 5px 10px black,
+    0 5px 10px black;
+  transition: 0.2s ease-in-out;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(1, 0.71, 0.13, 0.29);
+}
+.leftRightarrow:hover i {
+  animation-play-state: paused;
+}
+.leftRightarrow i:active {
+  transform: scale(0.95);
+}
+.icon-leftGalaxyShip {
+  animation-name: lefty;
+}
+.icon-rightGalaxyShip {
+  animation-name: righty;
+}
+
+@keyframes lefty {
+  to {
+    transform: translateX(5px);
+  }
+}
+@keyframes righty {
+  to {
+    transform: translateX(-5px);
+  }
+}
+
+/*<!--____________((Arrows End))____________--!>*/
+
+/*<!--__________((Image Triggers))__________--!>*/
+.image-trigger {
+  display: flex;
+  align-self: end;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  position: absolute;
+  margin-bottom: 10px;
+  width: 150px;
+}
+.image-trigger span {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0 5px 10px 4px rgb(33 33 33), 0 5px 10px 4px rgb(33 33 33);
+  animation-name: wavy;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.image-trigger span:nth-last-child(1) {
+  background-color: var(--specialColor);
+  animation-delay: 0.1s;
+}
+.image-trigger span:nth-last-child(2) {
+  animation-delay: 0.2s;
+}
+.image-trigger span:nth-last-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes wavy {
+  to {
+    transform: translateY(-5px);
+  }
+}
+/*<!--_________((Image Trigger End))________--!>*/
+
+/*
+  <!------------------------------------------------------------!>
+  <!--____________(The Wonderful Isaac Slider End)____________--!>
+  <!------------------------------------------------------------!>
+  */

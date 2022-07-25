@@ -32,7 +32,7 @@ html {
   );
   /**/
   --MainFont: "MGR";
-  --SecondFont: "audioWide"
+  --SecondFont: "audioWide";
 }
 
 /*---------------------------Scrollbar---------------------------------------------------------------*/
@@ -598,99 +598,6 @@ nav a i {
 /***********************************************************************************/
 
 /***********************************************************************************/
-/*******************____________Announce Column_______________**********************/
-/***********************************************************************************/
-.announceColumn {
-  display: flex;
-  border-radius: 20px;
-  box-shadow: 0px -8px 20px var(--pageColor), 0px 11px 20px #463e4f;
-  background: var(--CommanderColor);
-  margin: 30px 0;
-  width: 100%;
-  max-width: var(--soldierContainers);
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: center;
-}
-.subTitle {
-  margin: 0;
-  z-index: 1;
-  width: fit-content;
-  text-align: center;
-  font-family: var(--MainFont);
-  text-shadow: 0px 0 20px var(--pageColor), 0 0 20px var(--pageColor);
-  color: rgb(255 255 255);
-  font-size: 35px;
-  transition: 600ms;
-}
-
-.swiper {
-  height: fit-content;
-  width: var(--slider_special_width);
-  margin: 0;
-  overflow: hidden;
-  list-style: none;
-  z-index: 1;
-  position: relative;
-  padding: 0;
-  border-radius: 15px;
-}
-.swiper-slide {
-  height: var(--slider_special_height);
-  width: var(--slider_special_width);
-}
-.swiper-button-prev,
-.swiper-rtl .swiper-button-next {
-  color: var(--pageColor) !important;
-}
-.swiper-button-next,
-.swiper-rtl .swiper-button-next {
-  color: var(--pageColor) !important;
-}
-.swiper-pagination-bullet-active {
-  background: var(--pageColor) !important;
-}
-
-.swiper-slide img {
-  margin: auto;
-  position: relative;
-  height: var(--slider_special_height);
-  width: var(--slider_special_width);
-  animation: slide 10s ease-in-out infinite;
-}
-
-.auto-slider__content:hover {
-  animation-play-state: paused;
-}
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(var(--slider_special_width_negative));
-  }
-  80% {
-    transform: translateX(var(--slider_special_width_negative_big));
-  }
-}
-
-.swiper2 .swiper .swiper-wrapper .swiper-slide img {
-  animation: slide2 10s ease-in-out infinite;
-}
-@keyframes slide2 {
-  0% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(var(--slider_special_width_negative));
-  }
-}
-
-/***********************************************************************************/
-/***************____________Announce Column Finished_______________*****************/
-/***********************************************************************************/
-
-/***********************************************************************************/
 /************************____________Footer_______________**************************/
 /***********************************************************************************/
 footer {
@@ -786,7 +693,7 @@ footer {
 }
 .footer-wrapper {
   display: grid;
-  grid-template-columns: repeat(5,auto);
+  grid-template-columns: repeat(5, auto);
   gap: 5px;
 }
 .footer-wrapper .icon {
@@ -802,9 +709,9 @@ footer {
   box-shadow: 0px 20px 20px rgb(0 0 0 / 20%);
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.footer-wrapper .icon:hover{
+.footer-wrapper .icon:hover {
   transform: scale(1.2);
-  color:rgb(246 255 255)
+  color: rgb(246 255 255);
 }
 .footer-wrapper .facebook:hover {
   background: #3b5999;
