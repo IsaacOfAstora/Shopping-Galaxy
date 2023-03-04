@@ -84,11 +84,20 @@
 }
 .icon-leftGalaxyShip {
   animation-name: lefty;
+  cursor: pointer;
+}
+.icon-leftGalaxyShip.colored {
+  opacity: 0.5;
+  cursor: no-drop;
 }
 .icon-rightGalaxyShip {
   animation-name: righty;
+  cursor: pointer;
 }
-
+.icon-rightGalaxyShip.colored{
+  opacity: 0.5;
+  cursor: no-drop;
+}
 @keyframes lefty {
   to {
     transform: translateX(5px);
@@ -103,8 +112,26 @@
 /*<!--____________((Arrows End))____________--!>*/
 
 /*<!--__________((Image Triggers))__________--!>*/
-
-
+.trigger {
+  display: flex;
+  position: absolute;
+  width: 100px;
+  align-self: end;
+  flex-direction: row;
+  border-radius: 10px;
+  transform: translate(240px, -10px);
+  justify-content: space-between;
+}
+.trigger span {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: transparent;
+  box-shadow: 0px 2px 4px 1px #000000;
+}
+.trigger span.colored{
+  background-color: var(--specialColor);
+}
 /*<!--_________((Image Trigger End))________--!>*/
 
 /*
