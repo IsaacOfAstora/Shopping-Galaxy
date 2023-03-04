@@ -103,28 +103,7 @@
 /*<!--____________((Arrows End))____________--!>*/
 
 /*<!--__________((Image Triggers))__________--!>*/
-.image-trigger {
-  display: flex;
-  align-items: center;
-  align-self: end;
-  justify-content: space-around;
-  flex-direction: row;
-  position: absolute;
-  margin-bottom: 10px;
-  width: 120px;
-  transform: translateX(250px);
-}
-.image-trigger span {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: transparent;
-  box-shadow: 0 5px 10px 4px rgb(33 33 33), 0 5px 10px 4px rgb(33 33 33);
 
-}
-.image-trigger span.colored {
-  background-color: var(--specialColor);
-}
 
 /*<!--_________((Image Trigger End))________--!>*/
 

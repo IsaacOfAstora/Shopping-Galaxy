@@ -1,16 +1,15 @@
-
 let leftClick = document.querySelector(".icon-leftGalaxyShip")
 let rightClick = document.querySelector(".icon-rightGalaxyShip")
 let slider = document.querySelector(".slider-images")
 let sliderImage = document.querySelectorAll(".slider-images img")
-let trigger = document.querySelectorAll(".image-trigger span")
+
 
 
 
 let counter = 0;
 
 let size = sliderImage[0].clientWidth;
-trigger[counter].classList.add("colored")
+
 
 
 rightClick.addEventListener("click", ()=>{
@@ -45,4 +44,3 @@ if (sliderImage[counter].id === "firstClone"){
 
 }
 })
-
