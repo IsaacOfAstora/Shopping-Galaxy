@@ -115,12 +115,12 @@
 .trigger {
   display: flex;
   position: absolute;
-  width: 100px;
+  width: 150px;
   align-self: end;
   flex-direction: row;
   border-radius: 10px;
-  transform: translate(240px, -10px);
-  justify-content: space-between;
+  transform: translate(250px, -10px);
+  gap: 8px;
 }
 .trigger span {
   width: 20px;
