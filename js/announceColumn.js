@@ -45,7 +45,7 @@ triggerDot[i].classList.add("colored");
 rightClick.onclick = () => {
   triggerDot[i].classList.remove("colored");
   i++;
-  if (i > 2) {
+  if (i > 3) {
     i = 0;
   }
   triggerDot[i].classList.add("colored");
@@ -55,7 +55,7 @@ leftClick.onclick = () => {
   triggerDot[i].classList.remove("colored");
   i--;
   if (i < 0) {
-    i = 2;
+    i = 3;
   }
   triggerDot[i].classList.add("colored");
 };
