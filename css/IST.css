@@ -173,7 +173,7 @@ span.icon-IsaacLogo {
   animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .social:hover{
-  width: 150px;
+  width: 140px;
 }
 .social:hover span{
   pointer-events:all;
