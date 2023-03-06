@@ -314,7 +314,6 @@ nav a i {
   display: flex;
   align-items: center;
   font-family: var(--SecondFont);
-  margin: 0;
   color: rgb(255 255 255);
   text-decoration: none;
   width: fit-content;
@@ -767,8 +766,27 @@ header{
 
 }
 nav{
-  transform: translateY(-300px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  transform: translateY(-400px);
   transition: 0.6s ease;
+}
+.button span i{
+  transform: rotate(-90deg);
+}
+.button span i.rotate{
+  transform: rotate(90deg);
+}
+.button span:hover i.rotate{
+  transform: rotate(90deg);
+}
+.button span:hover i{
+  transform: rotate(-90deg);
+}
+.search-bar{
+  margin: 10px 50px;
 }
 .wrapper.active{
   display: flex;
@@ -780,15 +798,9 @@ nav{
   display: none;
 }
 nav.active{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   transform: translateY(0);
 }
-nav.active .search-bar{
-  margin: auto;
-}
+
 
 header.active{
   display: flex;
@@ -797,8 +809,24 @@ header.active{
   border-radius:unset;
   box-shadow:none;
 }
+nav a, nav label {
+  margin: 10px 30px;
+}
 nav.active a, nav.active label {
-  margin: auto ;
+  margin: 10px 30px;
+}
+.menu{
+  transform: translate(0, 2%) rotate3D(0, 1, 0 ,180deg);
+}
+.menu.dropDown {
+  opacity: 1;
+  padding: 0;
+  pointer-events: all;
+  transform: translate(70%, 2%) rotate3d(0, 1, 0, 360deg);
+}
+.menu::before{
+  left: -5px;
+  top: 8px;
 }
 
 }
