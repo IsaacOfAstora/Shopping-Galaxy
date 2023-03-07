@@ -81,7 +81,7 @@ function triggerRight() {
   triggerDot[i].style.transition = "0.5s cubic-bezier(0.9,-0.04, 0.71, 1.05)";
   triggerDot[i].classList.remove("colored");
   i++;
-  if (i > 3) {
+  if (i > 5) {
     i = 0;
   }
   triggerDot[i].classList.add("colored");
@@ -92,7 +92,7 @@ function triggerLeft() {
   triggerDot[i].classList.remove("colored");
   i--;
   if (i < 0) {
-    i = 3;
+    i = 5;
   }
   triggerDot[i].classList.add("colored");
 }

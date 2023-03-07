@@ -112,24 +112,24 @@
 /*<!--____________((Arrows End))____________--!>*/
 
 /*<!--__________((Image Triggers))__________--!>*/
-.trigger, .trigger2  {
+.trigger {
   display: flex;
   position: absolute;
   width: 150px;
   align-self: end;
   flex-direction: row;
   border-radius: 10px;
-  transform: translate(250px, -10px);
+  transform: translate(230px, -10px);
   gap: 8px;
 }
-.trigger span,.trigger2 span {
-  width: 20px;
+.trigger span {
+  width: 25px;
   height: 20px;
   border-radius: 5px;
   background-color: transparent;
   box-shadow: 0px 2px 4px 1px #000000;
 }
-.trigger span.colored, .trigger2  span.colored{
+.trigger span.colored{
   background-color: var(--specialColor);
 }
 /*<!--_________((Image Trigger End))________--!>*/
