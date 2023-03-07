@@ -5,14 +5,14 @@ let slider = document.querySelector(".slider-images");
 let sliderImage = document.querySelectorAll(".slider-images img");
 let trigger = document.querySelector(".trigger");
 
-let counter = 0;
+let counter = 1;
 let size = sliderImage[0].clientWidth;
+slider.style.transform = "translateX(" + -size * counter + "px)";
 
 rightClick.addEventListener("click", moveRight);
-
 function moveRight() {
   if (counter >= sliderImage.length - 1) return;
-  slider.style.transition = "0.6s ease-in-out";
+  slider.style.transition = "0.8s cubic-bezier(0.9,-0.04, 0.71, 1.05)";
   counter++;
   slider.style.transform = "translateX(" + -size * counter + "px)";
   triggerRight();
@@ -20,7 +20,7 @@ function moveRight() {
 
 leftClick.addEventListener("click", () => {
   if (counter <= 0) return;
-  slider.style.transition = "0.6s ease-in-out";
+  slider.style.transition = "0.8s cubic-bezier(0.9,-0.04, 0.71, 1.05)";
   counter--;
   slider.style.transform = "translateX(" + -size * counter + "px)";
   triggerLeft();
@@ -78,6 +78,7 @@ mainSlider.addEventListener("mouseout", autoplay);
 let i = 0;
 triggerDot[i].classList.add("colored");
 function triggerRight() {
+  triggerDot[i].style.transition = "0.5s cubic-bezier(0.9,-0.04, 0.71, 1.05)";
   triggerDot[i].classList.remove("colored");
   i++;
   if (i > 3) {
@@ -87,6 +88,7 @@ function triggerRight() {
 }
 
 function triggerLeft() {
+  triggerDot[i].style.transition = "0.5s cubic-bezier(0.9,-0.04, 0.71, 1.05)";
   triggerDot[i].classList.remove("colored");
   i--;
   if (i < 0) {
