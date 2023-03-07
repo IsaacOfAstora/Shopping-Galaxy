@@ -39,11 +39,11 @@
     border-radius: 15px;
     justify-items: flex-start;
     overflow: hidden;
+    margin-bottom: 50px;
   }
 /*<!--___________((slider images))__________--!>*/
 .slider-images {
   display: flex;
-  ;
 }
 
 .slider-images img {
@@ -67,7 +67,7 @@
   justify-content: space-between;
 }
 
-.leftRightarrow i {
+.leftRightarrow i{
   text-shadow: 0 5px 10px black, 0 5px 10px black, 0 5px 10px black,
     0 5px 10px black;
   transition: 0.2s ease-in-out;
@@ -76,10 +76,10 @@
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(1, 0.71, 0.13, 0.29);
 }
-.leftRightarrow:hover i {
+.leftRightarrow:hover i{
   animation-play-state: paused;
 }
-.leftRightarrow i:active {
+.leftRightarrow i:active{
   transform: scale(0.95);
 }
 .icon-leftGalaxyShip {
@@ -112,7 +112,7 @@
 /*<!--____________((Arrows End))____________--!>*/
 
 /*<!--__________((Image Triggers))__________--!>*/
-.trigger {
+.trigger, .trigger2  {
   display: flex;
   position: absolute;
   width: 150px;
@@ -122,14 +122,14 @@
   transform: translate(250px, -10px);
   gap: 8px;
 }
-.trigger span {
+.trigger span,.trigger2 span {
   width: 20px;
   height: 20px;
   border-radius: 5px;
   background-color: transparent;
   box-shadow: 0px 2px 4px 1px #000000;
 }
-.trigger span.colored{
+.trigger span.colored, .trigger2  span.colored{
   background-color: var(--specialColor);
 }
 /*<!--_________((Image Trigger End))________--!>*/

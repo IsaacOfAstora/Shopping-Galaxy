@@ -146,6 +146,9 @@ span.icon-IsaacLogo {
   right: 20px;
 
 }
+.nav-toggle:hover .second {
+  width: 20px;
+}
 .nav-toggle span{
   width: 30px;
   height: 4px;
@@ -179,6 +182,7 @@ span.icon-IsaacLogo {
   padding: 3px;
   width: 50px;
   font-size: 25px;
+  font-weight: bold;
   border-radius: 10px;
   text-decoration: none;
   background-color: var(--CommanderColor);
