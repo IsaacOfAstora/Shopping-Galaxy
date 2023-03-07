@@ -45,6 +45,24 @@ for (let i = 0; i < sliderImage.length - 2; i++) {
 }
 let triggerDot = document.querySelectorAll(".trigger span");
 /**********____________________________________**********/
+/**********______________dotClick______________**********/
+/**********____________________________________**********/
+let j = 0;
+for (let i = 0; i < triggerDot.length; i++) {
+  triggerDot[i].onclick = () => {
+    triggerDot[i].style.transition = "0.5s cubic-bezier(0.9,-0.04, 0.71, 1.05)";
+    triggerDot[i].classList.add("colored");
+    triggerDot[j].classList.remove("colored");
+    j = i;
+    slider.style.transition = "0.8s cubic-bezier(0.9,-0.04, 0.71, 1.05)";
+    slider.style.transform = "translateX(" + -size * i + "px)";
+  };
+}
+/**********____________________________________**********/
+/********______________dotClick End______________********/
+/**********____________________________________**********/
+
+/**********____________________________________**********/
 /**********______________Autoplay______________**********/
 /**********____________________________________**********/
 function autoplay() {
