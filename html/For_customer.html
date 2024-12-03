@@ -97,46 +97,18 @@
         <span>Amount</span>
         <span>Price</span>
       </div>
-      <div class="cartItem">
-        <button type="button" class="cartRemover">
-          <i class="fa-solid fa-trash"></i>
-        </button>
-        <div class="cartItem-info">
-          <img class="cartItem-image" src="../assets/pco x3 gt.jpg" alt="" />
-          Pocco X3 GT
+      <div class="cartItems"></div>
+      
+      <div class="cartTotal">
+        <div class="cartTotal-Titles">
+          <span>In cart</span>
+          <span>Total price</span>
         </div>
-        <input type="number" class="amount" min="0" max="3" />
-        <span class="totalPrice">500 DA</span>
-      </div>
-      <!---->
-      <!---->
-      <div class="cartItem">
-        <button type="button" class="cartRemover">
-          <i class="fa-solid fa-trash"></i>
-        </button>
-        <div class="cartItem-info">
-          <img class="cartItem-image" src="../assets/note 11 s.jpg" alt="" />
-          Redmi Note 11s
+        <div class="cartTotal-Item">
+          <span class="total">0</span>
+          <span class="price">0 DA</span>
         </div>
-        <input type="number" name="12" class="amount" />
-        <span class="totalPrice">500 DA</span>
       </div>
-    </div>
-
-    <!---->
-    <!---->
-    <!---->
-    <!--////////////////////////////////Total price Table////////////////////////////////-->
-    <div class="cartTotal">
-      <div class="cartTotal-Titles">
-        <span>In cart</span>
-        <span>Total price</span>
-      </div>
-      <div class="cartTotal-Item">
-        <span class="total">1</span>
-        <span class="price">500 DA</span>
-      </div>
-    </div>
   </section>
   <!--////////////////////////////////Total price Table End////////////////////////////////-->
   <!--////////////////////////////////Isaac Cart End////////////////////////////////-->
@@ -190,6 +162,89 @@
   <script src="../js/main.js"></script>
   <script src="../js/for_custumer.js"></script>
   <script src="../js/burger-menu.js"></script>
+  <script>
+  // cart-display.js
+function loadCart() {
+  const cartItemsContainer = document.querySelector('.cartItems');
+  cartItemsContainer.innerHTML = ''; // Clear the existing cart display
+
+  // Get cart from localStorage or use an empty array if it doesn't exist
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  let totalQuantity = 0;
+  let totalPrice = 0;
+
+  cart.forEach(item => {
+    if (item.quantity > 0) { // Only display items with quantity greater than 0
+      const cartItem = document.createElement('div');
+      cartItem.classList.add('cartItem');
+
+      cartItem.innerHTML = `
+        <button type="button" class="cartRemover" data-id="${item.id}">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+        <div class="cartItem-info">
+          <img class="cartItem-image" src="${item.image}" alt="${item.name}" />
+          <span>${item.name}</span>
+        </div>
+        <input type="number" class="amount" value="${item.quantity}" min="1" data-id="${item.id}" />
+        <span class="totalPrice">${(item.price * item.quantity).toFixed(2)} DA</span>
+      `;
+
+      totalQuantity += item.quantity;
+      totalPrice += item.price * item.quantity;
+      cartItemsContainer.appendChild(cartItem);
+    }
+  });
+
+  document.querySelector('.cartTotal .total').textContent = totalQuantity;
+  document.querySelector('.cartTotal .price').textContent = `${totalPrice.toFixed(2)} DA`;
+
+  addCartEventListeners();
+}
+
+function addCartEventListeners() {
+  document.querySelectorAll('.cartRemover').forEach(button => {
+    button.addEventListener('click', (e) => {
+      const itemId = e.target.closest('.cartRemover').dataset.id;
+      removeItemFromCart(itemId);
+      loadCart(); // Reload the cart after removal
+    });
+  });
+
+  document.querySelectorAll('.amount').forEach(input => {
+    input.addEventListener('change', (e) => {
+      const itemId = e.target.dataset.id;
+      const newQuantity = parseInt(e.target.value, 10);
+      updateItemQuantity(itemId, newQuantity);
+      loadCart(); // Reload the cart after updating quantity
+    });
+  });
+}
+
+function removeItemFromCart(id) {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  cart = cart.filter(item => item.id !== id);
+  localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+function updateItemQuantity(id, quantity) {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  const itemIndex = cart.findIndex(item => item.id === id);
+  if (itemIndex !== -1) {
+    cart[itemIndex].quantity = quantity;
+    if (cart[itemIndex].quantity <= 0) {
+      cart.splice(itemIndex, 1); // Remove item if quantity is 0 or less
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
+}
+
+// Initial load of the cart
+document.addEventListener('DOMContentLoaded', loadCart);
+
+
+</script>
+
 </body>
 
 </html>

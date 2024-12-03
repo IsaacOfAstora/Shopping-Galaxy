@@ -37,6 +37,7 @@ Amoudi.onclick = () => {
   Amoudi.classList.add("inUse");
   Mostaqim.classList.remove("inUse");
   productList.classList.remove("mostaqim");
+
   for (let i = 0; i < AddToCartButton.length; i++) {
     productItem[i].classList.remove("mostaqim");
     productItemState[i].classList.remove("mostaqim");

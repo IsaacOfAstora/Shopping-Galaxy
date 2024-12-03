@@ -100,10 +100,7 @@ function transitioned() {
 /**********______________Autoplay______________**********/
 /**********____________________________________**********/
 function autoplay() {
-  move = setInterval(timer, 2000);
-  function timer() {
-    moveRight();
-  }
+  move = setInterval(moveRight, 2000);
 }
 autoplay();
 /**********____________________________________**********/

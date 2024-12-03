@@ -1,4 +1,3 @@
-
 /*
 <!------------------------------------------------------------!>
 <!--________________(Products section Start)________________--!>
@@ -17,6 +16,7 @@
   flex-wrap: nowrap;
   align-content: flex-start;
 }
+
 /*
 <!------------------------------------------------------------!>
 <!--_________________(Look changing icons)__________________--!>
@@ -30,11 +30,13 @@
   margin: 1%;
   gap: 20px;
 }
+
 .changeLook h1 {
   letter-spacing: 1px;
   color: rgb(255 255 255);
   text-shadow: 0 0 8px var(--pageColor), 0 0 8px var(--pageColor);
 }
+
 .rowLook,
 .columnLook {
   display: flex;
@@ -49,10 +51,12 @@
   padding: 0;
   transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 .rowLook:active,
 .columnLook:active {
   transform: scale(0.9);
 }
+
 .rowLook.inUse {
   color: var(--pageColor);
 }
@@ -60,6 +64,7 @@
 .columnLook.inUse {
   color: var(--pageColor);
 }
+
 /*
 <!------------------------------------------------------------!>
 <!--_______________(Look changing Icons End)________________--!>
@@ -77,6 +82,7 @@
   margin: 4%;
   justify-content: space-between;
 }
+
 .product-item {
   display: grid;
   grid-template-rows: 200px auto auto;
@@ -89,10 +95,12 @@
   font-family: var(--MainFont);
   transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 .product-item:hover {
   transform: scale(0.95);
   box-shadow: 0 0 15px 0 rgb(227 201 204);
 }
+
 .product-item-state {
   display: grid;
   place-items: center;
@@ -111,6 +119,7 @@
   font-family: MGR;
   font-size: 15px;
 }
+
 .product-item-state::before {
   content: "";
   position: absolute;
@@ -123,6 +132,7 @@
   box-shadow: -2px 5px 2px 2px #383535;
   background-color: var(--pageColor);
 }
+
 .product-item-state::after {
   content: "";
   z-index: 0;
@@ -135,6 +145,7 @@
   box-shadow: rgb(56 53 53) -6px 2px 1px 2px;
   background-color: var(--pageColor);
 }
+
 .product-item-image {
   width: 200px;
   height: 200px;
@@ -150,12 +161,14 @@
   letter-spacing: 1.5px;
   margin: 0;
 }
-.product-item > span {
+
+.product-item>span {
   margin: 0;
   font-family: var(--SecondFont);
   opacity: 0.7;
   color: rgb(255 255 255);
 }
+
 /*
 <!------------------------------------------------------------!>
 <!--_________________(Add to Cart Button)___________________--!>
@@ -165,6 +178,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
   font-size: 20px;
   font-family: var(--SecondFont);
   border-radius: 5px;
@@ -174,6 +188,7 @@
   padding: 2px;
   height: 30px;
 }
+
 .add-to-cart i {
   display: flex;
   align-items: center;
@@ -186,11 +201,13 @@
   border-radius: 5px;
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
+
 .add-to-cart span {
   opacity: 0;
   font-size: 15px;
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
+
 /*------------------------------------*/
 /**_-_-_-_-_Hovering effects_-_-_-_-_**/
 /*----------________________----------*/
@@ -198,6 +215,7 @@
 .add-to-cart:active {
   transform: scale(0.95);
 }
+
 .add-to-cart:hover {
   background-color: var(--pageColor);
   box-shadow: 0 15px 20px 0px rgb(33 33 33);
@@ -208,10 +226,12 @@
   background-color: transparent;
   box-shadow: none;
 }
+
 .add-to-cart:hover span {
   opacity: 1;
   padding-left: 30px;
 }
+
 /*
 <!------------------------------------------------------------!>
 <!--________________(Add to Cart Button End)________________--!>
@@ -238,6 +258,7 @@
   justify-items: start;
   align-items: center;
 }
+
 .product-item.mostaqim {
   display: grid;
   grid-template-columns: 200px repeat(3, 1fr);
@@ -246,20 +267,24 @@
   align-items: center;
   justify-items: start;
 }
+
 .product-item-state.mostaqim {
   place-self: flex-start;
   transform: translateX(235%);
 }
+
 .product-item-image.mostaqim {
   height: 200px;
   width: 200px;
   border-radius: 15px;
 }
+
 .add-to-cart.mostaqim {
   justify-content: flex-start;
   margin: 0;
   gap: 2px;
 }
+
 .add-to-cart.mostaqim span {
   justify-content: center;
   pointer-events: none;
@@ -271,11 +296,13 @@
 .add-to-cart.mostaqim i {
   position: static;
 }
+
 .add-to-cart.mostaqim:hover span {
   transform: translateX(5%);
   pointer-events: all;
   padding: 0;
 }
+
 .add-to-cart.mostaqim:hover i {
   transform: none;
   background-color: var(--pageColor);

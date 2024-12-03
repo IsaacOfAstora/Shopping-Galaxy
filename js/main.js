@@ -3,7 +3,7 @@ $("nav .button").click(function () {
   $("nav .button .menu").toggleClass("dropDown");
 });
 
-/*________________________________________________________________ */
+/*___________*/
 
 $("nav .button-Products-html").click(function () {
   $("nav .button-Products-html span i").toggleClass("rotate");
